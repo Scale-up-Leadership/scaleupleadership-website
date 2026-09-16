@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/scan"
+  to = "https://scan.scaleupleadership.nl"
+  status = 301
+  force = false

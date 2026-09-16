@@ -1,0 +1,14 @@
+{
+  "name": "scaleupleadership-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website van Scale-up Leadership. Statische site met Eleventy, inhoud bewerkbaar via het CMS op /admin.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "type": "module"
+}
