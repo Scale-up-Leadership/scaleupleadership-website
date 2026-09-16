@@ -1,0 +1,22 @@
+---
+layout: basis.njk
+---
+<section class="page-hero">
+  <div class="page-hero-text">
+    {%- if label %}<div class="label">{{ label }}</div>{% endif %}
+    <h1 class="slab-hero">{{ kop or titel }}{% if kop_accent %}<span class="q">{{ kop_accent }}</span>{% endif %}</h1>
+    <hr class="rule">
+    {%- if intro %}<p>{{ intro }}</p>{% endif %}
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>
+
+<article class="artikel">
+  {{ content | safe }}
+
+  {%- if knop %}
+  <div class="artikel-cta">
+    <a class="pill-btn" href="{{ knop_url or '/contact/' }}">{{ knop }} <span class="arrow">&rarr;</span></a>
+  </div>
+  {%- endif %}
+</article>
