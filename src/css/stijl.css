@@ -119,8 +119,8 @@
   .team-card.team-meer .li-link { display: inline-block; }
 
   .insights { background: var(--greige-1); padding: 80px 60px; }
-  .insights-grid { display: flex; max-width: 1100px; margin: 0 auto; }
-  .insight-card { width: 33.33%; margin: 0 12px; background: var(--white); border-radius: 14px; overflow: hidden; }
+  .insights-grid { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1100px; margin: 0 auto; }
+  .insight-card { width: 33.33%; max-width: 340px; margin: 0 12px 24px; background: var(--white); border-radius: 14px; overflow: hidden; }
   .insight-img { height: 150px; background: linear-gradient(135deg, var(--dark), var(--magenta)); }
   .insight-card:nth-child(2) .insight-img { background: linear-gradient(135deg, var(--dark), var(--orange)); }
   .insight-card:nth-child(3) .insight-img { background: linear-gradient(135deg, var(--dark), var(--greige-3)); }
