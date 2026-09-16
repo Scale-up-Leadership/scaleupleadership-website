@@ -39,7 +39,7 @@ knop_url: "#"
 <div class="artikel-quote">
   <p>Als mentor bij NLgroeit zie ik dagelijks dat ondernemers sneller groeien wanneer ze leren van anderen, ervaringen delen en elkaar uitdagen om groter te denken. Juist tijdens de gesprekken tussen ondernemers ontstaan vaak de inzichten, contacten en samenwerkingen die het verschil maken.</p>
   <p>NL Changemakers biedt daarvoor het perfecte podium: inspirerende sprekers, breakoutsessies over AI, leiderschap, strategie, financiering en cultuur, en honderden ondernemers die tegen vergelijkbare uitdagingen aanlopen.</p>
-  <div class="quote-naam">Miriam Cnossen, co-founder Scale-Up Leadership en mentor bij NLgroeit</div>
+  <div class="quote-naam">Miriam Cnossen, co-founder Scale-up Leadership en mentor bij NLgroeit</div>
 </div>
 
 <h3>Reserveer jouw AI Moonshot</h3>
