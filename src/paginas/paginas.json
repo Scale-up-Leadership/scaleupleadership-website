@@ -1,0 +1,4 @@
+{
+  "layout": "losse-pagina.njk",
+  "permalink": "/{{ page.fileSlug }}/"
+}
