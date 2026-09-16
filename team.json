@@ -1,0 +1,76 @@
+{
+  "leden": [
+    {
+      "naam": "Miriam Cnossen",
+      "rol_kort": "Co-founder",
+      "rol": "Co-founder · Fractional CEO/COO",
+      "bio": "Ik stap in als je wil versnellen en iemand zoekt die meebouwt. Van strategie tot uitvoering, in elke fase. Niet adviseren vanaf de zijlijn, maar meewerken tot het staat.",
+      "linkedin": "https://www.linkedin.com/in/miriamcnossen/",
+      "foto": "",
+      "op_home": true
+    },
+    {
+      "naam": "Annemarie Holstvoogd",
+      "rol_kort": "Co-founder",
+      "rol": "Co-founder · Fractional CEO/COO",
+      "bio": "Ik stap in als je bedrijf groeit maar alles nog via jou loopt. Focus, ritme en structuur, zodat jij je handen vrij krijgt voor vernieuwing.",
+      "linkedin": "https://www.linkedin.com/in/annemarie-holstvoogd/",
+      "foto": "",
+      "op_home": true
+    },
+    {
+      "naam": "Hanka van Waas",
+      "rol_kort": "Scale up leader",
+      "rol": "Scale up leader · Fractional COO/CEO",
+      "bio": "Ik stap in als groei chaos begint te veroorzaken. Ik breng overzicht terug, zonder het ondernemerschap eruit te organiseren.",
+      "linkedin": "https://www.linkedin.com/in/hankavanwaas/",
+      "foto": "",
+      "op_home": false
+    },
+    {
+      "naam": "Naam 1",
+      "rol_kort": "Scale up leader",
+      "rol": "Scale up leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "",
+      "op_home": false
+    },
+    {
+      "naam": "Naam 2",
+      "rol_kort": "Scale up leader",
+      "rol": "Scale up leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "",
+      "op_home": false
+    },
+    {
+      "naam": "Naam 3",
+      "rol_kort": "Scale up leader",
+      "rol": "Scale up leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "",
+      "op_home": false
+    },
+    {
+      "naam": "Naam 4",
+      "rol_kort": "Scale up leader",
+      "rol": "Scale up leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "",
+      "op_home": false
+    },
+    {
+      "naam": "Naam 5",
+      "rol_kort": "Scale up leader",
+      "rol": "Scale up leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "",
+      "op_home": false
+    }
+  ]
+}
