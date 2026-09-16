@@ -9,13 +9,33 @@
     "knop_secundair": "Plan je Scale-up Droomgesprek"
   },
   "reis": [
-    { "label": "Startup", "tekst": "Je bouwt aan iets veelbelovends." },
-    { "label": "Groei", "tekst": "Je groeit hard, maar de complexiteit neemt toe." },
-    { "label": "Scale-up", "tekst": "Sterke organisatie en leiderschap brengen je verder." }
+    {
+      "label": "Startup",
+      "tekst": "Je bouwt aan iets veelbelovends."
+    },
+    {
+      "label": "Groei",
+      "tekst": "Je groeit hard, maar de complexiteit neemt toe."
+    },
+    {
+      "label": "Scale-up",
+      "tekst": "Sterke organisatie en leiderschap brengen je verder."
+    }
   ],
   "trustbar": {
     "label": "Vertrouwd door",
-    "namen": ["Knab", "Moneyou", "Area of People", "Flux", "Clarify", "Skyleague", "4dotnet", "HAN University of Applied Sciences", "Silverflow", "Vive"]
+    "namen": [
+      "Knab",
+      "Moneyou",
+      "Area of People",
+      "Flux",
+      "Clarify",
+      "Skyleague",
+      "4dotnet",
+      "HAN University of Applied Sciences",
+      "Silverflow",
+      "Vive"
+    ]
   },
   "intro": {
     "label": "Wie wij zijn",
@@ -25,10 +45,22 @@
     "kop": "Waar loop je tegenaan?",
     "sub": "Herken jij jezelf in één van deze situaties?",
     "kaarten": [
-      { "kop": "Je wil versnellen", "tekst": "Maar het lukt niet. De visie leeft niet in de organisatie en focus ontbreekt." },
-      { "kop": "Je merkt dat de groei hapert", "tekst": "Je loopt hard maar merkt dat het tempo terugvalt. Alle besluiten moeten nog steeds door jou genomen worden." },
-      { "kop": "Je wil het MT versterken", "tekst": "Je team is gegroeid, maar het MT mist de ervaring of slagkracht om de volgende fase te dragen." },
-      { "kop": "Je mist ritme & structuur", "tekst": "Besluiten duren te lang, prioriteiten verschuiven steeds, en een vast ritme ontbreekt." }
+      {
+        "kop": "Je wil versnellen",
+        "tekst": "Maar het lukt niet. De visie leeft niet in de organisatie en focus ontbreekt."
+      },
+      {
+        "kop": "Je merkt dat de groei hapert",
+        "tekst": "Je loopt hard maar merkt dat het tempo terugvalt. Alle besluiten moeten nog steeds door jou genomen worden."
+      },
+      {
+        "kop": "Je wil het MT versterken",
+        "tekst": "Je team is gegroeid, maar het MT mist de ervaring of slagkracht om de volgende fase te dragen."
+      },
+      {
+        "kop": "Je mist ritme & structuur",
+        "tekst": "Besluiten duren te lang, prioriteiten verschuiven steeds, en een vast ritme ontbreekt."
+      }
     ]
   },
   "diensten": {
@@ -96,7 +128,7 @@
   },
   "inzichten": {
     "kop": "Laatste inzichten",
-    "sub": "Blogs van de scale up leaders zelf"
+    "sub": "Blogs, events en podcasts van de scale up leaders zelf"
   },
   "scanblok": {
     "kop": "Hoe schaalbaar is je bedrijf?",
