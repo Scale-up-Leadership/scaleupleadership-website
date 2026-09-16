@@ -410,6 +410,28 @@ collections:
               - { name: op_home, label: "Ook op de homepage tonen", widget: boolean, default: false }
 
   # ------------------------------------------------------------------
+  # ---------------- LOSSE PAGINA'S ----------------
+  - name: losse_paginas
+    label: "Losse pagina's"
+    label_singular: "pagina"
+    description: "Zelf een pagina maken, bijvoorbeeld een privacyverklaring, een uitgebreide dienst of een landingspagina. De opmaak ligt vast: een kop bovenaan en daaronder je tekst."
+    folder: "src/paginas"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "{{titel}}"
+    fields:
+      - { name: titel, label: "Paginatitel (browsertab en Google)", widget: string }
+      - { name: omschrijving, label: "Omschrijving voor Google", widget: text, required: false }
+      - { name: label, label: "Kopje boven de titel", widget: string, required: false, hint: "Bijvoorbeeld Juridisch of Voor founders. Mag leeg." }
+      - { name: kop, label: "Grote kop", widget: string }
+      - { name: kop_accent, label: "Gekleurd deel van de kop", widget: string, required: false, hint: "Dit stukje komt in magenta achter de grote kop." }
+      - { name: intro, label: "Introtekst", widget: text, required: false }
+      - { name: knop, label: "Tekst op de knop onderaan", widget: string, required: false }
+      - { name: knop_url, label: "Link van die knop", widget: string, required: false, hint: "Bijvoorbeeld /contact/" }
+      - { name: body, label: "De tekst van de pagina", widget: markdown }
+
   - name: actueel_items
     label: "Actueel"
     label_singular: "item"
