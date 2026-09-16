@@ -1,0 +1,70 @@
+---
+layout: basis.njk
+permalink: /over-ons/
+eleventyComputed:
+  titel: "{{ pagina.over.titel }}"
+  omschrijving: "{{ pagina.over.omschrijving }}"
+---
+{% set p = pagina.over %}
+
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="label">{{ p.hero.label }}</div>
+    <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
+    <hr class="rule">
+    <p>{{ p.hero.tekst | safe }}</p>
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>
+
+<section class="verhaal">
+  <div class="verhaal-inner">
+    <div class="label">{{ p.verhaal.label }}</div>
+    <p class="verhaal-lead">{{ p.verhaal.lead | safe }}</p>
+    <p class="verhaal-body">{{ p.verhaal.body | safe }}</p>
+    <div class="verhaal-punch">{{ p.verhaal.punch }}</div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-row">
+    {%- for s in p.stats %}
+    <div class="stat"><div class="stat-n">{{ s.getal | safe }}</div><div class="stat-l">{{ s.label }}</div></div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="triggers">
+  <div class="section-head">
+    <div class="section-title slab-heading">{{ p.geloven.kop }}</div>
+    <div class="section-sub">{{ p.geloven.sub }}</div>
+  </div>
+  <div class="trigger-row">
+    {%- for k in p.geloven.kaarten %}
+    <div class="trigger-card">
+      <div class="dot-label"><span class="dot"></span>{{ k.kop }}</div>
+      <p>{{ k.tekst }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="leaders">
+  <div class="section-head">
+    <div class="section-title slab-heading">{{ p.leaders.kop }}</div>
+    <div class="section-sub">{{ p.leaders.sub }}</div>
+  </div>
+  <div class="leaders-grid">
+    {%- for lid in team.leden %}
+    <div class="leader-card">
+      <div class="leader-foto p{{ (loop.index0 % 3) + 1 }}{% if lid.foto %} heeft-foto{% endif %}"{% if lid.foto %} style="background-image:url({{ lid.foto }})"{% endif %}>{% if not lid.foto %}Foto{% endif %}</div>
+      <h4>{{ lid.naam }}</h4>
+      <div class="role">{{ lid.rol }}</div>
+      <p>{{ lid.bio }}</p>
+      {%- if lid.linkedin %}
+      <a class="li-link" href="{{ lid.linkedin }}" target="_blank" rel="noopener">Bekijk LinkedIn &rarr;</a>
+      {%- endif %}
+    </div>
+    {%- endfor %}
+  </div>
+</section>
