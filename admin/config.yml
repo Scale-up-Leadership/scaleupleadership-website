@@ -47,6 +47,7 @@ collections:
               - { name: tekst, label: "Tekst eronder", widget: text }
               - { name: knop_primair, label: "Tekst roze knop", widget: string }
               - { name: knop_secundair, label: "Tekst witte knop", widget: string }
+              - { name: afbeelding, label: "Afbeelding rechts", widget: image, required: false, hint: "Laat leeg voor het scale-up wiel. Kies een liggende afbeelding, minimaal 1000 pixels breed." }
           - name: reis
             label: "De drie fases"
             widget: list
