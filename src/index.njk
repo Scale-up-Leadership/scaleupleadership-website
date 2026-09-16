@@ -8,7 +8,7 @@ eleventyComputed:
 ---
 {% set p = pagina.home %}
 
-<section class="hero">
+<section class="hero{% if not p.hero.afbeelding %} hero-zonder-beeld{% endif %}">
   <div class="merk-ring"></div><div class="merk-stip"></div>
   <div class="hero-text">
     <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
@@ -19,9 +19,11 @@ eleventyComputed:
       <a class="pill-btn-outline" href="/contact/">{{ p.hero.knop_secundair }}</a>
     </div>
   </div>
+  {%- if p.hero.afbeelding %}
   <div class="hero-photo-wrap">
-    <div class="hero-photo"></div>
+    <div class="hero-photo" style="background-image:url({{ p.hero.afbeelding }})"></div>
   </div>
+  {%- endif %}
 </section>
 
 <section class="journey">
