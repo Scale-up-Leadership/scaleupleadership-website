@@ -1,0 +1,50 @@
+{
+  "titel": "Voor wie — Scale-Up Leadership",
+  "omschrijving": "Vier situaties waarin founders ons bellen. Herken je er één?",
+  "hero": {
+    "label": "Voor wie",
+    "kop": "Herken jij jezelf ",
+    "kop_accent": "hierin?",
+    "tekst": "Vier situaties waarin founders ons bellen. Herken je er één? Neem dan contact met ons op en wie weet kunnen wij je verder helpen.",
+    "knop": "Neem contact op"
+  },
+  "momenten": [
+    {
+      "kop": "Je wil versnellen",
+      "situatie": "Maar het lukt niet. De visie leeft niet in de organisatie en focus ontbreekt.",
+      "label": "Wat we doen",
+      "doen": "Je visie scherp stellen zodat deze inspireert. We vertalen samen met je team de visie naar heldere doelen per kwartaal die in het héle bedrijf leven. We brengen focus aan op wat er nu echt toe doet."
+    },
+    {
+      "kop": "Je merkt dat de groei hapert",
+      "situatie": "Je loopt hard maar merkt dat het tempo terugvalt. Alle besluiten moeten nog steeds door jou genomen worden.",
+      "label": "Wat we doen",
+      "doen": "Bouwen aan een team dat de operatie kan dragen. Rollen en verantwoordelijkheden beleggen, prioriteiten stellen en kaders meegeven, zodat niet alles meer bij jou terechtkomt."
+    },
+    {
+      "kop": "Je wil het MT versterken",
+      "situatie": "Je team is gegroeid, maar het MT mist de ervaring of slagkracht om de volgende fase te dragen.",
+      "label": "Wat we doen",
+      "doen": "Een ervaren leider stapt tijdelijk in als fractional CxO, draait mee in het ritme van je team en bouwt het MT op tot het zelf staat."
+    },
+    {
+      "kop": "Je mist ritme &amp; structuur",
+      "situatie": "Besluiten worden ad hoc genomen, prioriteiten verschuiven steeds en een vast ritme ontbreekt.",
+      "label": "Wat we doen",
+      "doen": "Een vast kwartaalritme creëren met inzicht in data, duidelijk eigenaarschap en besluiten die genomen worden. Zodat prioriteiten gerealiseerd worden."
+    }
+  ],
+  "fasecheck": {
+    "kop": "In welke fase zit je?",
+    "sub": "We werken zowel met bedrijven die de start-upfase ontgroeien en de sprong naar scale-up willen maken als met meer gevestigde mkb-bedrijven die een groeisprong willen maken.",
+    "kaarten": [
+      { "kop": "Start-up", "tekst": "Je product werkt en je wil de markt gaan veroveren. Je focus ligt op een effectieve salesorganisatie en betrouwbare fulfillment zodat klanten je aanbevelen." },
+      { "kop": "Groei", "tekst": "Je groeit hard en de complexiteit neemt toe. Het is nodig om een team te bouwen dat de volgende fase draagt. Hier stappen we het vaakst in." },
+      { "kop": "Scale-up", "tekst": "Schaalvergroting, efficiënte organisatie en leiderschap brengen je verder. Structuur in combinatie met wendbaarheid. Hier lopen we mee tot het staat." }
+    ]
+  },
+  "quote": {
+    "tekst": "Met de structuur en werkwijze die Scale-up Leadership ons heeft aangereikt staat nu echt een geoliede machine.",
+    "bron": "Joan Ronner, CEO Area of People"
+  }
+}

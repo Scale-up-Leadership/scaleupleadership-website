@@ -1,0 +1,88 @@
+---
+layout: basis.njk
+permalink: /aanpak/
+eleventyComputed:
+  titel: "{{ pagina.aanpak.titel }}"
+  omschrijving: "{{ pagina.aanpak.omschrijving }}"
+---
+{% set p = pagina.aanpak %}
+
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="label">{{ p.hero.label }}</div>
+    <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
+    <hr class="rule">
+    <p>{{ p.hero.tekst | safe }}</p>
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>
+
+<section class="fases">
+  {%- for f in p.fases %}
+  <a class="stap{% if f.start %} start{% endif %}" href="#{{ f.anker }}">
+    <div class="stap-label">{{ f.label }}</div>
+    <div class="stap-naam slab-heading">{{ f.naam }}</div>
+    <div class="stap-desc">{{ f.tekst }}</div>
+  </a>
+  {%- endfor %}
+</section>
+
+<section class="intro">
+  <div class="label">{{ p.intro.label }}</div>
+  <p>{{ p.intro.tekst | safe }}</p>
+</section>
+
+{%- for k in p.pakketten %}
+<section class="pakket-detail{% if loop.index % 2 == 0 %} alt{% endif %}{% if k.uitgelicht %} highlight-pd{% endif %}" id="{{ k.anker }}">
+  <div class="pd-inner">
+    <div class="pd-left">
+      <div class="pd-fase">{{ k.fase }}</div>
+      <h2 class="slab-heading">{{ k.naam }}</h2>
+      <div class="pd-prijs">{{ k.prijs }}</div>
+      <div class="pd-duur">{{ k.duur }}</div>
+      <p class="pd-pitch">{{ k.pitch }}</p>
+      <a class="pill-btn" href="/contact/">{{ k.knop }} <span class="arrow">&rarr;</span></a>
+      {%- if k.badge %}<div class="pd-badge">{{ k.badge }}</div>{% endif %}
+    </div>
+    <div class="pd-right">
+      <div class="pd-block">
+        <h5>{{ k.doen_kop }}</h5>
+        <ul>
+          {%- for r in k.doen %}<li>{{ r | safe }}</li>{% endfor %}
+        </ul>
+      </div>
+      <div class="pd-block out">
+        <h5>{{ k.mee_kop }}</h5>
+        <ul>
+          {%- for r in k.mee %}<li>{{ r | safe }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{%- endfor %}
+
+<section class="diensten-lijst" style="padding-top:70px;">
+  <div class="section-head">
+    <div class="section-title slab-heading">{{ p.diensten.kop }}</div>
+    <div class="section-sub">{{ p.diensten.sub }}</div>
+  </div>
+  <div class="diensten-ul">
+    <div class="diensten-row row-3">
+      {%- for item in p.diensten.items %}{% if loop.index <= 3 %}
+      <div class="dienst-item"><div class="bullet">{{ loop.index }}</div><h4>{{ item | safe }}</h4></div>
+      {%- endif %}{% endfor %}
+    </div>
+    <div class="diensten-row row-4">
+      {%- for item in p.diensten.items %}{% if loop.index > 3 %}
+      <div class="dienst-item"><div class="bullet">{{ loop.index }}</div><h4>{{ item | safe }}</h4></div>
+      {%- endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <span class="quote-mark">&rdquo;</span>
+  <blockquote>{{ p.quote.tekst }}</blockquote>
+  <cite>{{ p.quote.bron }}</cite>
+</section>

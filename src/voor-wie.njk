@@ -1,0 +1,53 @@
+---
+layout: basis.njk
+permalink: /voor-wie/
+eleventyComputed:
+  titel: "{{ pagina.voorwie.titel }}"
+  omschrijving: "{{ pagina.voorwie.omschrijving }}"
+---
+{% set p = pagina.voorwie %}
+
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="label">{{ p.hero.label }}</div>
+    <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
+    <hr class="rule">
+    <p>{{ p.hero.tekst | safe }}</p>
+    <a class="pill-btn hero-knop" href="/contact/">{{ p.hero.knop }} <span class="arrow">&rarr;</span></a>
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>
+
+<section class="momenten">
+  {%- for m in p.momenten %}
+  <div class="moment">
+    <div class="moment-nr">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</div>
+    <div class="moment-txt">
+      <h2 class="slab-heading">{{ m.kop | safe }}</h2>
+      <p class="moment-situatie">{{ m.situatie }}</p>
+      <div class="moment-doen"><span class="moment-label">{{ m.label }}</span> {{ m.doen }}</div>
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+
+<section class="fase-check">
+  <div class="section-head">
+    <div class="section-title slab-heading">{{ p.fasecheck.kop }}</div>
+    <div class="section-sub">{{ p.fasecheck.sub }}</div>
+  </div>
+  <div class="fase-row">
+    {%- for k in p.fasecheck.kaarten %}
+    <div class="fase-kaart mid">
+      <div class="fase-kop">{{ k.kop }}</div>
+      <p>{{ k.tekst }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="testimonial">
+  <span class="quote-mark">&rdquo;</span>
+  <blockquote>{{ p.quote.tekst }}</blockquote>
+  <cite>{{ p.quote.bron }}</cite>
+</section>

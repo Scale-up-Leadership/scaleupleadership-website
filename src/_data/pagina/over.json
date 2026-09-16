@@ -1,0 +1,35 @@
+{
+  "titel": "Over ons — Scale-Up Leadership",
+  "omschrijving": "We liepen zelf in alle valkuilen van snelle groei. Die ervaring zetten we nu in om jou te helpen.",
+  "hero": {
+    "label": "Over ons",
+    "kop": "Wij hebben de<br>scale-up code ",
+    "kop_accent": "gekraakt",
+    "tekst": "We liepen zelf in alle valkuilen van snelle groei. Deze ervaring zetten we nu in om jou te helpen, zodat jij in één keer de groei kan maken die je voor ogen hebt."
+  },
+  "verhaal": {
+    "label": "Hoe het begon",
+    "lead": "Bij Moneyou zagen Miriam en Annemarie de organisatie in 4 jaar groeien naar <strong>500K klanten</strong> en van <strong>50 naar 250 mensen</strong>. Ze liepen in alle valkuilen die bij snelle groei horen en kraakten uiteindelijk de code.",
+    "body": "Het duurde zes kwartalen voordat de strategie voor het héle bedrijf helder was, en het team zelf goede keuzes kon maken. Wat er toen stond: een blij team, 150 nieuwe klanten per dag en een conversieratio van boven de 50%.",
+    "punch": "Die zes kwartalen willen we voor jou korter maken."
+  },
+  "stats": [
+    { "getal": "50+", "label": "scale-ups geholpen" },
+    { "getal": "50 &rarr; 250", "label": "medewerkers in 4 jaar bij Moneyou" },
+    { "getal": "+13&ndash;20%", "label": "omzetgroei in 1 jaar bij Flux en Kamadur" }
+  ],
+  "geloven": {
+    "kop": "Waar we in geloven",
+    "sub": "Vier dingen waar we niet van afwijken",
+    "kaarten": [
+      { "kop": "We stappen in en werken direct mee", "tekst": "Adviseren is het makkelijke deel. Wij werken mee tot het staat: strategie, sales, leiderschap, people en operatie tegelijk als dat nodig is." },
+      { "kop": "We organiseren het ondernemerschap er niet uit", "tekst": "Structuur mag nooit ten koste gaan van de passie en het lef waarmee je begon. Overzicht en ritme brengen, zonder de energie eruit te halen." },
+      { "kop": "Wij zorgen voor ritme", "tekst": "Niet alleen een plan maken, maar zorgen dat het bedrijf in een ritme komt waarin besluiten ook echt vallen." },
+      { "kop": "We maken onszelf overbodig", "tekst": "Het doel is eigenaarschap bij jouw team. Wat wij opbouwen moet blijven staan als wij weggaan." }
+    ]
+  },
+  "leaders": {
+    "kop": "Wie we zijn",
+    "sub": "De scale up leaders die instappen. Kijk bij wie je terechtkomt."
+  }
+}

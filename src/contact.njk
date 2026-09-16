@@ -1,0 +1,74 @@
+---
+layout: basis.njk
+permalink: /contact/
+eleventyComputed:
+  titel: "{{ pagina.contact.titel }}"
+  omschrijving: "{{ pagina.contact.omschrijving }}"
+---
+{% set p = pagina.contact %}
+
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="label">{{ p.hero.label }}</div>
+    <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
+    <hr class="rule">
+    <p>{{ p.hero.tekst | safe }}</p>
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>
+
+<section class="contact">
+  <div class="contact-inner">
+    <div class="contact-form">
+      <form name="contact" method="POST" action="/bedankt/" data-netlify="true" netlify-honeypot="bot-veld">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><label>Laat dit leeg <input name="bot-veld"></label></p>
+        <div class="veld-rij">
+          <div class="veld">
+            <label for="c-naam">{{ p.formulier.naam }}</label>
+            <input id="c-naam" name="naam" type="text" required placeholder="{{ p.formulier.naam_hint }}">
+          </div>
+          <div class="veld">
+            <label for="c-bedrijf">{{ p.formulier.bedrijf }}</label>
+            <input id="c-bedrijf" name="bedrijf" type="text" placeholder="{{ p.formulier.bedrijf_hint }}">
+          </div>
+        </div>
+        <div class="veld-rij">
+          <div class="veld">
+            <label for="c-mail">{{ p.formulier.mail }}</label>
+            <input id="c-mail" name="email" type="email" required placeholder="{{ p.formulier.mail_hint }}">
+          </div>
+          <div class="veld">
+            <label for="c-tel">{{ p.formulier.tel }} <span class="optie">optioneel</span></label>
+            <input id="c-tel" name="telefoon" type="tel" placeholder="{{ p.formulier.tel_hint }}">
+          </div>
+        </div>
+        <div class="veld">
+          <label for="c-onderwerp">{{ p.formulier.onderwerp }}</label>
+          <select id="c-onderwerp" name="onderwerp">
+            {%- for o in p.formulier.onderwerpen %}
+            <option>{{ o }}</option>
+            {%- endfor %}
+          </select>
+        </div>
+        <div class="veld">
+          <label for="c-bericht">{{ p.formulier.bericht }}</label>
+          <textarea id="c-bericht" name="bericht" rows="5" placeholder="{{ p.formulier.bericht_hint }}"></textarea>
+        </div>
+        <button class="pill-btn" type="submit">{{ p.formulier.knop }} <span class="arrow">&rarr;</span></button>
+      </form>
+    </div>
+
+    <div class="contact-naast">
+      <div class="contact-blok">
+        <h4>{{ p.naast.direct_kop }}</h4>
+        <a class="contact-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a class="contact-link" href="{{ site.linkedin }}" target="_blank" rel="noopener">{{ p.naast.linkedin_label }}</a>
+      </div>
+      <div class="contact-blok laatste">
+        <h4>{{ p.naast.gegevens_kop }}</h4>
+        <p class="klein">{{ site.bedrijfsnaam }}<br>{{ site.kvk }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+{
+  "naam": "Scale-Up Leadership",
+  "domein": "https://www.scaleupleadership.nl",
+  "scan_url": "/scan",
+  "scan_knop": "DOE DE SCAN",
+  "email": "info@scaleupleadership.nl",
+  "linkedin": "https://www.linkedin.com/company/scale-up-leadership/",
+  "bedrijfsnaam": "Scale-up Leadership B.V.",
+  "kvk": "KvK 94269076",
+  "menu": [
+    { "label": "Over ons", "url": "/over-ons/" },
+    { "label": "Scan", "url": "/scan" },
+    { "label": "Aanpak", "url": "/aanpak/" },
+    { "label": "Voor wie", "url": "/voor-wie/" },
+    { "label": "Actueel", "url": "/actueel/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+  "footer_tekst": "Sneller groeien? We stappen in en pakken samen door, zodat jij als founder vol passie blijft bouwen.",
+  "footer_slogan": "Van eenvoud naar groei",
+  "slot_cta": {
+    "tekst": "Hoe schaalbaar is je bedrijf?",
+    "knop": "DOE DE SCAN"
+  }
+}

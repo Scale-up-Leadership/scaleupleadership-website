@@ -1,0 +1,134 @@
+{
+  "titel": "Aanpak — Scale-Up Leadership",
+  "omschrijving": "We werken gefaseerd. We starten met de Scale-up Droom en daaruit kunnen Pad, Reis of Kompas volgen.",
+  "hero": {
+    "label": "Onze aanpak",
+    "kop": "Van ambitie<br>naar ",
+    "kop_accent": "resultaat",
+    "tekst": "We werken gefaseerd. We starten met de Scale-up Droom en daaruit kunnen Pad, Reis of Kompas volgen."
+  },
+  "fases": [
+    { "label": "De start", "naam": "Scale-up Droom", "tekst": "Je droom concreet en je groeivraag benoemd.", "anker": "droom", "start": true },
+    { "label": "Groeistrategie", "naam": "Scale-up Pad", "tekst": "Keuzes maken en een helder pad vastleggen.", "anker": "pad", "start": false },
+    { "label": "Executie", "naam": "Scale-up Reis", "tekst": "Meelopen tot het staat, in ritme en resultaat.", "anker": "reis", "start": false },
+    { "label": "Support", "naam": "Het Kompas", "tekst": "Zelf doen, met ons ernaast als je vastloopt.", "anker": "kompas", "start": false }
+  ],
+  "intro": {
+    "label": "Hoe we werken",
+    "tekst": "Geen advies op afstand, maar <strong>hands-on meebouwen</strong>. We stappen in je organisatie, werken mee in het ritme van jouw team, en dragen over zodra het staat."
+  },
+  "pakketten": [
+    {
+      "anker": "droom",
+      "fase": "De start · van ambitie naar inzicht",
+      "naam": "Scale-up Droom",
+      "prijs": "€500",
+      "duur": "2 uur · gesprek met 1 of 2 scale-up experts",
+      "pitch": "We maken je droom concreet, benoemen je groeivraag en brengen focus voor de volgende fase.",
+      "knop": "Plan je droomgesprek",
+      "badge": "",
+      "uitgelicht": false,
+      "doen_kop": "Wat we doen",
+      "doen": [
+        "<strong>Droombeeld</strong>: we maken een helder beeld van jouw droom.",
+        "<strong>Scale-up assessment</strong>: een scherp beeld van waar je organisatie nu staat.",
+        "<strong>Focusgebieden</strong>: je kiest twee dimensies waar verandering nodig is."
+      ],
+      "mee_kop": "Wat je meeneemt",
+      "mee": [
+        "Een helder droombeeld",
+        "Je scale-up assessment: waar je organisatie nu staat",
+        "Twee focusgebieden waar verandering nodig is",
+        "Je eerste stap: je weet welke stap je morgen kan zetten"
+      ]
+    },
+    {
+      "anker": "pad",
+      "fase": "Groeistrategie · van inzicht naar richting",
+      "naam": "Scale-up Pad",
+      "prijs": "€4.500",
+      "duur": "2 dagen · met jou en je MT",
+      "pitch": "Maak de keuzes die je vooruit helpen en benoem wat niet meer past. Een duidelijke richting voor 1 tot 3 jaar en een helder pad voor het komende kwartaal.",
+      "knop": "Plan een kennismaking",
+      "badge": "Meest gekozen",
+      "uitgelicht": true,
+      "doen_kop": "Wat we doen",
+      "doen": [
+        "Samen met je team verkennen we de groeikansen.",
+        "We maken expliciete keuzes en stellen prioriteiten.",
+        "We benoemen wat niet meer past.",
+        "Geen dik rapport, wél een heldere richting."
+      ],
+      "mee_kop": "Wat je meeneemt",
+      "mee": [
+        "Een duidelijke richting voor 1 tot 3 jaar",
+        "Een helder pad voor het komende kwartaal",
+        "De acties die daarbij horen",
+        "Duidelijke rollen en verantwoordelijkheden"
+      ]
+    },
+    {
+      "anker": "reis",
+      "fase": "Executie · van richting naar realisatie",
+      "naam": "Scale-up Reis",
+      "prijs": "vanaf €10K",
+      "duur": "per maand · 3 tot 6 maanden",
+      "pitch": "Wij lopen mee tot het staat: meedenken, meehelpen, meedoen. Ritme en eigenaarschap in de uitvoering.",
+      "knop": "Plan een kennismaking",
+      "badge": "",
+      "uitgelicht": false,
+      "doen_kop": "Wat we doen",
+      "doen": [
+        "We begeleiden de groeistap die je hebt gekozen.",
+        "Meedenken, meehelpen of meedoen, net wat er nodig is.",
+        "We brengen ritme en eigenaarschap in de uitvoering."
+      ],
+      "mee_kop": "Wat je meeneemt",
+      "mee": [
+        "Een team dat de operatie kan dragen, zodat jij ruimte krijgt in je agenda",
+        "Voortgang die zichtbaar is",
+        "Ritme in de uitvoering",
+        "Resultaat dat blijft staan"
+      ]
+    },
+    {
+      "anker": "kompas",
+      "fase": "Support · koers vasthouden",
+      "naam": "Het Kompas",
+      "prijs": "€4K",
+      "duur": "per kwartaal",
+      "pitch": "Doe het zelf, met ons ernaast zodra je vastloopt. Onbeperkt sparren, elk kwartaal.",
+      "knop": "Plan een kennismaking",
+      "badge": "",
+      "uitgelicht": false,
+      "doen_kop": "Wat we doen",
+      "doen": [
+        "Onbeperkt sparren op het moment dat je vastloopt: app, bel of plan in.",
+        "Onbeperkt toegang tot scaling-expertise op het gebied van onder andere people &amp; culture, finance, leiderschap, marketing en operationeel management.",
+        "Elk kwartaal een vast moment om koers en voortgang te ijken."
+      ],
+      "mee_kop": "Wat je meeneemt",
+      "mee": [
+        "Een klankbord dat je bedrijf al kent",
+        "Bijsturen vóórdat het een probleem wordt"
+      ]
+    }
+  ],
+  "diensten": {
+    "kop": "Waar we op instappen",
+    "sub": "Binnen elk pakket pakken we op wat het hardst nodig is",
+    "items": [
+      "Van strategie naar executie",
+      "Fractional CxO",
+      "Sales &amp; marketing",
+      "Leiderschaps&shy;ontwikkeling",
+      "AI executie",
+      "People &amp; Culture",
+      "Begeleiden financierings&shy;ronde"
+    ]
+  },
+  "quote": {
+    "tekst": "De samenwerking heeft gezorgd voor een gedragen en goed onderbouwd plan. De ervaren begeleiders zorgden direct voor een veilige omgeving, waardoor ook andere uitdagingen rondom teamdynamiek en groei bespreekbaar werden.",
+    "bron": "Founder & CEO Vive"
+  }
+}

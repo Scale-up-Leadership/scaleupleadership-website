@@ -1,0 +1,39 @@
+{
+  "titel": "Contact — Scale-Up Leadership",
+  "omschrijving": "Vertel kort waar je tegenaan loopt. We reageren binnen één werkdag en denken meteen mee.",
+  "hero": {
+    "label": "Contact",
+    "kop": "Even ",
+    "kop_accent": "sparren?",
+    "tekst": "Vertel kort waar je tegenaan loopt. We reageren binnen één werkdag en denken meteen mee."
+  },
+  "formulier": {
+    "naam": "Naam",
+    "naam_hint": "Je naam",
+    "bedrijf": "Bedrijf",
+    "bedrijf_hint": "Naam van je bedrijf",
+    "mail": "E-mailadres",
+    "mail_hint": "jij@bedrijf.nl",
+    "tel": "Telefoonnummer",
+    "tel_hint": "06 12 34 56 78",
+    "onderwerp": "Waar gaat het over?",
+    "onderwerpen": [
+      "Ik wil een Scale-up Droomgesprek plannen",
+      "Ik heb een vraag over de aanpak",
+      "Ik wil aansluiten als scale up leader",
+      "Iets anders"
+    ],
+    "bericht": "Waar loop je tegenaan?",
+    "bericht_hint": "Een paar zinnen is genoeg.",
+    "knop": "Versturen"
+  },
+  "naast": {
+    "direct_kop": "Direct",
+    "linkedin_label": "Scale-Up Leadership op LinkedIn",
+    "gegevens_kop": "Bedrijfsgegevens"
+  },
+  "bedankt": {
+    "kop": "Dank je wel",
+    "tekst": "We hebben je bericht binnen en reageren binnen één werkdag."
+  }
+}

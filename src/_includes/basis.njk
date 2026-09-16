@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titel or site.naam }}</title>
+<meta name="description" content="{{ omschrijving or site.footer_tekst }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@700;800&display=swap">
+<link rel="stylesheet" href="/css/stijl.css">
+<link rel="icon" href="/img/logo.png">
+</head>
+<body>
+
+<nav>
+  <div class="logo-row">
+    <a href="/"><img src="/img/logo.png" alt="{{ site.naam }}" style="height: 74px; width: auto;"></a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu" onclick="this.closest('nav').classList.toggle('open')">&#9776;</button>
+  <div class="nav-links" onclick="this.closest('nav').classList.remove('open')">
+    {%- for item in site.menu %}
+    <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.label }}</a>
+    {%- endfor %}
+  </div>
+  <a class="pill-btn" href="{{ site.scan_url }}">{{ site.scan_knop }} <span class="arrow">&rarr;</span></a>
+</nav>
+
+<div class="page">
+{{ content | safe }}
+
+{%- if slot_cta != false %}
+<section class="slot-cta">
+  <p>{{ site.slot_cta.tekst }}</p>
+  <a class="pill-btn" href="{{ site.scan_url }}">{{ site.slot_cta.knop }} <span class="arrow">&rarr;</span></a>
+</section>
+{%- endif %}
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <h5>{{ site.naam }}</h5>
+      <p style="font-size:13.5px; line-height:1.7; opacity:0.75;">{{ site.footer_tekst }}</p>
+    </div>
+    <div>
+      <h5>Menu</h5>
+      {%- for item in site.menu %}
+      <a href="{{ item.url }}">{{ item.label }}</a>
+      {%- endfor %}
+    </div>
+    <div>
+      <h5>Volg ons</h5>
+      <a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="/contact/">Plan een gesprek</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; {{ jaar }} {{ site.naam }}. Alle rechten voorbehouden.</span>
+    <span>{{ site.footer_slogan }}</span>
+  </div>
+</footer>
+
+</body>
+</html>

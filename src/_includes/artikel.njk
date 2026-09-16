@@ -1,0 +1,39 @@
+---
+layout: basis.njk
+---
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="label">{{ soort }}</div>
+    <h1 class="slab-hero">{{ titel }}</h1>
+    <hr class="rule">
+    {%- if intro %}<p>{{ intro }}</p>{% endif %}
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>
+
+<article class="artikel">
+  <div class="artikel-meta">
+    <span class="artikel-tag">{{ soort }}</span>
+    {{ datum | datum }}{% if auteur %} &middot; {{ auteur }}{% endif %}{% if locatie %} &middot; {{ locatie }}{% endif %}
+  </div>
+
+  {{ content | safe }}
+
+  {%- if praktisch and praktisch.length %}
+  <div class="praktisch">
+    {%- for r in praktisch %}
+    <div class="prak-item">{{ r }}</div>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {%- if knop %}
+  <div class="artikel-cta">
+    <a class="pill-btn" href="{{ knop_url or '/contact/' }}">{{ knop }} <span class="arrow">&rarr;</span></a>
+  </div>
+  {%- endif %}
+</article>
+
+<div style="text-align:center; padding-bottom:40px;">
+  <a class="li-link" href="/actueel/">&larr; Terug naar Actueel</a>
+</div>

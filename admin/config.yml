@@ -1,0 +1,434 @@
+# Beheerscherm van scaleupleadership.nl
+#
+# Hier staat welke onderdelen van de site aan te passen zijn en met welke velden.
+# Wie inhoud wijzigt hoeft dit bestand nooit te openen.
+#
+# De repository staat nu op het persoonlijke account van Lian. Zodra de site
+# overgaat naar een organisatie op naam van Scale-up Leadership, moet de regel
+# "repo" hieronder mee veranderen. Iedere redacteur heeft een eigen (gratis)
+# GitHub-account nodig en toegang tot deze repository.
+
+backend:
+  name: github
+  repo: Lianvisser/scaleupleadership-website
+  branch: main
+
+# Wil je liever dat redacteuren zonder GitHub-account inloggen, gebruik dan:
+# backend:
+#   name: git-gateway
+#   branch: main
+
+media_folder: "src/img/uploads"
+public_folder: "/img/uploads"
+
+publish_mode: simple
+locale: nl
+
+collections:
+  # ------------------------------------------------------------------
+  - name: paginas
+    label: "Pagina's"
+    label_singular: "pagina"
+    description: "De vaste pagina's van de site. De opmaak ligt vast, de teksten pas je hier aan."
+    files:
+      # ---------------- HOME ----------------
+      - name: home
+        label: "Homepage"
+        file: "src/_data/pagina/home.json"
+        fields:
+          - { name: titel, label: "Paginatitel (browsertab en Google)", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text }
+          - name: hero
+            label: "Bovenaan de pagina"
+            widget: object
+            fields:
+              - { name: kop, label: "Grote kop", widget: string, hint: "Gebruik <br> voor een nieuwe regel" }
+              - { name: kop_accent, label: "Gekleurd deel van de kop", widget: string, required: false }
+              - { name: tekst, label: "Tekst eronder", widget: text }
+              - { name: knop_primair, label: "Tekst roze knop", widget: string }
+              - { name: knop_secundair, label: "Tekst witte knop", widget: string }
+          - name: reis
+            label: "De drie fases"
+            widget: list
+            fields:
+              - { name: label, label: "Naam", widget: string }
+              - { name: tekst, label: "Eén regel uitleg", widget: string }
+          - name: trustbar
+            label: "Balk met klantnamen"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: namen, label: "Namen", widget: list, field: { name: naam, label: "Naam", widget: string } }
+          - name: intro
+            label: "Wie wij zijn"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+          - name: triggers
+            label: "Waar loop je tegenaan"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+              - name: kaarten
+                label: "Kaarten"
+                widget: list
+                fields:
+                  - { name: kop, label: "Kop", widget: string }
+                  - { name: tekst, label: "Tekst", widget: text }
+          - name: diensten
+            label: "Wat komen we doen"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+              - { name: items, label: "Onderwerpen", widget: list, field: { name: item, label: "Onderwerp", widget: string } }
+          - name: pakketten
+            label: "Pakketten"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+              - name: kaarten
+                label: "Pakketten"
+                widget: list
+                fields:
+                  - { name: naam, label: "Naam", widget: string }
+                  - { name: prijs, label: "Prijs", widget: string }
+                  - { name: duur, label: "Duur", widget: string }
+                  - { name: tekst, label: "Omschrijving", widget: text }
+                  - { name: uitgelicht, label: "Uitgelicht", widget: boolean, default: false }
+                  - { name: badge, label: "Label op de kaart", widget: string, required: false }
+          - name: quote
+            label: "Klantquote"
+            widget: object
+            fields:
+              - { name: tekst, label: "Quote", widget: text }
+              - { name: bron, label: "Van wie", widget: string }
+          - name: team
+            label: "Team op de homepage"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+              - { name: meer_kop, label: "Kop van de laatste kaart", widget: string }
+              - { name: meer_rol, label: "Rol op de laatste kaart", widget: string }
+              - { name: meer_tekst, label: "Tekst op de laatste kaart", widget: text }
+              - { name: meer_link, label: "Linktekst", widget: string }
+          - name: inzichten
+            label: "Laatste inzichten"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+          - name: scanblok
+            label: "Blok over de scan"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+              - { name: stappen, label: "De drie stappen", widget: list, field: { name: stap, label: "Stap", widget: text } }
+
+      # ---------------- AANPAK ----------------
+      - name: aanpak
+        label: "Aanpak"
+        file: "src/_data/pagina/aanpak.json"
+        fields:
+          - { name: titel, label: "Paginatitel", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text }
+          - name: hero
+            label: "Bovenaan de pagina"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: kop, label: "Grote kop", widget: string }
+              - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
+              - { name: tekst, label: "Tekst", widget: text }
+          - name: fases
+            label: "De vier fases bovenin"
+            widget: list
+            fields:
+              - { name: label, label: "Label", widget: string }
+              - { name: naam, label: "Naam", widget: string }
+              - { name: tekst, label: "Eén regel", widget: string }
+              - { name: anker, label: "Verwijst naar", widget: string, hint: "droom, pad, reis of kompas" }
+              - { name: start, label: "Dit is de startfase", widget: boolean, default: false }
+          - name: intro
+            label: "Hoe we werken"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+          - name: pakketten
+            label: "De pakketten uitgewerkt"
+            widget: list
+            fields:
+              - { name: anker, label: "Ankernaam", widget: string }
+              - { name: fase, label: "Fasezin bovenaan", widget: string }
+              - { name: naam, label: "Naam", widget: string }
+              - { name: prijs, label: "Prijs", widget: string }
+              - { name: duur, label: "Duur", widget: string }
+              - { name: pitch, label: "Korte pitch", widget: text }
+              - { name: knop, label: "Tekst op de knop", widget: string }
+              - { name: badge, label: "Label", widget: string, required: false }
+              - { name: uitgelicht, label: "Uitgelicht", widget: boolean, default: false }
+              - { name: doen_kop, label: "Kop linkerblok", widget: string }
+              - { name: doen, label: "Wat we doen", widget: list, field: { name: regel, label: "Regel", widget: text } }
+              - { name: mee_kop, label: "Kop rechterblok", widget: string }
+              - { name: mee, label: "Wat je meeneemt", widget: list, field: { name: regel, label: "Regel", widget: text } }
+          - name: diensten
+            label: "Waar we op instappen"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+              - { name: items, label: "Onderwerpen", widget: list, field: { name: item, label: "Onderwerp", widget: string } }
+          - name: quote
+            label: "Klantquote"
+            widget: object
+            fields:
+              - { name: tekst, label: "Quote", widget: text }
+              - { name: bron, label: "Van wie", widget: string }
+
+      # ---------------- OVER ONS ----------------
+      - name: over
+        label: "Over ons"
+        file: "src/_data/pagina/over.json"
+        fields:
+          - { name: titel, label: "Paginatitel", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text }
+          - name: hero
+            label: "Bovenaan de pagina"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: kop, label: "Grote kop", widget: string }
+              - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
+              - { name: tekst, label: "Tekst", widget: text }
+          - name: verhaal
+            label: "Hoe het begon"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: lead, label: "Eerste alinea", widget: text }
+              - { name: body, label: "Tweede alinea", widget: text }
+              - { name: punch, label: "Uitsmijter", widget: string }
+          - name: stats
+            label: "De cijfers"
+            widget: list
+            fields:
+              - { name: getal, label: "Getal", widget: string }
+              - { name: label, label: "Waar het over gaat", widget: string }
+          - name: geloven
+            label: "Waar we in geloven"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+              - name: kaarten
+                label: "Kaarten"
+                widget: list
+                fields:
+                  - { name: kop, label: "Kop", widget: string }
+                  - { name: tekst, label: "Tekst", widget: text }
+          - name: leaders
+            label: "Kop boven het team"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: string }
+
+      # ---------------- VOOR WIE ----------------
+      - name: voorwie
+        label: "Voor wie"
+        file: "src/_data/pagina/voorwie.json"
+        fields:
+          - { name: titel, label: "Paginatitel", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text }
+          - name: hero
+            label: "Bovenaan de pagina"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: kop, label: "Grote kop", widget: string }
+              - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
+              - { name: tekst, label: "Tekst", widget: text }
+              - { name: knop, label: "Tekst op de knop", widget: string }
+          - name: momenten
+            label: "De herkenmomenten"
+            widget: list
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: situatie, label: "De situatie", widget: text }
+              - { name: label, label: "Label voor de actie", widget: string }
+              - { name: doen, label: "Wat we doen", widget: text }
+          - name: fasecheck
+            label: "In welke fase zit je"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: sub, label: "Ondertitel", widget: text }
+              - name: kaarten
+                label: "Fases"
+                widget: list
+                fields:
+                  - { name: kop, label: "Naam", widget: string }
+                  - { name: tekst, label: "Tekst", widget: text }
+          - name: quote
+            label: "Klantquote"
+            widget: object
+            fields:
+              - { name: tekst, label: "Quote", widget: text }
+              - { name: bron, label: "Van wie", widget: string }
+
+      # ---------------- ACTUEEL ----------------
+      - name: actueel
+        label: "Actueel (koptekst en podcast)"
+        file: "src/_data/pagina/actueel.json"
+        fields:
+          - { name: titel, label: "Paginatitel", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text }
+          - name: hero
+            label: "Bovenaan de pagina"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: kop, label: "Grote kop", widget: string }
+              - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
+              - { name: tekst, label: "Tekst", widget: text }
+          - { name: leeg, label: "Tekst als er nog geen items zijn", widget: string }
+          - name: podcast
+            label: "Podcastblok"
+            widget: object
+            fields:
+              - { name: tonen, label: "Blok tonen", widget: boolean, default: true }
+              - { name: meta, label: "Regel naast het label", widget: string }
+              - { name: kop, label: "Naam van de podcast", widget: string }
+              - { name: lead, label: "Eerste regel", widget: text }
+              - { name: alinea1, label: "Alinea 1", widget: text }
+              - { name: alinea2, label: "Alinea 2", widget: text }
+              - { name: alinea3, label: "Alinea 3", widget: text }
+              - { name: slot, label: "Slotzin", widget: text }
+              - { name: knop, label: "Tekst op de knop", widget: string }
+              - { name: knop_url, label: "Link van de knop", widget: string }
+
+      # ---------------- CONTACT ----------------
+      - name: contact
+        label: "Contact"
+        file: "src/_data/pagina/contact.json"
+        fields:
+          - { name: titel, label: "Paginatitel", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text }
+          - name: hero
+            label: "Bovenaan de pagina"
+            widget: object
+            fields:
+              - { name: label, label: "Kopje", widget: string }
+              - { name: kop, label: "Grote kop", widget: string }
+              - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
+              - { name: tekst, label: "Tekst", widget: text }
+          - name: formulier
+            label: "Het formulier"
+            widget: object
+            fields:
+              - { name: naam, label: "Label naam", widget: string }
+              - { name: naam_hint, label: "Voorbeeldtekst naam", widget: string }
+              - { name: bedrijf, label: "Label bedrijf", widget: string }
+              - { name: bedrijf_hint, label: "Voorbeeldtekst bedrijf", widget: string }
+              - { name: mail, label: "Label e-mail", widget: string }
+              - { name: mail_hint, label: "Voorbeeldtekst e-mail", widget: string }
+              - { name: tel, label: "Label telefoon", widget: string }
+              - { name: tel_hint, label: "Voorbeeldtekst telefoon", widget: string }
+              - { name: onderwerp, label: "Label onderwerp", widget: string }
+              - { name: onderwerpen, label: "Keuzes bij onderwerp", widget: list, field: { name: keuze, label: "Keuze", widget: string } }
+              - { name: bericht, label: "Label bericht", widget: string }
+              - { name: bericht_hint, label: "Voorbeeldtekst bericht", widget: string }
+              - { name: knop, label: "Tekst op de knop", widget: string }
+          - name: naast
+            label: "Blokje naast het formulier"
+            widget: object
+            fields:
+              - { name: direct_kop, label: "Kop", widget: string }
+              - { name: linkedin_label, label: "Tekst LinkedIn-link", widget: string }
+              - { name: gegevens_kop, label: "Kop bedrijfsgegevens", widget: string }
+          - name: bedankt
+            label: "Bedanktpagina"
+            widget: object
+            fields:
+              - { name: kop, label: "Kop", widget: string }
+              - { name: tekst, label: "Tekst", widget: text }
+
+  # ------------------------------------------------------------------
+  - name: algemeen
+    label: "Algemeen"
+    files:
+      - name: site
+        label: "Menu, footer en contactgegevens"
+        file: "src/_data/site.json"
+        fields:
+          - { name: naam, label: "Naam van het bedrijf", widget: string }
+          - { name: domein, label: "Website-adres", widget: string }
+          - { name: scan_url, label: "Link naar de scan", widget: string }
+          - { name: scan_knop, label: "Tekst op de scanknop", widget: string }
+          - { name: email, label: "E-mailadres", widget: string }
+          - { name: linkedin, label: "LinkedIn-pagina", widget: string }
+          - { name: bedrijfsnaam, label: "Statutaire naam", widget: string }
+          - { name: kvk, label: "KvK-regel", widget: string }
+          - name: menu
+            label: "Menu bovenaan"
+            widget: list
+            fields:
+              - { name: label, label: "Tekst", widget: string }
+              - { name: url, label: "Link", widget: string }
+          - { name: footer_tekst, label: "Tekst in de footer", widget: text }
+          - { name: footer_slogan, label: "Slogan rechtsonder", widget: string }
+          - name: slot_cta
+            label: "Blok onderaan elke pagina"
+            widget: object
+            fields:
+              - { name: tekst, label: "Tekst", widget: string }
+              - { name: knop, label: "Tekst op de knop", widget: string }
+
+      - name: team
+        label: "Het team"
+        file: "src/_data/team.json"
+        fields:
+          - name: leden
+            label: "Scale up leaders"
+            label_singular: "persoon"
+            widget: list
+            summary: "{{fields.naam}}"
+            fields:
+              - { name: naam, label: "Naam", widget: string }
+              - { name: rol_kort, label: "Rol kort (homepage)", widget: string }
+              - { name: rol, label: "Rol volledig (Over ons)", widget: string }
+              - { name: bio, label: "Ik stap in als...", widget: text }
+              - { name: linkedin, label: "LinkedIn-profiel", widget: string, required: false }
+              - { name: foto, label: "Foto", widget: image, required: false }
+              - { name: op_home, label: "Ook op de homepage tonen", widget: boolean, default: false }
+
+  # ------------------------------------------------------------------
+  - name: actueel_items
+    label: "Actueel"
+    label_singular: "item"
+    description: "Blogs, events, nieuws en podcastafleveringen. Een nieuw item verschijnt vanzelf op Actueel en op de homepage."
+    folder: "src/actueel"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "{{datum}} — {{titel}}"
+    sortable_fields: [datum, titel]
+    fields:
+      - { name: titel, label: "Titel", widget: string }
+      - { name: soort, label: "Soort", widget: select, options: ["Blog", "Event", "Nieuws", "Podcast"], default: "Blog" }
+      - { name: datum, label: "Datum", widget: datetime, date_format: "DD-MM-YYYY", time_format: false, picker_utc: true }
+      - { name: auteur, label: "Wie schreef het", widget: string, required: false }
+      - { name: locatie, label: "Locatie (alleen bij een event)", widget: string, required: false }
+      - { name: afbeelding, label: "Afbeelding", widget: image, required: false }
+      - { name: intro, label: "Introzin", widget: text, required: false }
+      - { name: praktisch, label: "Praktische regels (alleen bij een event)", widget: list, required: false, field: { name: regel, label: "Regel", widget: string } }
+      - { name: knop, label: "Tekst op de knop", widget: string, required: false }
+      - { name: knop_url, label: "Link van de knop", widget: string, required: false }
+      - { name: body, label: "De tekst", widget: markdown }
