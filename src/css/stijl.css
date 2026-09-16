@@ -45,7 +45,9 @@
   .hero-text p strong { color: var(--magenta); font-weight: 700; }
 
   .hero-photo-wrap { width: 54%; position: relative; height: 460px; }
-  .hero-photo { width: 100%; height: 100%; background-image: url(/img/foto-team.jpg); background-size: cover; background-position: center 20%; border-radius: 18px; position: relative; overflow: hidden; }
+  .hero-zonder-beeld .hero-text { width: 100%; max-width: 760px; margin-right: 0; }
+  .hero-photo { width: 100%; height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center; background-color: var(--white); border-radius: 18px; position: relative; overflow: hidden; }
+
   .photo-ring { position: absolute; border-radius: 50%; }
   .photo-ring.r1 { width: 200px; height: 200px; background: var(--magenta); top: -60px; right: -60px; opacity: 0.92; }
   .photo-ring.r2 { width: 130px; height: 130px; border: 30px solid var(--orange); bottom: -30px; right: 90px; }
@@ -237,7 +239,7 @@
     .hero-text h1 { font-size: 38px; }
     .hero-cta { display: block; }
     .hero-cta a { margin-right: 0; margin-left: 0 !important; margin-bottom: 12px; display: flex; justify-content: center; text-align: center; width: 100%; box-sizing: border-box; }
-    .hero-photo-wrap { width: 100%; height: 260px; }
+    .hero-photo-wrap { width: 100%; height: 300px; }
 
     .journey { flex-direction: column; padding: 6px 20px 34px; background: var(--cream); }
     .journey-step { margin-bottom: 20px; width: 100%; }
