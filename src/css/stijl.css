@@ -517,5 +517,5 @@
   }
 
 /* --- toegevoegd bij de omzetting naar een echte site --- */
-.heeft-foto { background-size: cover; background-position: center; color: transparent !important; }
+.heeft-foto { background-size: cover !important; background-position: center 25% !important; color: transparent !important; }
 .insight-card { text-decoration: none; color: inherit; display: block; }
