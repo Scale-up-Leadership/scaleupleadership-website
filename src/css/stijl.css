@@ -44,9 +44,9 @@
   .hero-text p { font-size: 18px; color: var(--dark); line-height: 1.6; margin-bottom: 30px; max-width: 420px; }
   .hero-text p strong { color: var(--magenta); font-weight: 700; }
 
-  .hero-photo-wrap { width: 54%; position: relative; height: 460px; }
+  .hero-photo-wrap { width: 54%; position: relative; height: 520px; }
   .hero-zonder-beeld .hero-text { width: 100%; max-width: 760px; margin-right: 0; }
-  .hero-photo { width: 100%; height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center; background-color: var(--white); border-radius: 18px; position: relative; overflow: hidden; }
+  .hero-photo { width: 100%; height: 100%; background-size: contain; background-repeat: no-repeat; background-position: center; background-color: transparent; border-radius: 0; position: relative; overflow: hidden; }
 
   .photo-ring { position: absolute; border-radius: 50%; }
   .photo-ring.r1 { width: 200px; height: 200px; background: var(--magenta); top: -60px; right: -60px; opacity: 0.92; }
