@@ -146,6 +146,14 @@
   .step:nth-child(3) .n { background: var(--accent-pink); }
   .step p { font-size: 12.5px; color: var(--grey); }
 
+  /* donkere variant van het scanblok, zodat elke pagina op dezelfde toon eindigt */
+  .functioneel.donker { background: var(--dark); }
+  .functioneel.donker h2 { color: var(--white); }
+  .functioneel.donker > p { color: rgba(255,255,255,0.72); }
+  .functioneel.donker .functioneel-box { background: rgba(255,255,255,0.07); }
+  .functioneel.donker .step p { color: rgba(255,255,255,0.78); }
+  .functioneel.donker .functioneel-box .fring { opacity: 0.9; }
+
   footer { background: var(--greige-1); color: var(--dark); padding: 60px 60px 30px; }
   .footer-top { display: flex; margin-bottom: 40px; }
   .footer-top > div { width: 25%; margin-right: 30px; }
@@ -290,7 +298,7 @@
   .page-hero h1 .q { color: var(--magenta); }
   .page-hero p { font-size: 17.5px; color: var(--dark); line-height: 1.6; max-width: 520px; }
   .page-hero .hero-knop { margin-top: 26px; }
-  .page-hero-foto { width: 40%; max-width: 480px; height: 320px; border-radius: 20px; background-size: cover; background-position: center; flex-shrink: 0; margin-left: 48px; position: relative; z-index: 2; }
+  .page-hero-foto { width: 36%; max-width: 420px; height: 300px; border-radius: 20px; background-size: cover; background-position: center; flex-shrink: 0; margin-left: 40px; position: relative; z-index: 2; }
   .page-hero-ring { position: absolute; width: 340px; height: 340px; border-radius: 50%; border: 50px solid var(--orange); opacity: 0.32; top: -110px; right: -140px; pointer-events: none; }
 
 
