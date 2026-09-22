@@ -48,7 +48,8 @@ collections:
               - { name: tekst, label: "Tekst eronder", widget: text }
               - { name: knop_primair, label: "Tekst roze knop", widget: string }
               - { name: knop_secundair, label: "Tekst witte knop", widget: string }
-              - { name: afbeelding, label: "Afbeelding rechts", widget: image, required: false, hint: "Laat leeg voor het scale-up wiel. Kies een liggende afbeelding, minimaal 1000 pixels breed." }
+              - { name: afbeelding, label: "Afbeelding rechts", widget: image, required: false, hint: "Laat leeg om het vlak leeg te laten. Kies een liggende afbeelding, minimaal 1000 pixels breed." }
+              - { name: vul_vlak, label: "Foto het hele vlak laten vullen", widget: boolean, default: false, required: false, hint: "Aanzetten bij een foto. Uitlaten bij een tekening of het scale-up wiel, dan blijft de hele afbeelding zichtbaar." }
           - name: reis
             label: "De drie fases"
             widget: list
