@@ -42,6 +42,7 @@ collections:
             label: "Bovenaan de pagina"
             widget: object
             fields:
+              - { name: label, label: "Regeltje boven de kop", widget: string, required: false, hint: "Komt in oranje hoofdletters boven de grote kop. Laat leeg om hem weg te halen." }
               - { name: kop, label: "Grote kop", widget: string, hint: "Gebruik <br> voor een nieuwe regel" }
               - { name: kop_accent, label: "Gekleurd deel van de kop", widget: string, required: false }
               - { name: tekst, label: "Tekst eronder", widget: text }
