@@ -3,9 +3,10 @@
   "omschrijving": "We liepen zelf in alle valkuilen van snelle groei. Die ervaring zetten we nu in om jou te helpen.",
   "hero": {
     "label": "Over ons",
-    "kop": "Wij hebben de<br>scale-up code ",
+    "kop": "Wij hebben de<br>scale-up code",
     "kop_accent": "gekraakt",
-    "tekst": "We liepen zelf in alle valkuilen van snelle groei. Deze ervaring zetten we nu in om jou te helpen, zodat jij in één keer de groei kan maken die je voor ogen hebt."
+    "tekst": "We liepen zelf in alle valkuilen van snelle groei. Deze ervaring zetten we nu in om jou te helpen, zodat jij in één keer de groei kan maken die je voor ogen hebt.",
+    "afbeelding": "/img/uploads/werkfoto-hero.jpg"
   },
   "verhaal": {
     "label": "Hoe het begon",
@@ -14,18 +15,39 @@
     "punch": "Die zes kwartalen willen we voor jou korter maken."
   },
   "stats": [
-    { "getal": "50+", "label": "scale-ups geholpen" },
-    { "getal": "50 &rarr; 250", "label": "medewerkers in 4 jaar bij Moneyou" },
-    { "getal": "+13&ndash;20%", "label": "omzetgroei in 1 jaar bij Flux en Kamadur" }
+    {
+      "getal": "50+",
+      "label": "scale-ups geholpen"
+    },
+    {
+      "getal": "50 &rarr; 250",
+      "label": "medewerkers in 4 jaar bij Moneyou"
+    },
+    {
+      "getal": "+13&ndash;20%",
+      "label": "omzetgroei in 1 jaar bij Flux en Kamadur"
+    }
   ],
   "geloven": {
     "kop": "Waar we in geloven",
     "sub": "Vier dingen waar we niet van afwijken",
     "kaarten": [
-      { "kop": "We stappen in en werken direct mee", "tekst": "Adviseren is het makkelijke deel. Wij werken mee tot het staat: strategie, sales, leiderschap, people en operatie tegelijk als dat nodig is." },
-      { "kop": "We organiseren het ondernemerschap er niet uit", "tekst": "Structuur mag nooit ten koste gaan van de passie en het lef waarmee je begon. Overzicht en ritme brengen, zonder de energie eruit te halen." },
-      { "kop": "Wij zorgen voor ritme", "tekst": "Niet alleen een plan maken, maar zorgen dat het bedrijf in een ritme komt waarin besluiten ook echt vallen." },
-      { "kop": "We maken onszelf overbodig", "tekst": "Het doel is eigenaarschap bij jouw team. Wat wij opbouwen moet blijven staan als wij weggaan." }
+      {
+        "kop": "We stappen in en werken direct mee",
+        "tekst": "Adviseren is het makkelijke deel. Wij werken mee tot het staat: strategie, sales, leiderschap, people en operatie tegelijk als dat nodig is."
+      },
+      {
+        "kop": "We organiseren het ondernemerschap er niet uit",
+        "tekst": "Structuur mag nooit ten koste gaan van de passie en het lef waarmee je begon. Overzicht en ritme brengen, zonder de energie eruit te halen."
+      },
+      {
+        "kop": "Wij zorgen voor ritme",
+        "tekst": "Niet alleen een plan maken, maar zorgen dat het bedrijf in een ritme komt waarin besluiten ook echt vallen."
+      },
+      {
+        "kop": "We maken onszelf overbodig",
+        "tekst": "Het doel is eigenaarschap bij jouw team. Wat wij opbouwen moet blijven staan als wij weggaan."
+      }
     ]
   },
   "leaders": {
