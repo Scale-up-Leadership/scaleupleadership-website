@@ -6,7 +6,7 @@
       "rol": "Co-founder · Fractional CEO/COO",
       "bio": "Ik stap in als je wil versnellen en iemand zoekt die meebouwt. Van strategie tot uitvoering, in elke fase. Niet adviseren vanaf de zijlijn, maar meewerken tot het staat.",
       "linkedin": "https://www.linkedin.com/in/miriamcnossen/",
-      "foto": "/img/uploads/202309 Scaleup-7791.jpg",
+      "foto": "/img/uploads/portret-a.jpg",
       "op_home": true
     },
     {
@@ -15,7 +15,7 @@
       "rol": "Co-founder · Fractional CEO/COO",
       "bio": "Ik stap in als je bedrijf groeit maar alles nog via jou loopt. Focus, ritme en structuur, zodat jij je handen vrij krijgt voor vernieuwing.",
       "linkedin": "https://www.linkedin.com/in/annemarie-holstvoogd/",
-      "foto": "/img/uploads/202309 Scaleup-7760.jpg",
+      "foto": "/img/uploads/portret-b.jpg",
       "op_home": true
     },
     {
@@ -24,7 +24,7 @@
       "rol": "Scale up leader · Fractional COO/CEO",
       "bio": "Ik stap in als groei chaos begint te veroorzaken. Ik breng overzicht terug, zonder het ondernemerschap eruit te organiseren.",
       "linkedin": "https://www.linkedin.com/in/hankavanwaas/",
-      "foto": "/img/uploads/Hanka.jpeg",
+      "foto": "/img/uploads/hanka.jpg",
       "op_home": false
     },
     {
@@ -33,7 +33,7 @@
       "rol": "Scale up leader",
       "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
       "linkedin": "",
-      "foto": "/img/uploads/Foto ilse.jpeg",
+      "foto": "/img/uploads/ilse.jpg",
       "op_home": false
     },
     {
@@ -42,34 +42,61 @@
       "rol": "Scale up leader",
       "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
       "linkedin": "",
-      "foto": "/img/uploads/foto xander.jpg",
+      "foto": "/img/uploads/robin.jpg",
       "op_home": false
     },
     {
-      "naam": "Naam 3",
+      "naam": "Xander",
       "rol_kort": "Scale up leader",
       "rol": "Scale up leader",
       "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
       "linkedin": "",
-      "foto": "",
+      "foto": "/img/uploads/xander.jpg",
       "op_home": false
     },
     {
-      "naam": "Naam 4",
+      "naam": "Anouk",
       "rol_kort": "Scale up leader",
       "rol": "Scale up leader",
       "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
       "linkedin": "",
-      "foto": "",
+      "foto": "/img/uploads/anouk.jpg",
       "op_home": false
     },
     {
-      "naam": "Naam 5",
+      "naam": "Marleen",
       "rol_kort": "Scale up leader",
       "rol": "Scale up leader",
       "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
       "linkedin": "",
-      "foto": "",
+      "foto": "/img/uploads/marleen.jpg",
+      "op_home": false
+    },
+    {
+      "naam": "David",
+      "rol_kort": "Scale-up Leader",
+      "rol": "Scale-up Leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "/img/uploads/david.jpg",
+      "op_home": false
+    },
+    {
+      "naam": "Floor",
+      "rol_kort": "Scale-up Leader",
+      "rol": "Scale-up Leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "/img/uploads/floor.jpg",
+      "op_home": false
+    },
+    {
+      "naam": "Raf",
+      "rol_kort": "Scale-up Leader",
+      "rol": "Scale-up Leader",
+      "bio": "Ik stap in als … één regel over waar deze leader voor instapt.",
+      "linkedin": "",
+      "foto": "/img/uploads/raf.jpg",
       "op_home": false
     }
   ]
