@@ -11,7 +11,7 @@ eleventyComputed:
 <section class="hero{% if not p.hero.afbeelding %} hero-zonder-beeld{% endif %}">
   <div class="merk-ring"></div><div class="merk-stip"></div>
   <div class="hero-text">
-    {%- set kopje = p.hero.label if p.hero.label is defined else "Fractional CxO voor groeiende bedrijven" %}
+    {%- set kopje = p.hero.label if p.hero.label is defined else "Fractional CxO voor de volgende fase van je bedrijf" %}
     {%- if kopje %}<div class="hero-label">{{ kopje }}</div>{% endif %}
     <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
     <hr class="rule">
