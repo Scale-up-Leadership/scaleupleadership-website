@@ -209,6 +209,7 @@ collections:
               - { name: kop, label: "Grote kop", widget: string }
               - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
               - { name: tekst, label: "Tekst", widget: text }
+              - { name: afbeelding, label: "Foto rechts", widget: image, required: false, hint: "Laat leeg om geen foto te tonen. Kies een liggende foto, minimaal 1000 pixels breed." }
           - name: verhaal
             label: "Hoe het begon"
             widget: object
