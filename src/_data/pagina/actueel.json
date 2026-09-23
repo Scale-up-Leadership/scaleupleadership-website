@@ -3,11 +3,20 @@
   "omschrijving": "Events, nieuws, blogs en podcasts van Scale-up Leadership.",
   "hero": {
     "label": "Actueel",
-    "kop": "Waar we nu<br>mee ",
+    "kop": "Waar we nu<br>mee",
     "kop_accent": "bezig zijn",
     "tekst": "Events, nieuws, blogs, podcasts. Hier plaatsen we alles wat er nu rondom Scale-up Leadership speelt."
   },
   "leeg": "Er staat nog niets op deze pagina. Het eerste item komt eraan.",
+  "aanmelding": {
+    "tonen": true,
+    "kop": "Houd me op de hoogte",
+    "tekst": "Nieuws en events van Scale-up Leadership in je inbox.",
+    "knop": "Aanmelden",
+    "kleine_letters": "",
+    "bedankt_kop": "Je staat op de lijst",
+    "bedankt_tekst": "Je krijgt voortaan ons nieuws en onze events in je inbox."
+  },
   "podcast": {
     "tonen": true,
     "meta": "Binnenkort te beluisteren",
@@ -18,6 +27,6 @@
     "alinea3": "Want achter elke succesvolle scale-up zit een verhaal. Over ambities, fouten maken, loslaten en leren. Precies die verhalen hoor je hier.",
     "slot": "Luister mee en ontdek welke code succesvolle groeibedrijven hebben gekraakt.",
     "knop": "Houd me op de hoogte",
-    "knop_url": "/contact/"
+    "knop_url": "/actueel/#aanmelden"
   }
 }
