@@ -311,6 +311,18 @@ collections:
               - { name: kop_accent, label: "Gekleurd deel", widget: string, required: false }
               - { name: tekst, label: "Tekst", widget: text }
           - { name: leeg, label: "Tekst als er nog geen items zijn", widget: string }
+          - name: aanmelding
+            label: "Aanmeldblok onderaan"
+            widget: object
+            required: false
+            fields:
+              - { name: tonen, label: "Blok tonen", widget: boolean, default: true }
+              - { name: kop, label: "Kop", widget: string, required: false }
+              - { name: tekst, label: "Tekst eronder", widget: text, required: false }
+              - { name: knop, label: "Tekst op de knop", widget: string, required: false }
+              - { name: kleine_letters, label: "Regeltje onder het formulier", widget: string, required: false }
+              - { name: bedankt_kop, label: "Kop op de bedanktpagina", widget: string, required: false }
+              - { name: bedankt_tekst, label: "Tekst op de bedanktpagina", widget: text, required: false }
           - name: podcast
             label: "Podcastblok"
             widget: object
@@ -469,6 +481,7 @@ collections:
     fields:
       - { name: titel, label: "Titel", widget: string }
       - { name: soort, label: "Soort", widget: select, options: ["Blog", "Event", "Nieuws", "Podcast"], default: "Blog" }
+      - { name: uitgelicht, label: "Bovenaan uitlichten", widget: boolean, default: false, required: false, hint: "Aan bij het item dat groot bovenaan Actueel moet staan. Staat nergens een vinkje, dan wordt het nieuwste item uitgelicht." }
       - { name: datum, label: "Datum", widget: datetime, date_format: "DD-MM-YYYY", time_format: false, picker_utc: true }
       - { name: auteur, label: "Wie schreef het", widget: string, required: false }
       - { name: locatie, label: "Locatie (alleen bij een event)", widget: string, required: false }
