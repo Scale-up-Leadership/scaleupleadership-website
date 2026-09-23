@@ -3,7 +3,13 @@
   "domein": "https://www.scaleupleadership.nl",
   "scan_url": "/scan",
   "ga_id": "G-E9M3KLY3YH",
-  "cookies": null,
+  "cookies": {
+    "tekst": "We gebruiken cookies om te analyseren hoe de website gebruikt wordt",
+    "knop_ja": "Accepteren",
+    "knop_nee": "Weigeren",
+    "link_tekst": "Privacyverklaring",
+    "link_url": ""
+  },
   "scan_knop": "DOE DE SCAN",
   "email": "info@scaleupleadership.nl",
   "linkedin": "https://www.linkedin.com/company/scale-up-leadership/",
