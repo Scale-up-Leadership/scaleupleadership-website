@@ -1,17 +1,17 @@
 ---
-titel: "De Scale-up Code, onze podcast over groeien zonder chaos"
+titel: De Scale-up Code, onze podcast over groeien zonder chaos
 soort: Podcast
 datum: 2026-09-16
-auteur: "Miriam en Annemarie"
-locatie: ""
-afbeelding: ""
-intro: "Een podcast van 20 tot 30 minuten voor scale-up founders en CEO's. Elke aflevering één ondernemer over een groeifase die hij of zij zelf heeft doorgemaakt."
+auteur: Miriam en Annemarie
+locatie: ''
+afbeelding: /img/uploads/WhatsApp Image 2026-09-23 at 11.58.52.jpeg
+intro: Een podcast van 20 tot 30 minuten voor scale-up founders en CEO's. Elke aflevering één ondernemer over een groeifase die hij of zij zelf heeft doorgemaakt.
 praktisch:
-  - "20 tot 30 minuten per aflevering"
-  - "Eén gast per aflevering, altijd een ondernemer"
-  - "Binnenkort te beluisteren"
-knop: "Houd me op de hoogte"
-knop_url: "/contact/"
+  - 20 tot 30 minuten per aflevering
+  - Eén gast per aflevering, altijd een ondernemer
+  - Binnenkort te beluisteren
+knop: Houd me op de hoogte
+knop_url: /contact/
 ---
 
 <p class="lead">Achter elke succesvolle scale-up zit een verhaal over ambitie, fouten maken, loslaten en leren. Precies die verhalen hoor je in De Scale-up Code.</p>
