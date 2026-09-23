@@ -10,7 +10,7 @@ eleventyComputed:
 <section class="page-hero">
   <div class="page-hero-text">
     <div class="label">{{ p.hero.label }}</div>
-    <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
+    <h1 class="slab-hero">{{ p.hero.kop | safe }}{% if p.hero.kop_accent %}{% if p.hero.kop_accent[0] not in "?!.,:;" %} {% endif %}<span class="q">{{ p.hero.kop_accent }}</span>{% endif %}</h1>
     <hr class="rule">
     <p>{{ p.hero.tekst | safe }}</p>
     <a class="pill-btn hero-knop" href="/contact/">{{ p.hero.knop }} <span class="arrow">&rarr;</span></a>

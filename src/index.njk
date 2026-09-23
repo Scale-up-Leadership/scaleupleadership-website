@@ -13,7 +13,7 @@ eleventyComputed:
   <div class="hero-text">
     {%- set kopje = p.hero.label if p.hero.label is defined else "Fractional CxO voor de volgende fase van je bedrijf" %}
     {%- if kopje %}<div class="hero-label">{{ kopje }}</div>{% endif %}
-    <h1 class="slab-hero">{{ p.hero.kop | safe }}<span class="q">{{ p.hero.kop_accent }}</span></h1>
+    <h1 class="slab-hero">{{ p.hero.kop | safe }}{% if p.hero.kop_accent %}{% if p.hero.kop_accent[0] not in "?!.,:;" %} {% endif %}<span class="q">{{ p.hero.kop_accent }}</span>{% endif %}</h1>
     <hr class="rule">
     <p>{{ p.hero.tekst | safe }}</p>
     <div class="hero-cta">
