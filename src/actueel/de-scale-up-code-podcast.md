@@ -12,7 +12,7 @@ praktisch:
   - Eén gast per aflevering, altijd een ondernemer
   - Binnenkort te beluisteren
 knop: Houd me op de hoogte
-knop_url: /actueel/
+knop_url: /actueel/#aanmelden
 ---
 
 <p class="lead">Achter elke succesvolle scale-up zit een verhaal over ambitie, fouten maken, loslaten en leren. Precies die verhalen hoor je in De Scale-up Code.</p>
