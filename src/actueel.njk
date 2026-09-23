@@ -21,7 +21,7 @@ eleventyComputed:
   <div class="insights-grid">
     {%- for item in collections.actueel %}
     <a class="insight-card" href="{{ item.url }}">
-      <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url({{ item.data.afbeelding }}); background-size:cover; background-position:center;"{% endif %}></div>
+      <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url('{{ item.data.afbeelding }}'); background-size:cover; background-position:center;"{% endif %}></div>
       <div class="insight-body">
         <div class="insight-tag">{{ item.data.soort }}{% if item.data.auteur %} &middot; {{ item.data.auteur }}{% endif %}</div>
         <h4>{{ item.data.titel }}</h4>

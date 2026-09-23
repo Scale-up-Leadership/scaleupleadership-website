@@ -23,7 +23,7 @@ eleventyComputed:
   </div>
   {%- if p.hero.afbeelding %}
   <div class="hero-photo-wrap">
-    <div class="hero-photo{% if p.hero.vul_vlak %} hero-photo-vol{% endif %}" style="background-image:url({{ p.hero.afbeelding }})"></div>
+    <div class="hero-photo{% if p.hero.vul_vlak %} hero-photo-vol{% endif %}" style="background-image:url('{{ p.hero.afbeelding }}')"></div>
   </div>
   {%- endif %}
 </section>
@@ -131,7 +131,7 @@ eleventyComputed:
   <div class="team-grid">
     {%- for lid in team.leden %}{% if lid.op_home %}
     <div class="team-card">
-      <div class="team-photo{% if lid.foto %} heeft-foto{% endif %}"{% if lid.foto %} style="background-image:url({{ lid.foto }})"{% endif %}>{% if not lid.foto %}Foto{% endif %}</div>
+      <div class="team-photo{% if lid.foto %} heeft-foto{% endif %}"{% if lid.foto %} style="background-image:url('{{ lid.foto }}')"{% endif %}>{% if not lid.foto %}Foto{% endif %}</div>
       <h3>{{ lid.naam }}</h3>
       <div class="role">{{ lid.rol_kort }}</div>
       <p class="bio">{{ lid.bio }}</p>
@@ -164,7 +164,7 @@ eleventyComputed:
   <div class="insights-grid">
     {%- for item in laatste %}{% if loop.index <= 3 %}
     <a class="insight-card" href="{{ item.url }}">
-      <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url({{ item.data.afbeelding }}); background-size:cover; background-position:center;"{% endif %}></div>
+      <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url('{{ item.data.afbeelding }}'); background-size:cover; background-position:center;"{% endif %}></div>
       <div class="insight-body">
         <div class="insight-tag">{{ item.data.soort }}{% if item.data.auteur %} &middot; {{ item.data.auteur }}{% endif %}</div>
         <h4>{{ item.data.titel }}</h4>

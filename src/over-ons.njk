@@ -15,7 +15,7 @@ eleventyComputed:
     <p>{{ p.hero.tekst | safe }}</p>
   </div>
   {%- if p.hero.afbeelding %}
-  <div class="page-hero-foto" style="background-image:url({{ p.hero.afbeelding }})"></div>
+  <div class="page-hero-foto" style="background-image:url('{{ p.hero.afbeelding }}')"></div>
   {%- endif %}
   <div class="merk-ring"></div><div class="merk-stip"></div>
 </section>
@@ -60,7 +60,7 @@ eleventyComputed:
   <div class="leaders-grid">
     {%- for lid in team.leden %}
     <div class="leader-card">
-      <div class="leader-foto p{{ (loop.index0 % 3) + 1 }}{% if lid.foto %} heeft-foto{% endif %}"{% if lid.foto %} style="background-image:url({{ lid.foto }})"{% endif %}>{% if not lid.foto %}Foto{% endif %}</div>
+      <div class="leader-foto p{{ (loop.index0 % 3) + 1 }}{% if lid.foto %} heeft-foto{% endif %}"{% if lid.foto %} style="background-image:url('{{ lid.foto }}')"{% endif %}>{% if not lid.foto %}Foto{% endif %}</div>
       <h4>{{ lid.naam }}</h4>
       <div class="role">{{ lid.rol }}</div>
       <p>{{ lid.bio }}</p>
