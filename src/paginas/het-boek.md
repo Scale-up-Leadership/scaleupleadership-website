@@ -28,4 +28,4 @@ Dit is geen boek dat je uitleest en wegzet. Je schrijft er zelf in. Je werkt aan
 - een strategie die je in één zin kunt uitleggen
 - een bedrijf dat blijft draaien als jij er even niet bent
 
-Geschreven door Miriam Cnossen, uitgegeven door Scale-up Leadership.![](/img/uploads/CoverJournal_ScaleUp_Voorzijde.jpg)
+Geschreven door Miriam Cnossen, uitgegeven door Scale-up Leadership.
