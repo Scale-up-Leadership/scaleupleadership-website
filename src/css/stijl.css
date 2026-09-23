@@ -232,6 +232,7 @@
     .logo-row img { height: 46px !important; }
     .hero-label { font-size: 11px; letter-spacing: 1.6px; margin-bottom: 12px; text-wrap: balance; }
     .page-hero-foto ~ .merk-ring, .page-hero-foto ~ .merk-stip { display: none; }
+    .hero:not(.hero-zonder-beeld) .merk-ring, .hero:not(.hero-zonder-beeld) .merk-stip { display: none; }
     .nav-links { display: none; }
     nav .pill-btn { display: none; }
 
