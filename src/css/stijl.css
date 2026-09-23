@@ -73,11 +73,12 @@
 
   .trustbar { background: var(--greige-1); padding: 34px 60px; text-align: center; }
   .trustbar .label { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--grey); text-transform: uppercase; margin-bottom: 18px; }
-  .trust-logos { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; }
+  .trust-logos { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; max-width: 920px; margin: 0 auto; }
   .trust-logo { font-weight: 700; font-size: 15px; color: var(--grey); opacity: 0.75; margin: 0 20px; }
-  .trust-logo.beeld { display: inline-flex; align-items: center; opacity: 1; margin: 8px 22px; }
-  .trust-logo.beeld img { height: 32px; width: auto; max-width: 150px; object-fit: contain; filter: grayscale(1); opacity: 0.62; transition: filter .18s ease, opacity .18s ease; }
-  .trust-logo.beeld img:hover { filter: none; opacity: 1; }
+  /* Elk logo krijgt een wit tegeltje, zodat logo's met een witte achtergrond
+     niet als losse witte vlakken op de grijze balk komen te liggen. */
+  .trust-logo.beeld { display: inline-flex; align-items: center; justify-content: center; opacity: 1; margin: 9px 11px; background: var(--white); border-radius: 12px; padding: 12px 14px; height: 78px; width: 150px; box-sizing: border-box; }
+  .trust-logo.beeld img { max-height: 54px; max-width: 122px; height: auto; width: auto; object-fit: contain; display: block; }
 
   .intro { padding: 66px 60px; text-align: center; }
   .intro .label { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: var(--orange); text-transform: uppercase; margin-bottom: 14px; }
@@ -316,8 +317,8 @@
 
     .trustbar, .intro, .diensten-lijst, .pakketten, .actueel, .team, .insights, .functioneel, .triggers { padding-left: 20px; padding-right: 20px; }
     .trust-logo { margin: 6px 12px; font-size: 13px; }
-    .trust-logo.beeld { margin: 6px 12px; }
-    .trust-logo.beeld img { height: 24px; max-width: 110px; }
+    .trust-logo.beeld { margin: 5px 5px; padding: 9px 10px; height: 60px; width: 132px; }
+    .trust-logo.beeld img { max-height: 40px; max-width: 108px; }
 
     .section-title { font-size: 24px; }
     .intro p { font-size: 16px; }
