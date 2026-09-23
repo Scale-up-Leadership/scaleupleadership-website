@@ -32,6 +32,9 @@
   .pill-btn-outline { display: inline-flex; align-items: center; border: 2px solid var(--dark); color: var(--dark); font-weight: 600; font-size: 13.5px; padding: 11px 24px; border-radius: 30px; text-decoration: none; margin-left: 14px; }
   .pill-btn-outline .arrow { margin-left: 10px; font-size: 16px; }
   .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; }
+  .vinkje { display: flex; align-items: flex-start; gap: 10px; margin: 6px 0 22px; cursor: pointer; }
+  .vinkje input { width: 18px; height: 18px; margin-top: 2px; flex-shrink: 0; accent-color: var(--magenta); }
+  .vinkje span { font-size: 13.5px; line-height: 1.5; color: var(--grey); }
   .hero-cta .pill-btn-outline { margin-left: 0; }
 
   /* ============ MOBIEL MENU ============ */
