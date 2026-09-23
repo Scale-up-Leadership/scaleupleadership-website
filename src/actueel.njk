@@ -93,7 +93,7 @@ eleventyComputed:
       <input id="n-mail" name="email" type="email" required placeholder="jij@bedrijf.nl">
       <button class="pill-btn" type="submit">{{ a.knop or "Aanmelden" }} <span class="arrow">&rarr;</span></button>
     </form>
-    <p class="kleine-letters">{{ a.kleine_letters or "Je kunt je op elk moment afmelden via de link onderaan elke mail." }}</p>
+    {%- if a.kleine_letters %}<p class="kleine-letters">{{ a.kleine_letters }}</p>{% endif %}
   </div>
 </section>
 {%- endif %}
