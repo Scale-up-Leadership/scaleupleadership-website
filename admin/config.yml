@@ -62,6 +62,15 @@ collections:
             fields:
               - { name: label, label: "Kopje", widget: string }
               - { name: namen, label: "Namen", widget: list, field: { name: naam, label: "Naam", widget: string } }
+              - name: logos
+                label: "Logo's"
+                widget: list
+                required: false
+                summary: "{{fields.naam}}"
+                hint: "Zodra hier minstens één rij staat, worden de namen hierboven niet meer getoond. Laat het logo leeg bij een bedrijf waarvan je er geen hebt, dan blijft daar de naam staan."
+                fields:
+                  - { name: naam, label: "Naam van het bedrijf", widget: string, hint: "Wordt voorgelezen door schermlezers en getoond als het logo niet laadt." }
+                  - { name: logo, label: "Logo", widget: image, required: false, hint: "Bij voorkeur een SVG of een PNG met doorzichtige achtergrond, minstens 200 pixels breed." }
           - name: intro
             label: "Wie wij zijn"
             widget: object
