@@ -1,0 +1,146 @@
+{#- Google Analytics plus cookiebanner.
+    Staat er geen meet-ID in het beheerscherm, dan gebeurt hier helemaal niets:
+    geen script, geen banner, geen cookies. -#}
+{%- if site.ga_id %}
+{%- set ck = site.cookies or {} %}
+<script>
+(function () {
+  var ID = "{{ site.ga_id }}";
+  var SLEUTEL = "sul-cookies";
+  var SCAN = "{{ site.scan_url }}";
+  var TEKST = {
+    tekst: {{ (ck.tekst or "We gebruiken cookies om te zien hoe de site gebruikt wordt. Alleen om hem beter te maken, verder niets.") | dump | safe }},
+    ja: {{ (ck.knop_ja or "Accepteren") | dump | safe }},
+    nee: {{ (ck.knop_nee or "Weigeren") | dump | safe }},
+    link_tekst: {{ (ck.link_tekst or "Privacyverklaring") | dump | safe }},
+    link_url: {{ (ck.link_url or "/privacyverklaring/") | dump | safe }}
+  };
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied"
+  });
+
+  function lees() { try { return localStorage.getItem(SLEUTEL); } catch (e) { return null; } }
+  function bewaar(v) { try { localStorage.setItem(SLEUTEL, v); } catch (e) {} }
+
+  var geladen = false;
+  function start() {
+    if (geladen) return;
+    geladen = true;
+    gtag("consent", "update", { analytics_storage: "granted" });
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+    document.head.appendChild(s);
+    gtag("js", new Date());
+    gtag("config", ID, { anonymize_ip: true });
+    volgKliks();
+  }
+
+  function tekstVan(el) {
+    return (el.textContent || "").replace(/\s+/g, " ").trim().slice(0, 70);
+  }
+
+  var volgtAl = false;
+  function volgKliks() {
+    if (volgtAl) return;
+    volgtAl = true;
+
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a") : null;
+      if (!a) return;
+      var href = a.getAttribute("href") || "";
+      var tekst = tekstVan(a);
+      var plek = location.pathname;
+      var inMenu = !!a.closest(".nav-links");
+      var inFooter = !!a.closest(".footer-top");
+
+      if (href.indexOf(SCAN) === 0 || href.indexOf("scan.scaleupleadership.nl") > -1) {
+        gtag("event", "klik_scan", { knop: tekst, plek: plek, vanuit: inMenu ? "menu" : (inFooter ? "footer" : "pagina") });
+        return;
+      }
+      if (a.classList.contains("uitgelicht-kaart") || a.classList.contains("insight-card")) {
+        var titel = a.querySelector("h2, h4");
+        gtag("event", "klik_artikel", { artikel: titel ? tekstVan(titel) : tekst, link_url: href, plek: plek });
+        return;
+      }
+      if (inMenu || inFooter) {
+        gtag("event", "klik_menu", { link_tekst: tekst, link_url: href, vanuit: inMenu ? "menu" : "footer" });
+        return;
+      }
+      if (href.indexOf("#aanmelden") > -1) {
+        gtag("event", "klik_houd_me_op_de_hoogte", { knop: tekst, plek: plek });
+        return;
+      }
+      if (a.classList.contains("pill-btn") || a.classList.contains("pill-btn-outline") || a.classList.contains("li-link")) {
+        gtag("event", "klik_knop", { knop: tekst, link_url: href, plek: plek });
+        return;
+      }
+      if (/^https?:/i.test(href) && href.indexOf(location.host) === -1) {
+        gtag("event", "klik_extern", { link_url: href, link_tekst: tekst, plek: plek });
+      }
+    }, true);
+
+    document.addEventListener("submit", function (e) {
+      var f = e.target;
+      if (!f || f.tagName !== "FORM") return;
+      var naam = f.getAttribute("name") || "onbekend";
+      gtag("event", "formulier_verstuurd", { formulier: naam, plek: location.pathname });
+      if (naam === "nieuwsbrief") gtag("event", "aanmelding_nieuwsbrief", { plek: location.pathname });
+      if (naam === "contact") gtag("event", "contact_verstuurd", { plek: location.pathname });
+    }, true);
+  }
+
+  function weg(balk) { balk.parentNode && balk.parentNode.removeChild(balk); }
+
+  function toonBanner() {
+    var balk = document.createElement("div");
+    balk.className = "cookiebalk";
+    balk.setAttribute("role", "dialog");
+    balk.setAttribute("aria-label", "Cookies");
+    var p = document.createElement("p");
+    p.textContent = TEKST.tekst + " ";
+    var link = document.createElement("a");
+    link.href = TEKST.link_url;
+    link.textContent = TEKST.link_tekst;
+    p.appendChild(link);
+    var knoppen = document.createElement("div");
+    knoppen.className = "cookieknoppen";
+    var ja = document.createElement("button");
+    ja.type = "button"; ja.className = "pill-btn"; ja.textContent = TEKST.ja;
+    var nee = document.createElement("button");
+    nee.type = "button"; nee.className = "pill-btn-outline"; nee.textContent = TEKST.nee;
+    ja.addEventListener("click", function () { bewaar("ja"); weg(balk); start(); });
+    nee.addEventListener("click", function () { bewaar("nee"); weg(balk); });
+    knoppen.appendChild(ja); knoppen.appendChild(nee);
+    balk.appendChild(p); balk.appendChild(knoppen);
+    document.body.appendChild(balk);
+  }
+
+  function open() {
+    if (!document.querySelector(".cookiebalk")) toonBanner();
+  }
+  window.cookiesOpnieuw = function (e) { if (e) e.preventDefault(); open(); };
+
+  function begin() {
+    var keuze = lees();
+    if (keuze === "ja") { start(); return; }
+    if (keuze === "nee") return;
+    toonBanner();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", begin);
+  } else {
+    begin();
+  }
+})();
+</script>
+{%- endif %}

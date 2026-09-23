@@ -18,10 +18,10 @@
   <button class="nav-toggle" aria-label="Menu" onclick="this.closest('nav').classList.toggle('open')">&#9776;</button>
   <div class="nav-links" onclick="this.closest('nav').classList.remove('open')">
     {%- for item in site.menu %}
-    <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}>{{ item.label }}</a>
+    <a href="{{ item.url }}"{% if page.url == item.url %} class="active"{% endif %}{% if item.url == site.scan_url %} target="_blank" rel="noopener"{% endif %}>{{ item.label }}</a>
     {%- endfor %}
   </div>
-  <a class="pill-btn" href="{{ site.scan_url }}">{{ site.scan_knop }} <span class="arrow">&rarr;</span></a>
+  <a class="pill-btn" href="{{ site.scan_url }}" target="_blank" rel="noopener">{{ site.scan_knop }} <span class="arrow">&rarr;</span></a>
 </nav>
 
 <div class="page">
@@ -30,7 +30,7 @@
 {%- if slot_cta != false and scanblok != false %}
 <section class="slot-cta">
   <p>{{ site.slot_cta.tekst }}</p>
-  <a class="pill-btn" href="{{ site.scan_url }}">{{ site.slot_cta.knop }} <span class="arrow">&rarr;</span></a>
+  <a class="pill-btn" href="{{ site.scan_url }}" target="_blank" rel="noopener">{{ site.slot_cta.knop }} <span class="arrow">&rarr;</span></a>
 </section>
 {%- endif %}
 </div>
@@ -44,7 +44,7 @@
     <div>
       <h5>Menu</h5>
       {%- for item in site.menu %}
-      <a href="{{ item.url }}">{{ item.label }}</a>
+      <a href="{{ item.url }}"{% if item.url == site.scan_url %} target="_blank" rel="noopener"{% endif %}>{{ item.label }}</a>
       {%- endfor %}
     </div>
     <div>
@@ -64,11 +64,16 @@
       {%- for l in site.footer_links %}
       <a href="{{ l.url }}"{% if l.nieuw_tabblad %} target="_blank" rel="noopener"{% endif %}>{{ l.label }}</a>
       {%- endfor %}
+      {%- if site.ga_id %}<a href="#" onclick="return cookiesOpnieuw(event)">Cookies</a>{% endif %}
     </span>
+    {%- elif site.ga_id %}
+    <span class="footer-links"><a href="#" onclick="return cookiesOpnieuw(event)">Cookies</a></span>
     {%- endif %}
     {%- if site.footer_slogan %}<span>{{ site.footer_slogan }}</span>{% endif %}
   </div>
 </footer>
+
+{% include "statistieken.njk" %}
 
 </body>
 </html>
