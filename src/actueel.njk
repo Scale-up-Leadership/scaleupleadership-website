@@ -81,7 +81,7 @@ eleventyComputed:
 
 {%- set a = p.aanmelding or {} %}
 {%- if a.tonen is not defined or a.tonen %}
-<section class="aanmelden">
+<section class="aanmelden" id="aanmelden">
   <div class="aanmelden-box">
     <div class="aanmelden-ring"></div>
     <h2 class="slab-heading">{{ a.kop or "Houd me op de hoogte" }}</h2>
