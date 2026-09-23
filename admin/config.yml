@@ -348,6 +348,7 @@ collections:
               - { name: onderwerpen, label: "Keuzes bij onderwerp", widget: list, field: { name: keuze, label: "Keuze", widget: string } }
               - { name: bericht, label: "Label bericht", widget: string }
               - { name: bericht_hint, label: "Voorbeeldtekst bericht", widget: string }
+              - { name: updates, label: "Tekst bij het vinkje voor updates", widget: string, required: false, hint: "Laat leeg om het vinkje weg te halen. Het vinkje staat altijd uit, mensen moeten het zelf aanzetten." }
               - { name: knop, label: "Tekst op de knop", widget: string }
           - name: naast
             label: "Blokje naast het formulier"
