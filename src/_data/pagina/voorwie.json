@@ -3,7 +3,7 @@
   "omschrijving": "Vier situaties waarin founders ons bellen. Herken je er één?",
   "hero": {
     "label": "Voor wie",
-    "kop": "Herken jij jezelf ",
+    "kop": "Herken jij jezelf",
     "kop_accent": "hierin?",
     "tekst": "Vier situaties waarin founders ons bellen. Herken je er één? Neem dan contact met ons op en wie weet kunnen wij je verder helpen.",
     "knop": "Neem contact op"
@@ -38,13 +38,22 @@
     "kop": "In welke fase zit je?",
     "sub": "We werken zowel met bedrijven die de start-upfase ontgroeien en de sprong naar scale-up willen maken als met meer gevestigde mkb-bedrijven die een groeisprong willen maken.",
     "kaarten": [
-      { "kop": "Start-up", "tekst": "Je product werkt en je wil de markt gaan veroveren. Je focus ligt op een effectieve salesorganisatie en betrouwbare fulfillment zodat klanten je aanbevelen." },
-      { "kop": "Groei", "tekst": "Je groeit hard en de complexiteit neemt toe. Het is nodig om een team te bouwen dat de volgende fase draagt. Hier stappen we het vaakst in." },
-      { "kop": "Scale-up", "tekst": "Schaalvergroting, efficiënte organisatie en leiderschap brengen je verder. Structuur in combinatie met wendbaarheid. Hier lopen we mee tot het staat." }
+      {
+        "kop": "Start-up",
+        "tekst": "Je product werkt en je wil de markt gaan veroveren. Je focus ligt op een effectieve salesorganisatie en betrouwbare fulfillment zodat klanten je aanbevelen."
+      },
+      {
+        "kop": "Groei",
+        "tekst": "Je groeit hard en de complexiteit neemt toe. Het is nodig om een team te bouwen dat de volgende fase draagt. Hier stappen we het vaakst in."
+      },
+      {
+        "kop": "Scale-up",
+        "tekst": "Schaalvergroting, efficiënte organisatie en leiderschap brengen je verder. Structuur in combinatie met wendbaarheid. Hier lopen we mee tot het staat."
+      }
     ]
   },
   "quote": {
-    "tekst": "Met de structuur en werkwijze die Scale-up Leadership ons heeft aangereikt staat nu echt een geoliede machine.",
-    "bron": "Joan Ronner, CEO Area of People"
+    "tekst": "Als je wil weten hoe je de geldmachine béter kan laten draaien, neem dan contact op met Annemarie. Zij kan je echt helpen. Als je de geldmachine vooral hárder wil laten draaien, blijf dan vooral doen wat je nu al doet.",
+    "bron": "Kamadur"
   }
 }
