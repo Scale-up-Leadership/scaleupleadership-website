@@ -226,6 +226,9 @@
     .contact-form button { width: 100%; justify-content: center; }
 
     .artikel { padding: 34px 20px 10px; }
+    .artikel-beeld-wrap { padding: 26px 20px 0; }
+    .artikel-beeld { border-radius: 14px; }
+    .artikel-beeld-wrap + .artikel { padding-top: 22px; }
     .artikel h2 { font-size: 26px; }
     .artikel h3 { font-size: 18px; }
     .artikel p.lead { font-size: 17px; }
@@ -377,13 +380,20 @@
   }
 
   /* ============ ACTUEEL ============ */
+  .artikel-beeld-wrap { max-width: 880px; margin: 0 auto; padding: 44px 60px 0; }
+  .artikel-beeld { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 20px; display: block; }
   .artikel { max-width: 760px; margin: 0 auto; padding: 66px 60px 20px; }
+  .artikel-beeld-wrap + .artikel { padding-top: 34px; }
   .artikel-meta { font-size: 12px; font-weight: 600; color: var(--grey); letter-spacing: 0.3px; margin-bottom: 14px; }
   .artikel-tag { display: inline-block; background: var(--tint-m); color: var(--magenta); font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; margin-right: 10px; }
   .artikel h2 { font-size: 34px; line-height: 1.18; font-weight: 800; margin-bottom: 22px; }
   .artikel h3 { font-size: 20px; font-weight: 800; font-family: 'Sora', sans-serif; margin: 34px 0 12px; }
   .artikel p { font-size: 16px; line-height: 1.75; color: var(--grey); margin-bottom: 16px; }
   .artikel p.lead { font-size: 19px; line-height: 1.65; color: var(--dark); margin-bottom: 26px; }
+  .artikel ul, .artikel ol { margin: 0 0 24px; padding-left: 22px; }
+  .artikel li { font-size: 16px; line-height: 1.75; color: var(--grey); margin-bottom: 8px; padding-left: 4px; }
+  .artikel li::marker { color: var(--magenta); }
+  .artikel li > p { margin-bottom: 6px; }
   .artikel-box { background: var(--cream); border-radius: 16px; padding: 30px 34px; margin: 30px 0 10px; }
   .artikel-box h4 { font-size: 18px; font-weight: 800; font-family: 'Sora', sans-serif; margin-bottom: 10px; }
   .artikel-box .box-intro { margin-bottom: 14px; font-size: 15px; }
