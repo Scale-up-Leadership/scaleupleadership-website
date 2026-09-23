@@ -2,12 +2,14 @@
   "titel": "Scale-up Leadership",
   "omschrijving": "We stappen in en pakken samen door, zodat jij als founder vol passie blijft bouwen.",
   "hero": {
+    "label": "",
     "kop": "Sneller<br>groeien",
     "kop_accent": "?",
     "tekst": "We stappen in en pakken samen door, zodat jij als founder <strong>vol passie</strong> blijft bouwen.",
     "knop_primair": "DOE DE SCAN",
     "knop_secundair": "Plan je Scale-up Droomgesprek",
-    "afbeelding": "/img/uploads/scale-up-wiel-creme.png"
+    "afbeelding": "/img/uploads/scale-up-wiel-creme.png",
+    "vul_vlak": false
   },
   "reis": [
     {
@@ -116,8 +118,8 @@
     ]
   },
   "quote": {
-    "tekst": "Als je wil weten hoe je de geldmachine béter kan laten draaien, neem dan contact op met Annemarie. Zij kan je echt helpen. Als je de geldmachine vooral hárder wil laten draaien, blijf dan vooral doen wat je nu al doet.",
-    "bron": "Kamadur"
+    "tekst": "Met de structuur en werkwijze die Scale-up Leadership ons heeft aangereikt staat nu echt een geoliede machine.",
+    "bron": "Joan Ronner, CEO Area of People"
   },
   "team": {
     "kop": "Het team",
