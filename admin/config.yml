@@ -383,6 +383,18 @@ collections:
           - { name: naam, label: "Naam van het bedrijf", widget: string }
           - { name: domein, label: "Website-adres", widget: string }
           - { name: scan_url, label: "Link naar de scan", widget: string }
+          - { name: ga_id, label: "Meet-ID van Google Analytics", widget: string, required: false, hint: "Begint met G- en staat in Google Analytics onder Beheer, Datastreams. Laat leeg en er wordt niets gemeten en verschijnt er geen cookiebalk." }
+          - name: cookies
+            label: "Cookiebalk"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { name: tekst, label: "Tekst in de balk", widget: text, required: false }
+              - { name: knop_ja, label: "Tekst op de ja-knop", widget: string, required: false }
+              - { name: knop_nee, label: "Tekst op de nee-knop", widget: string, required: false }
+              - { name: link_tekst, label: "Tekst van de link", widget: string, required: false }
+              - { name: link_url, label: "Link naar de privacyverklaring", widget: string, required: false }
           - { name: scan_knop, label: "Tekst op de scanknop", widget: string }
           - { name: email, label: "E-mailadres", widget: string }
           - { name: linkedin, label: "LinkedIn-pagina", widget: string }
