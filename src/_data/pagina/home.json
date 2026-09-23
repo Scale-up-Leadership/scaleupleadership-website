@@ -38,7 +38,8 @@
       "HAN University of Applied Sciences",
       "Silverflow",
       "Vive"
-    ]
+    ],
+    "logos": []
   },
   "intro": {
     "label": "Wie wij zijn",
@@ -123,15 +124,15 @@
   },
   "team": {
     "kop": "Het team",
-    "sub": "De co-founders en de scale up leaders die instappen",
-    "meer_kop": "Onze scale up leaders",
+    "sub": "De co-founders en de Scale up leaders die instappen",
+    "meer_kop": "Onze Scale up leaders",
     "meer_rol": "Ervaren leiders",
     "meer_tekst": "Elk met een eigen achtergrond en een eigen moment waarop ze instappen. Kijk bij wie jij terechtkomt.",
     "meer_link": "Bekijk het hele team &rarr;"
   },
   "inzichten": {
     "kop": "Laatste inzichten",
-    "sub": "Blogs, events en podcasts van de scale up leaders zelf"
+    "sub": "Blogs, events en podcasts van de Scale up leaders zelf"
   },
   "scanblok": {
     "kop": "Hoe schaalbaar is je bedrijf?",
