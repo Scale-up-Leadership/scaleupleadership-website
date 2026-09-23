@@ -105,23 +105,3 @@ eleventyComputed:
   </div>
 </section>
 {%- endif %}
-
-{%- if p.podcast.tonen %}
-<section class="podcast">
-  <div class="podcast-inner">
-    <div class="podcast-visual">
-      <span class="podcast-icoon">&#127911;</span>
-    </div>
-    <div class="podcast-txt">
-      <div class="artikel-meta"><span class="artikel-tag">Podcast</span> {{ p.podcast.meta }}</div>
-      <h2 class="slab-heading">{{ p.podcast.kop }}</h2>
-      <p class="lead">{{ p.podcast.lead }}</p>
-      <p>{{ p.podcast.alinea1 }}</p>
-      <p>{{ p.podcast.alinea2 }}</p>
-      <p>{{ p.podcast.alinea3 }}</p>
-      <p class="podcast-slot">{{ p.podcast.slot }}</p>
-      <a class="pill-btn-outline" href="{{ p.podcast.knop_url }}">{{ p.podcast.knop }}</a>
-    </div>
-  </div>
-</section>
-{%- endif %}
