@@ -463,6 +463,7 @@ collections:
       - { name: kop, label: "Grote kop", widget: string }
       - { name: kop_accent, label: "Gekleurd deel van de kop", widget: string, required: false, hint: "Dit stukje komt in magenta achter de grote kop." }
       - { name: intro, label: "Introtekst", widget: text, required: false }
+      - { name: afbeelding, label: "Beeld naast de kop", widget: image, required: false, hint: "Komt rechts naast de titel te staan, bijvoorbeeld een boekomslag. Het beeld wordt niet bijgesneden." }
       - { name: knop, label: "Tekst op de knop onderaan", widget: string, required: false }
       - { name: knop_url, label: "Link van die knop", widget: string, required: false, hint: "Bijvoorbeeld /contact/" }
       - { name: body, label: "De tekst van de pagina", widget: markdown }
