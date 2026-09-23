@@ -320,6 +320,7 @@ collections:
               - { name: kop, label: "Kop", widget: string, required: false }
               - { name: tekst, label: "Tekst eronder", widget: text, required: false }
               - { name: knop, label: "Tekst op de knop", widget: string, required: false }
+              - { name: mail_hint, label: "Voorbeeldtekst in het invulveld", widget: string, required: false, hint: "Wat er grijs in het veld staat voordat iemand typt. Laat leeg voor naam@bedrijf.nl." }
               - { name: kleine_letters, label: "Regeltje onder het formulier", widget: string, required: false, hint: "Laat leeg om deze regel helemaal weg te halen." }
               - { name: bedankt_kop, label: "Kop op de bedanktpagina", widget: string, required: false }
               - { name: bedankt_tekst, label: "Tekst op de bedanktpagina", widget: text, required: false }
