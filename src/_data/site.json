@@ -8,15 +8,34 @@
   "bedrijfsnaam": "Scale-up Leadership B.V.",
   "kvk": "KvK 94269076",
   "menu": [
-    { "label": "Over ons", "url": "/over-ons/" },
-    { "label": "Scan", "url": "/scan" },
-    { "label": "Aanpak", "url": "/aanpak/" },
-    { "label": "Voor wie", "url": "/voor-wie/" },
-    { "label": "Actueel", "url": "/actueel/" },
-    { "label": "Contact", "url": "/contact/" }
+    {
+      "label": "Over ons",
+      "url": "/over-ons/"
+    },
+    {
+      "label": "Scan",
+      "url": "/scan"
+    },
+    {
+      "label": "Aanpak",
+      "url": "/aanpak/"
+    },
+    {
+      "label": "Voor wie",
+      "url": "/voor-wie/"
+    },
+    {
+      "label": "Actueel",
+      "url": "/actueel/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
+    }
   ],
   "footer_tekst": "Sneller groeien? We stappen in en pakken samen door, zodat jij als founder vol passie blijft bouwen.",
-  "footer_slogan": "Van eenvoud naar groei",
+  "footer_slogan": "",
+  "footer_links": [],
   "slot_cta": {
     "tekst": "Hoe schaalbaar is je bedrijf?",
     "knop": "DOE DE SCAN"
