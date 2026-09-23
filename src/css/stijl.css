@@ -304,7 +304,8 @@
   .page-hero h1 .q { color: var(--magenta); }
   .page-hero p { font-size: 17.5px; color: var(--dark); line-height: 1.6; max-width: 520px; }
   .page-hero .hero-knop { margin-top: 26px; }
-  .page-hero-foto { width: 36%; max-width: 420px; height: 300px; border-radius: 20px; background-size: cover; background-position: center; flex-shrink: 0; margin-left: 40px; position: relative; z-index: 2; }
+  /* De kop heeft 620px nodig om op twee regels te blijven, dus de foto krijgt wat overblijft. */
+  .page-hero-foto { width: calc(100% - 668px); max-width: 560px; height: 380px; border-radius: 20px; background-size: cover; background-position: center; flex-shrink: 0; margin-left: 48px; position: relative; z-index: 2; }
   .page-hero-ring { position: absolute; width: 340px; height: 340px; border-radius: 50%; border: 50px solid var(--orange); opacity: 0.32; top: -110px; right: -140px; pointer-events: none; }
 
 
@@ -554,4 +555,14 @@
     .pakket-card { width: 46%; margin: 0 2% 20px; }
     .hero { padding: 50px 28px 70px; }
     .page-hero { padding: 50px 28px 70px; }
+  }
+
+  /* ===== SMALLE DESKTOP: 901 tot 1200 px =====
+     Hier passen kop en foto niet naast elkaar zonder dat de kop afbreekt,
+     dus zakt de foto onder de tekst. */
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .page-hero { flex-direction: column; align-items: flex-start; }
+    .page-hero-text { max-width: 760px; }
+    .page-hero-foto { width: 100%; max-width: 720px; height: 320px; margin-left: 0; margin-top: 30px; }
+    .page-hero-foto ~ .merk-ring, .page-hero-foto ~ .merk-stip { display: none; }
   }
