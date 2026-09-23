@@ -297,7 +297,7 @@ collections:
 
       # ---------------- ACTUEEL ----------------
       - name: actueel
-        label: "Actueel (koptekst en podcast)"
+        label: "Actueel (koptekst en aanmeldblok)"
         file: "src/_data/pagina/actueel.json"
         fields:
           - { name: titel, label: "Paginatitel", widget: string }
@@ -323,20 +323,6 @@ collections:
               - { name: kleine_letters, label: "Regeltje onder het formulier", widget: string, required: false, hint: "Laat leeg om deze regel helemaal weg te halen." }
               - { name: bedankt_kop, label: "Kop op de bedanktpagina", widget: string, required: false }
               - { name: bedankt_tekst, label: "Tekst op de bedanktpagina", widget: text, required: false }
-          - name: podcast
-            label: "Podcastblok"
-            widget: object
-            fields:
-              - { name: tonen, label: "Blok tonen", widget: boolean, default: true }
-              - { name: meta, label: "Regel naast het label", widget: string }
-              - { name: kop, label: "Naam van de podcast", widget: string }
-              - { name: lead, label: "Eerste regel", widget: text }
-              - { name: alinea1, label: "Alinea 1", widget: text }
-              - { name: alinea2, label: "Alinea 2", widget: text }
-              - { name: alinea3, label: "Alinea 3", widget: text }
-              - { name: slot, label: "Slotzin", widget: text }
-              - { name: knop, label: "Tekst op de knop", widget: string }
-              - { name: knop_url, label: "Link van de knop", widget: string }
 
       # ---------------- CONTACT ----------------
       - name: contact
