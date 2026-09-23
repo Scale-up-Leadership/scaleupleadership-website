@@ -5,6 +5,7 @@ label: Het boek
 kop: Stilstaan om te
 kop_accent: groeien
 intro: Als je bedrijf harder groeit dan jijzelf, is harder rennen zelden de oplossing. Dit boek helpt je om even stil te staan, zodat je daarna scherper verder kunt.
+afbeelding: /img/uploads/CoverJournal_ScaleUp_Voorzijde.jpg
 knop: Bestel het boek
 knop_url: https://www.managementboek.nl/boek/9789090413495/stilstaan-om-te-groeien-miriam-cnossen
 ---
