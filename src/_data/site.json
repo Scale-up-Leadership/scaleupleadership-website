@@ -35,7 +35,13 @@
   ],
   "footer_tekst": "Sneller groeien? We stappen in en pakken samen door, zodat jij als founder vol passie blijft bouwen.",
   "footer_slogan": "",
-  "footer_links": [],
+  "footer_links": [
+    {
+      "label": "Algemene voorwaarden",
+      "url": "/img/uploads/algemene-voorwaarden.pdf",
+      "nieuw_tabblad": true
+    }
+  ],
   "slot_cta": {
     "tekst": "Hoe schaalbaar is je bedrijf?",
     "knop": "DOE DE SCAN"
