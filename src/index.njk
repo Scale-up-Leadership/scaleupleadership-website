@@ -44,9 +44,19 @@ eleventyComputed:
 <div class="trustbar">
   <div class="label">{{ p.trustbar.label }}</div>
   <div class="trust-logos">
+    {%- if p.trustbar.logos and p.trustbar.logos.length %}
+    {%- for l in p.trustbar.logos %}
+    {%- if l.logo %}
+    <span class="trust-logo beeld"><img src="{{ l.logo }}" alt="{{ l.naam }}" loading="lazy"></span>
+    {%- else %}
+    <span class="trust-logo">{{ l.naam }}</span>
+    {%- endif %}
+    {%- endfor %}
+    {%- else %}
     {%- for naam in p.trustbar.namen %}
     <span class="trust-logo">{{ naam }}</span>
     {%- endfor %}
+    {%- endif %}
   </div>
 </div>
 
