@@ -25,6 +25,10 @@
       "url": "/voor-wie/"
     },
     {
+      "label": "Boek",
+      "url": "/het-boek/"
+    },
+    {
       "label": "Actueel",
       "url": "/actueel/"
     },
