@@ -166,7 +166,11 @@ eleventyComputed:
     <a class="insight-card" href="{{ item.url }}">
       <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url('{{ item.data.afbeelding }}'); background-size:cover; background-position:center;"{% endif %}></div>
       <div class="insight-body">
-        <div class="insight-tag">{{ item.data.soort }}{% if item.data.auteur %} &middot; {{ item.data.auteur }}{% endif %}</div>
+        <div class="kaart-meta">
+          <span class="kaart-tag">{{ item.data.soort }}</span>
+          {%- set bij = item.data.status or item.data.auteur %}
+          {%- if bij %}<span class="kaart-sub">{{ bij }}</span>{% endif %}
+        </div>
         <h4>{{ item.data.titel }}</h4>
         {%- if item.data.intro %}<p class="insight-intro">{{ item.data.intro }}</p>{% endif %}
         <div class="date">{{ item.data.datum | datum }}</div>

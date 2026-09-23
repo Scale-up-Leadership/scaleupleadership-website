@@ -26,7 +26,11 @@ eleventyComputed:
   <a class="uitgelicht-kaart" href="{{ uit.url }}">
     <div class="uitgelicht-beeld"{% if uit.data.afbeelding %} style="background-image:url('{{ uit.data.afbeelding }}')"{% endif %}></div>
     <div class="uitgelicht-tekst">
-      <div class="insight-tag">{{ uit.data.soort }}{% if uit.data.auteur %} &middot; {{ uit.data.auteur }}{% endif %}</div>
+      <div class="kaart-meta">
+        <span class="kaart-tag">{{ uit.data.soort }}</span>
+        {%- set bij = uit.data.status or uit.data.auteur %}
+        {%- if bij %}<span class="kaart-sub">{{ bij }}</span>{% endif %}
+      </div>
       <h2 class="slab-heading">{{ uit.data.titel }}</h2>
       {%- if uit.data.intro %}<p>{{ uit.data.intro }}</p>{% endif %}
       <div class="date">{{ uit.data.datum | datum }}</div>
@@ -51,7 +55,11 @@ eleventyComputed:
     <a class="insight-card" href="{{ item.url }}" data-soort="{{ item.data.soort }}">
       <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url('{{ item.data.afbeelding }}'); background-size:cover; background-position:center;"{% endif %}></div>
       <div class="insight-body">
-        <div class="insight-tag">{{ item.data.soort }}{% if item.data.auteur %} &middot; {{ item.data.auteur }}{% endif %}</div>
+        <div class="kaart-meta">
+          <span class="kaart-tag">{{ item.data.soort }}</span>
+          {%- set bij = item.data.status or item.data.auteur %}
+          {%- if bij %}<span class="kaart-sub">{{ bij }}</span>{% endif %}
+        </div>
         <h4>{{ item.data.titel }}</h4>
         {%- if item.data.intro %}<p class="insight-intro">{{ item.data.intro }}</p>{% endif %}
         <div class="date">{{ item.data.datum | datum }}</div>
