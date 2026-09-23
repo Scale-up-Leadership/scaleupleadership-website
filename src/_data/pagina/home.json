@@ -39,7 +39,44 @@
       "Silverflow",
       "Vive"
     ],
-    "logos": []
+    "logos": [
+      {
+        "naam": "Knab",
+        "logo": "/img/uploads/340606897_782260349981949_2519453896047602011_n_edited.jpg"
+      },
+      {
+        "naam": "Area of People",
+        "logo": "/img/uploads/aop_logo.png"
+      },
+      {
+        "naam": "Clarify",
+        "logo": "/img/uploads/Clarify logo_edited-2.jpg"
+      },
+      {
+        "naam": "flux",
+        "logo": "/img/uploads/Flux .png"
+      },
+      {
+        "naam": "Vive",
+        "logo": "/img/uploads/image-2.png"
+      },
+      {
+        "naam": "4dotnet",
+        "logo": "/img/uploads/image-3.png"
+      },
+      {
+        "naam": "HAN University of Applied Sciences",
+        "logo": "/img/uploads/image-4.png"
+      },
+      {
+        "naam": "Silverflow",
+        "logo": "/img/uploads/image-5.png"
+      },
+      {
+        "naam": "moneyou",
+        "logo": "/img/uploads/logo-moneyou-rondjes.png"
+      }
+    ]
   },
   "intro": {
     "label": "Wie wij zijn",
