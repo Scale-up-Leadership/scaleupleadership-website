@@ -31,6 +31,8 @@
   .pill-btn .arrow { margin-left: 10px; font-size: 16px; }
   .pill-btn-outline { display: inline-flex; align-items: center; border: 2px solid var(--dark); color: var(--dark); font-weight: 600; font-size: 13.5px; padding: 11px 24px; border-radius: 30px; text-decoration: none; margin-left: 14px; }
   .pill-btn-outline .arrow { margin-left: 10px; font-size: 16px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; position: relative; z-index: 2; }
+  .hero-cta .pill-btn-outline { margin-left: 0; }
 
   /* ============ MOBIEL MENU ============ */
   .nav-toggle { display: none; background: none; border: 0; font-size: 26px; line-height: 1; color: var(--dark); cursor: pointer; padding: 4px 6px; }
@@ -235,10 +237,14 @@
     .podcast-txt h2 { font-size: 26px; }
 
     nav { padding: 16px 20px; flex-wrap: wrap; }
+    .logo-row img { height: 46px !important; }
+    .hero-label { font-size: 11px; letter-spacing: 1.6px; margin-bottom: 12px; text-wrap: balance; }
+    .page-hero-foto ~ .merk-ring, .page-hero-foto ~ .merk-stip { display: none; }
     .nav-links { display: none; }
     nav .pill-btn { display: none; }
 
     .nav-toggle { display: block; order: 3; }
+    nav.open .pill-btn { display: inline-flex; order: 5; width: 100%; justify-content: center; margin-top: 14px; }
     nav.open .nav-links { display: flex; flex-direction: column; width: 100%; order: 4; padding-top: 14px; margin-top: 12px; border-top: 1px solid var(--greige-2); }
     nav.open .nav-links a { margin-right: 0; padding: 12px 0; font-size: 16px; font-weight: 600; }
 
@@ -531,3 +537,21 @@
 /* --- toegevoegd bij de omzetting naar een echte site --- */
 .heeft-foto { background-size: cover !important; background-position: center 25% !important; color: transparent !important; }
 .insight-card { text-decoration: none; color: inherit; display: block; }
+
+  /* ===== TABLET: 769 tot 900 px =====
+     Hier paste de bovenbalk niet meer, dus daar het uitklapmenu ook.
+     De rest van de opmaak blijft de desktopversie. */
+  @media (min-width: 769px) and (max-width: 900px) {
+    nav { flex-wrap: wrap; padding: 16px 28px; }
+    .logo-row img { height: 56px !important; }
+    .nav-links { display: none; }
+    nav > .pill-btn { display: none; }
+    .nav-toggle { display: block; order: 3; }
+    nav.open .nav-links { display: flex; flex-direction: column; width: 100%; order: 4; padding-top: 14px; margin-top: 12px; border-top: 1px solid var(--greige-2); }
+    nav.open .nav-links a { margin-right: 0; padding: 12px 0; font-size: 16px; font-weight: 600; }
+    nav.open > .pill-btn { display: inline-flex; order: 5; width: 100%; justify-content: center; margin-top: 14px; }
+    .pakketten-grid { flex-wrap: wrap; }
+    .pakket-card { width: 46%; margin: 0 2% 20px; }
+    .hero { padding: 50px 28px 70px; }
+    .page-hero { padding: 50px 28px 70px; }
+  }
