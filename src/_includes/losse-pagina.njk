@@ -8,6 +8,9 @@ layout: basis.njk
     <hr class="rule">
     {%- if intro %}<p>{{ intro }}</p>{% endif %}
   </div>
+  {%- if afbeelding %}
+  <div class="page-hero-cover"><img src="{{ afbeelding }}" alt="{{ kop or titel }}"></div>
+  {%- endif %}
   <div class="merk-ring"></div><div class="merk-stip"></div>
 </section>
 
