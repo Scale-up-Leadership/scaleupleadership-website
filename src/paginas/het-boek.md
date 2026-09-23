@@ -8,6 +8,7 @@ intro: Als je bedrijf harder groeit dan jijzelf, is harder rennen zelden de oplo
 afbeelding: /img/uploads/CoverJournal_ScaleUp_Voorzijde.jpg
 knop: Bestel het boek
 knop_url: https://www.managementboek.nl/boek/9789090413495/stilstaan-om-te-groeien-miriam-cnossen
+scanblok: false
 ---
 
 ### Voor wie
