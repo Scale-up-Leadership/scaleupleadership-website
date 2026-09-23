@@ -148,14 +148,6 @@
   .step:nth-child(3) .n { background: var(--accent-pink); }
   .step p { font-size: 12.5px; color: var(--grey); }
 
-  /* donkere variant van het scanblok, zodat elke pagina op dezelfde toon eindigt */
-  .functioneel.donker { background: var(--dark); }
-  .functioneel.donker h2 { color: var(--white); }
-  .functioneel.donker > p { color: rgba(255,255,255,0.72); }
-  .functioneel.donker .functioneel-box { background: rgba(255,255,255,0.07); }
-  .functioneel.donker .step p { color: rgba(255,255,255,0.78); }
-  .functioneel.donker .functioneel-box .fring { opacity: 0.9; }
-
   footer { background: var(--greige-1); color: var(--dark); padding: 60px 60px 30px; }
   .footer-top { display: flex; margin-bottom: 40px; }
   .footer-top > div { width: 25%; margin-right: 30px; }
@@ -288,8 +280,8 @@
   }
 
   /* ============ AANPAK-PAGINA ============ */
-  .slot-cta { padding: 70px 60px 80px; text-align: center; background: var(--dark); }
-  .slot-cta p { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 22px; color: var(--white); margin-bottom: 22px; }
+  .slot-cta { padding: 70px 60px 80px; text-align: center; background: var(--white); border-top: 3px solid var(--orange); }
+  .slot-cta p { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 22px; color: var(--dark); margin-bottom: 22px; }
   @media (max-width: 768px) {
     .slot-cta { padding: 50px 20px 60px; }
     .slot-cta p { font-size: 18px; }
