@@ -3,7 +3,7 @@
   "omschrijving": "Vertel kort waar je tegenaan loopt. We reageren binnen één werkdag en denken meteen mee.",
   "hero": {
     "label": "Contact",
-    "kop": "Even ",
+    "kop": "Even",
     "kop_accent": "sparren?",
     "tekst": "Vertel kort waar je tegenaan loopt. We reageren binnen één werkdag en denken meteen mee."
   },
@@ -34,6 +34,6 @@
   },
   "bedankt": {
     "kop": "Dank je wel",
-    "tekst": "We hebben je bericht binnen en reageren binnen één werkdag."
+    "tekst": "We hebben je bericht ontvangen en reageren binnen één werkdag."
   }
 }
