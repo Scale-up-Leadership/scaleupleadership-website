@@ -17,7 +17,7 @@ eleventyComputed:
     <hr class="rule">
     <p>{{ p.hero.tekst | safe }}</p>
     <div class="hero-cta">
-      <a class="pill-btn" href="{{ site.scan_url }}">{{ p.hero.knop_primair }} <span class="arrow">&rarr;</span></a>
+      <a class="pill-btn" href="{{ site.scan_url }}" target="_blank" rel="noopener">{{ p.hero.knop_primair }} <span class="arrow">&rarr;</span></a>
       <a class="pill-btn-outline" href="/contact/">{{ p.hero.knop_secundair }}</a>
     </div>
   </div>
@@ -191,6 +191,6 @@ eleventyComputed:
       <div class="step"><div class="n">{{ loop.index }}</div><p>{{ stap }}</p></div>
       {%- endfor %}
     </div>
-    <a class="pill-btn" href="{{ site.scan_url }}">{{ site.scan_knop }} <span class="arrow">&rarr;</span></a>
+    <a class="pill-btn" href="{{ site.scan_url }}" target="_blank" rel="noopener">{{ site.scan_knop }} <span class="arrow">&rarr;</span></a>
   </div>
 </section>
