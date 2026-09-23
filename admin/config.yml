@@ -386,7 +386,7 @@ collections:
               - { name: label, label: "Tekst", widget: string }
               - { name: url, label: "Link", widget: string }
           - { name: footer_tekst, label: "Tekst in de footer", widget: text }
-          - { name: footer_slogan, label: "Slogan rechtsonder", widget: string }
+          - { name: footer_slogan, label: "Slogan rechtsonder", widget: string, required: false, hint: "Staat op desktop rechts naast de copyrightregel. Laat leeg om hem weg te halen." }
           - name: slot_cta
             label: "Blok onderaan elke pagina"
             widget: object
