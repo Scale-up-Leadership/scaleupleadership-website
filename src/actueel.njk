@@ -99,7 +99,7 @@ eleventyComputed:
       <input type="hidden" name="form-name" value="nieuwsbrief">
       <p style="display:none"><label>Laat dit leeg <input name="bot-veld"></label></p>
       <label class="sr-only" for="n-mail">E-mailadres</label>
-      <input id="n-mail" name="email" type="email" required placeholder="jij@bedrijf.nl">
+      <input id="n-mail" name="email" type="email" required placeholder="{{ a.mail_hint or 'naam@bedrijf.nl' }}">
       <button class="pill-btn" type="submit">{{ a.knop or "Aanmelden" }} <span class="arrow">&rarr;</span></button>
     </form>
     {%- if a.kleine_letters %}<p class="kleine-letters">{{ a.kleine_letters }}</p>{% endif %}
