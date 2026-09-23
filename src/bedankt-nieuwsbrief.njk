@@ -1,0 +1,18 @@
+---
+layout: basis.njk
+permalink: /bedankt-aanmelding/
+titel: "Bedankt voor je aanmelding — Scale-up Leadership"
+slot_cta: false
+---
+{% set a = pagina.actueel.aanmelding or {} %}
+
+<section class="page-hero">
+  <div class="page-hero-text">
+    <div class="label">Aanmelding</div>
+    <h1 class="slab-hero">{{ a.bedankt_kop or "Je staat op de lijst" }}<span class="q">.</span></h1>
+    <hr class="rule">
+    <p>{{ a.bedankt_tekst or "Je krijgt voortaan ons nieuws en onze events in je inbox. Afmelden kan met één klik onderaan elke mail." }}</p>
+    <a class="pill-btn hero-knop" href="/actueel/">Terug naar Actueel <span class="arrow">&rarr;</span></a>
+  </div>
+  <div class="merk-ring"></div><div class="merk-stip"></div>
+</section>

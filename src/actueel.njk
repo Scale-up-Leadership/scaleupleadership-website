@@ -6,6 +6,10 @@ eleventyComputed:
   omschrijving: "{{ pagina.actueel.omschrijving }}"
 ---
 {% set p = pagina.actueel %}
+{% set alles = collections.actueel %}
+{% set uit = alles | uitgelicht %}
+{% set rest = alles | zonder(uit) %}
+{% set soorten = rest | soorten %}
 
 <section class="page-hero">
   <div class="page-hero-text">
@@ -17,10 +21,34 @@ eleventyComputed:
   <div class="merk-ring"></div><div class="merk-stip"></div>
 </section>
 
+{%- if uit %}
+<section class="uitgelicht">
+  <a class="uitgelicht-kaart" href="{{ uit.url }}">
+    <div class="uitgelicht-beeld"{% if uit.data.afbeelding %} style="background-image:url('{{ uit.data.afbeelding }}')"{% endif %}></div>
+    <div class="uitgelicht-tekst">
+      <div class="insight-tag">{{ uit.data.soort }}{% if uit.data.auteur %} &middot; {{ uit.data.auteur }}{% endif %}</div>
+      <h2 class="slab-heading">{{ uit.data.titel }}</h2>
+      {%- if uit.data.intro %}<p>{{ uit.data.intro }}</p>{% endif %}
+      <div class="date">{{ uit.data.datum | datum }}</div>
+      <span class="li-link">Lees verder &rarr;</span>
+    </div>
+  </a>
+</section>
+{%- endif %}
+
+{%- if rest.length %}
 <section class="insights">
+  {%- if soorten.length > 1 and rest.length > 3 %}
+  <div class="filters" id="filters">
+    <button class="filter actief" data-soort="alles">Alles</button>
+    {%- for s in soorten %}
+    <button class="filter" data-soort="{{ s }}">{{ s }}</button>
+    {%- endfor %}
+  </div>
+  {%- endif %}
   <div class="insights-grid">
-    {%- for item in collections.actueel %}
-    <a class="insight-card" href="{{ item.url }}">
+    {%- for item in rest %}
+    <a class="insight-card" href="{{ item.url }}" data-soort="{{ item.data.soort }}">
       <div class="insight-img"{% if item.data.afbeelding %} style="background-image:url('{{ item.data.afbeelding }}'); background-size:cover; background-position:center;"{% endif %}></div>
       <div class="insight-body">
         <div class="insight-tag">{{ item.data.soort }}{% if item.data.auteur %} &middot; {{ item.data.auteur }}{% endif %}</div>
@@ -29,11 +57,46 @@ eleventyComputed:
         <div class="date">{{ item.data.datum | datum }}</div>
       </div>
     </a>
-    {%- else %}
-    <p>{{ p.leeg }}</p>
     {%- endfor %}
   </div>
 </section>
+<script>
+  (function () {
+    var balk = document.getElementById('filters');
+    if (!balk) return;
+    balk.addEventListener('click', function (e) {
+      var knop = e.target.closest('.filter');
+      if (!knop) return;
+      var soort = knop.dataset.soort;
+      balk.querySelectorAll('.filter').forEach(function (k) { k.classList.toggle('actief', k === knop); });
+      document.querySelectorAll('.insights-grid .insight-card').forEach(function (kaart) {
+        kaart.style.display = (soort === 'alles' || kaart.dataset.soort === soort) ? '' : 'none';
+      });
+    });
+  })();
+</script>
+{%- elif not uit %}
+<section class="insights"><p style="text-align:center;">{{ p.leeg }}</p></section>
+{%- endif %}
+
+{%- set a = p.aanmelding or {} %}
+{%- if a.tonen is not defined or a.tonen %}
+<section class="aanmelden">
+  <div class="aanmelden-box">
+    <div class="aanmelden-ring"></div>
+    <h2 class="slab-heading">{{ a.kop or "Houd me op de hoogte" }}</h2>
+    <p>{{ a.tekst or "Nieuws en events van Scale-up Leadership in je inbox. Niet vaker dan nodig." }}</p>
+    <form name="nieuwsbrief" method="POST" action="/bedankt-aanmelding/" data-netlify="true" netlify-honeypot="bot-veld" class="aanmeld-form">
+      <input type="hidden" name="form-name" value="nieuwsbrief">
+      <p style="display:none"><label>Laat dit leeg <input name="bot-veld"></label></p>
+      <label class="sr-only" for="n-mail">E-mailadres</label>
+      <input id="n-mail" name="email" type="email" required placeholder="jij@bedrijf.nl">
+      <button class="pill-btn" type="submit">{{ a.knop or "Aanmelden" }} <span class="arrow">&rarr;</span></button>
+    </form>
+    <p class="kleine-letters">{{ a.kleine_letters or "Je kunt je op elk moment afmelden via de link onderaan elke mail." }}</p>
+  </div>
+</section>
+{%- endif %}
 
 {%- if p.podcast.tonen %}
 <section class="podcast">
