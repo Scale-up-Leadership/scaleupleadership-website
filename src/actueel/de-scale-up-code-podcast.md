@@ -1,6 +1,7 @@
 ---
 titel: De Scale-up Code, onze podcast over groeien zonder chaos
 soort: Podcast
+uitgelicht: false
 datum: 2026-09-16
 auteur: Miriam en Annemarie
 locatie: ''
@@ -11,7 +12,7 @@ praktisch:
   - Eén gast per aflevering, altijd een ondernemer
   - Binnenkort te beluisteren
 knop: Houd me op de hoogte
-knop_url: /contact/
+knop_url: /actueel/
 ---
 
 <p class="lead">Achter elke succesvolle scale-up zit een verhaal over ambitie, fouten maken, loslaten en leren. Precies die verhalen hoor je in De Scale-up Code.</p>
