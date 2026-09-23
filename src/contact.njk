@@ -55,6 +55,12 @@ eleventyComputed:
           <label for="c-bericht">{{ p.formulier.bericht }}</label>
           <textarea id="c-bericht" name="bericht" rows="5" placeholder="{{ p.formulier.bericht_hint }}"></textarea>
         </div>
+        {%- if p.formulier.updates %}
+        <label class="vinkje">
+          <input type="checkbox" name="updates" value="ja">
+          <span>{{ p.formulier.updates }}</span>
+        </label>
+        {%- endif %}
         <button class="pill-btn" type="submit">{{ p.formulier.knop }} <span class="arrow">&rarr;</span></button>
       </form>
     </div>
