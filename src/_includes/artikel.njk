@@ -11,6 +11,12 @@ layout: basis.njk
   <div class="merk-ring"></div><div class="merk-stip"></div>
 </section>
 
+{%- if afbeelding %}
+<div class="artikel-beeld-wrap">
+  <img class="artikel-beeld" src="{{ afbeelding }}" alt="{{ titel }}">
+</div>
+{%- endif %}
+
 <article class="artikel">
   <div class="artikel-meta">
     <span class="artikel-tag">{{ soort }}</span>
