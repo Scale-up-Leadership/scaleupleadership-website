@@ -27,7 +27,7 @@
 <div class="page">
 {{ content | safe }}
 
-{%- if slot_cta != false %}
+{%- if slot_cta != false and scanblok != false %}
 <section class="slot-cta">
   <p>{{ site.slot_cta.tekst }}</p>
   <a class="pill-btn" href="{{ site.scan_url }}">{{ site.slot_cta.knop }} <span class="arrow">&rarr;</span></a>
