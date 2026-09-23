@@ -388,6 +388,16 @@ collections:
               - { name: url, label: "Link", widget: string }
           - { name: footer_tekst, label: "Tekst in de footer", widget: text }
           - { name: footer_slogan, label: "Slogan rechtsonder", widget: string, required: false, hint: "Staat op desktop rechts naast de copyrightregel. Laat leeg om hem weg te halen." }
+          - name: footer_links
+            label: "Links onderaan"
+            widget: list
+            required: false
+            summary: "{{fields.label}}"
+            hint: "Voor de algemene voorwaarden, een privacyverklaring en dergelijke. Deze staan onderin naast de copyrightregel."
+            fields:
+              - { name: label, label: "Tekst", widget: string }
+              - { name: url, label: "Link", widget: string, hint: "Een pagina op de site zoals /privacyverklaring/, of een bestand zoals /img/uploads/algemene-voorwaarden.pdf" }
+              - { name: nieuw_tabblad, label: "In een nieuw tabblad openen", widget: boolean, default: false, required: false, hint: "Aanzetten bij een pdf." }
           - name: slot_cta
             label: "Blok onderaan elke pagina"
             widget: object
