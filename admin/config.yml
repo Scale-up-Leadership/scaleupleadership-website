@@ -484,6 +484,7 @@ collections:
       - { name: uitgelicht, label: "Bovenaan uitlichten", widget: boolean, default: false, required: false, hint: "Aan bij het item dat groot bovenaan Actueel moet staan. Staat nergens een vinkje, dan wordt het nieuwste item uitgelicht." }
       - { name: datum, label: "Datum", widget: datetime, date_format: "DD-MM-YYYY", time_format: false, picker_utc: true }
       - { name: auteur, label: "Wie schreef het", widget: string, required: false }
+      - { name: status, label: "Regeltje naast het label", widget: string, required: false, hint: "Komt op de kaart naast het roze label te staan, bijvoorbeeld Binnenkort te beluisteren. Laat je dit leeg, dan staat daar wie het schreef." }
       - { name: locatie, label: "Locatie (alleen bij een event)", widget: string, required: false }
       - { name: afbeelding, label: "Afbeelding", widget: image, required: false }
       - { name: intro, label: "Introzin", widget: text, required: false }
