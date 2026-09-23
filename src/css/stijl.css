@@ -147,7 +147,7 @@
   .uitgelicht-tekst .li-link { align-self: flex-start; }
 
   /* ===== AANMELDBLOK ONDERAAN ACTUEEL ===== */
-  .aanmelden { padding: 20px 60px 70px; }
+  .aanmelden { padding: 20px 60px 70px; scroll-margin-top: 20px; }
   .aanmelden-box { max-width: 720px; margin: 0 auto; background: var(--cream); border-radius: 20px;
                    padding: 48px 46px; text-align: center; position: relative; overflow: hidden; }
   .aanmelden-ring { position: absolute; width: 150px; height: 150px; border-radius: 50%;
