@@ -59,6 +59,13 @@
   </div>
   <div class="footer-bottom">
     <span>&copy; {{ jaar }} {{ site.naam }}. Alle rechten voorbehouden.</span>
+    {%- if site.footer_links %}
+    <span class="footer-links">
+      {%- for l in site.footer_links %}
+      <a href="{{ l.url }}"{% if l.nieuw_tabblad %} target="_blank" rel="noopener"{% endif %}>{{ l.label }}</a>
+      {%- endfor %}
+    </span>
+    {%- endif %}
     {%- if site.footer_slogan %}<span>{{ site.footer_slogan }}</span>{% endif %}
   </div>
 </footer>
