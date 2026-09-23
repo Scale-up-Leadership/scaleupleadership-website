@@ -20,6 +20,21 @@ export default function (eleventyConfig) {
     }).format(d);
   });
 
+  // Het uitgelichte item: het eerste met het vinkje aan, anders het nieuwste.
+  eleventyConfig.addFilter("uitgelicht", (lijst) =>
+    (lijst || []).find((i) => i.data.uitgelicht) || (lijst || [])[0]
+  );
+
+  // Dezelfde lijst zonder dat ene item.
+  eleventyConfig.addFilter("zonder", (lijst, item) =>
+    (lijst || []).filter((i) => i !== item)
+  );
+
+  // Welke soorten komen er voor, in de volgorde waarin ze voorkomen.
+  eleventyConfig.addFilter("soorten", (lijst) =>
+    [...new Set((lijst || []).map((i) => i.data.soort).filter(Boolean))]
+  );
+
   // Alle actueel-items, nieuwste eerst.
   eleventyConfig.addCollection("actueel", (api) =>
     api.getFilteredByGlob("src/actueel/*.md").sort((a, b) => b.data.datum - a.data.datum)
