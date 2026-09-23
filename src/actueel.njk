@@ -25,6 +25,7 @@ eleventyComputed:
       <div class="insight-body">
         <div class="insight-tag">{{ item.data.soort }}{% if item.data.auteur %} &middot; {{ item.data.auteur }}{% endif %}</div>
         <h4>{{ item.data.titel }}</h4>
+        {%- if item.data.intro %}<p class="insight-intro">{{ item.data.intro }}</p>{% endif %}
         <div class="date">{{ item.data.datum | datum }}</div>
       </div>
     </a>
