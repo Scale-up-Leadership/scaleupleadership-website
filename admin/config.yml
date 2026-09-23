@@ -452,6 +452,7 @@ collections:
       - { name: afbeelding, label: "Beeld naast de kop", widget: image, required: false, hint: "Komt rechts naast de titel te staan, bijvoorbeeld een boekomslag. Het beeld wordt niet bijgesneden." }
       - { name: knop, label: "Tekst op de knop onderaan", widget: string, required: false }
       - { name: knop_url, label: "Link van die knop", widget: string, required: false, hint: "Bijvoorbeeld /contact/" }
+      - { name: scanblok, label: "Scanblok onderaan tonen", widget: boolean, default: true, required: false, hint: "Het blokje Hoe schaalbaar is je bedrijf met de knop naar de scan. Zet uit als het op deze pagina niet past." }
       - { name: body, label: "De tekst van de pagina", widget: markdown }
 
   - name: actueel_items
