@@ -4,7 +4,7 @@ layout: basis.njk
 <section class="page-hero">
   <div class="page-hero-text">
     {%- if label %}<div class="label">{{ label }}</div>{% endif %}
-    <h1 class="slab-hero">{{ kop or titel }}{% if kop_accent %}<span class="q">{{ kop_accent }}</span>{% endif %}</h1>
+    <h1 class="slab-hero">{{ kop or titel }}{% if kop_accent %}{% if kop_accent[0] not in "?!.,:;" %} {% endif %}<span class="q">{{ kop_accent }}</span>{% endif %}</h1>
     <hr class="rule">
     {%- if intro %}<p>{{ intro }}</p>{% endif %}
   </div>
