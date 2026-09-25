@@ -52,6 +52,11 @@
       "label": "Algemene voorwaarden",
       "url": "/img/uploads/algemene-voorwaarden.pdf",
       "nieuw_tabblad": true
+    },
+    {
+      "label": "Privacyverklaring",
+      "url": "/privacyverklaring/",
+      "nieuw_tabblad": true
     }
   ],
   "slot_cta": {
