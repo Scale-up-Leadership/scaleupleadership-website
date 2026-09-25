@@ -451,6 +451,10 @@ collections:
     description: "Zelf een pagina maken, bijvoorbeeld een privacyverklaring, een uitgebreide dienst of een landingspagina. De opmaak ligt vast: een kop bovenaan en daaronder je tekst."
     folder: "src/paginas"
     create: true
+    # Het webadres van de pagina komt uit de Paginatitel. Zonder deze regel
+    # pakt het beheerscherm het eerste veld dat het tegenkomt, en dat gaf
+    # adressen als /juridisch/ of een willekeurige code.
+    identifier_field: titel
     slug: "{{slug}}"
     extension: md
     format: frontmatter
