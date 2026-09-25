@@ -1,0 +1,55 @@
+{#- Onderdelen komen zachtjes in beeld tijdens het scrollen.
+    Zonder JavaScript is alles gewoon meteen zichtbaar, en wie in zijn
+    systeem minder beweging heeft ingesteld krijgt hier niets van mee. -#}
+<script>
+(function () {
+  var doeHetNiet = !("IntersectionObserver" in window) ||
+    (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  if (doeHetNiet) return;
+
+  document.documentElement.classList.add("beweegt");
+
+  var selectors = [
+    ".section-head", ".trigger-card", ".dienst-item", ".pakket-card",
+    ".team-card", ".leader-card", ".insight-card", ".uitgelicht-kaart",
+    ".stat", ".journey-step", ".trust-logo.beeld", ".fase", ".pd-block",
+    ".verhaal-inner", ".functioneel-box", ".aanmelden-box",
+    ".page-hero-foto", ".page-hero-cover", ".artikel-beeld-wrap", ".testimonial"
+  ];
+
+  function start() {
+    var grens = window.innerHeight * 0.9;
+    var lijst = [];
+    selectors.forEach(function (s) {
+      document.querySelectorAll(s).forEach(function (el) {
+        // Alles wat al in beeld staat laten we met rust, zodat de
+        // bovenkant van de pagina meteen leesbaar is.
+        if (el.getBoundingClientRect().top > grens) lijst.push(el);
+      });
+    });
+
+    lijst.forEach(function (el) {
+      el.classList.add("kom-op");
+      var broers = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+      var wacht = Math.min(broers, 4) * 70;
+      if (wacht) el.style.transitionDelay = wacht + "ms";
+    });
+
+    var kijker = new IntersectionObserver(function (items) {
+      items.forEach(function (i) {
+        if (!i.isIntersecting) return;
+        i.target.classList.add("in-beeld");
+        kijker.unobserve(i.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+
+    lijst.forEach(function (el) { kijker.observe(el); });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
+</script>
