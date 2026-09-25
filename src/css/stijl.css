@@ -209,6 +209,33 @@
   .footer-top h5 { font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--magenta); margin-bottom: 16px; }
   .footer-top a { display:block; color: var(--dark); font-size: 13.5px; text-decoration: none; margin-bottom: 10px; opacity: 0.75; overflow-wrap: anywhere; }
 
+
+  /* ============ BEWEGING ============ */
+  /* Alleen actief als het script draait, dus zonder JavaScript blijft
+     alles gewoon zichtbaar. */
+  .beweegt .kom-op { opacity: 0; transform: translateY(16px);
+                     transition: opacity .55s ease, transform .55s cubic-bezier(.22,.61,.36,1); }
+  .beweegt .kom-op.in-beeld { opacity: 1; transform: none; }
+
+  /* Kleine reactie op de muis bij dingen waar je op kunt klikken. */
+  .insight-card, .uitgelicht-kaart, .trust-logo.beeld, .pakket-card, .trigger-card {
+    transition: transform .22s ease, box-shadow .22s ease; }
+  .insight-card:hover, .uitgelicht-kaart:hover {
+    transform: translateY(-4px); box-shadow: 0 14px 30px rgba(26,22,20,0.10); }
+  .trust-logo.beeld:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(26,22,20,0.10); }
+  .pakket-card:hover, .trigger-card:hover { transform: translateY(-3px); }
+  .pill-btn, .pill-btn-outline { transition: transform .16s ease, opacity .16s ease; }
+  .pill-btn:hover, .pill-btn-outline:hover { transform: translateY(-2px); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .beweegt .kom-op { opacity: 1; transform: none; transition: none; }
+    .insight-card, .uitgelicht-kaart, .trust-logo.beeld, .pakket-card,
+    .trigger-card, .pill-btn, .pill-btn-outline { transition: none; }
+    .insight-card:hover, .uitgelicht-kaart:hover, .trust-logo.beeld:hover,
+    .pakket-card:hover, .trigger-card:hover, .pill-btn:hover,
+    .pill-btn-outline:hover { transform: none; box-shadow: none; }
+  }
+
   /* ============ COOKIEBALK ============ */
   .cookiebalk { position: fixed; left: 20px; right: 20px; bottom: 20px; z-index: 60;
                 max-width: 760px; margin: 0 auto; background: var(--white);
