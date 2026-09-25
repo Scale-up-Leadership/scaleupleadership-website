@@ -1,17 +1,19 @@
 ---
-titel: "Ontdek jouw AI Moonshot tijdens NL Changemakers 2026. Ben je erbij?"
+titel: Ontdek jouw AI Moonshot tijdens NL Changemakers 2026. Ben je erbij?
 soort: Event
+uitgelicht: false
 datum: 2026-09-01
-auteur: ""
-locatie: "Van Nelle Fabriek, Rotterdam"
-afbeelding: ""
-intro: "Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026."
+auteur: ''
+status: ''
+locatie: Van Nelle Fabriek, Rotterdam
+afbeelding: /img/uploads/LR WM NLGroeit Changemakers 2026 (194 van 436).jpg
+intro: Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026.
 praktisch:
-  - "22 september 2026"
-  - "09.00 tot 19.00 uur"
-  - "Van Nelle Fabriek, Rotterdam"
-knop: "Aanmelden voor NL Changemakers"
-knop_url: "#"
+  - 22 september 2026
+  - 09.00 tot 19.00 uur
+  - Van Nelle Fabriek, Rotterdam
+knop: Aanmelden voor NL Changemakers
+knop_url: '#'
 ---
 
 <p class="lead">Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026. Daar helpen wij je in slechts 15 minuten jouw persoonlijke AI Moonshot te ontdekken, in een interactieve sessie waarin ambitie, groei en AI samenkomen.</p>
