@@ -4,6 +4,7 @@ soort: Podcast
 uitgelicht: false
 datum: 2026-09-16
 auteur: Miriam en Annemarie
+status: ''
 locatie: ''
 afbeelding: /img/uploads/WhatsApp Image 2026-09-23 at 11.58.52.jpeg
 intro: Een podcast van 20 tot 30 minuten voor scale-up founders en CEO's. Elke aflevering één ondernemer over een groeifase die hij of zij zelf heeft doorgemaakt.
@@ -11,7 +12,7 @@ praktisch:
   - 20 tot 30 minuten per aflevering
   - Eén gast per aflevering, altijd een ondernemer
   - Binnenkort te beluisteren
-knop: Houd me op de hoogte
+knop: Blijf op de hoogte
 knop_url: /actueel/#aanmelden
 ---
 
