@@ -10,23 +10,24 @@
   "leeg": "Er staat nog niets op deze pagina. Het eerste item komt eraan.",
   "aanmelding": {
     "tonen": true,
-    "kop": "Houd me op de hoogte",
+    "kop": "Blijf op de hoogte",
     "tekst": "Nieuws en events van Scale-up Leadership in je inbox.",
     "knop": "Aanmelden",
+    "mail_hint": "",
     "kleine_letters": "",
     "bedankt_kop": "Je staat op de lijst",
     "bedankt_tekst": "Je krijgt voortaan ons nieuws en onze events in je inbox."
   },
   "podcast": {
-    "tonen": true,
-    "meta": "Binnenkort te beluisteren",
-    "kop": "De Scale-up Code",
-    "lead": "Een podcast van 20 tot 30 minuten, gemaakt voor scale-up founders en CEO's.",
     "alinea1": "Elke aflevering draait om één gast, altijd een ondernemer, die terugkijkt op een groeifase die hij of zij zelf heeft doorgemaakt: wat er misging, wat er is veranderd, wat het heeft gekost, en wat ervoor terugkwam.",
     "alinea2": "Slechts een klein percentage bedrijven groeit ooit door tot serieuze schaal. Deze podcast helpt luisteraars te begrijpen waarom, en wat succesvolle founders anders deden.",
     "alinea3": "Want achter elke succesvolle scale-up zit een verhaal. Over ambities, fouten maken, loslaten en leren. Precies die verhalen hoor je hier.",
-    "slot": "Luister mee en ontdek welke code succesvolle groeibedrijven hebben gekraakt.",
     "knop": "Houd me op de hoogte",
-    "knop_url": "/actueel/#aanmelden"
+    "knop_url": "/actueel/#aanmelden",
+    "kop": "De Scale-up Code",
+    "lead": "Een podcast van 20 tot 30 minuten, gemaakt voor scale-up founders en CEO's.",
+    "meta": "Binnenkort te beluisteren",
+    "slot": "Luister mee en ontdek welke code succesvolle groeibedrijven hebben gekraakt.",
+    "tonen": true
   }
 }
