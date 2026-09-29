@@ -40,7 +40,7 @@ eleventyComputed:
           </div>
           <div class="veld">
             <label for="c-tel">{{ p.formulier.tel }} <span class="optie">optioneel</span></label>
-            <input id="c-tel" name="telefoon" type="tel" placeholder="{{ p.formulier.tel_hint }}">
+         <input id="c-tel" name="telefoon" type="tel" inputmode="tel" maxlength="20" pattern="[0-9+()\s.-]{9,20}" title="Bijvoorbeeld 06 12 34 56 78 of +31 6 12 34 56 78" placeholder="{{ p.formulier.tel_hint }}">
           </div>
         </div>
         <div class="veld">
