@@ -12,8 +12,8 @@ praktisch:
   - 22 september 2026
   - 09.00 tot 19.00 uur
   - Van Nelle Fabriek, Rotterdam
-knop: Aanmelden voor NL Changemakers
-knop_url: '#'
+knop: Plan alsnog je AI Moonshot
+knop_url: /contact/
 ---
 
 <p class="lead">Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026. Daar helpen wij je in slechts 15 minuten jouw persoonlijke AI Moonshot te ontdekken, in een interactieve sessie waarin ambitie, groei en AI samenkomen.</p>
@@ -46,4 +46,4 @@ knop_url: '#'
 
 <h3>Reserveer jouw AI Moonshot</h3>
 
-<p>Het aantal Moonshot-sessies is beperkt. We werken met vooraf ingeplande tijdslots, zodat iedere ondernemer persoonlijke aandacht krijgt. Schrijf je in via de event-app van NLgroeit nadat je een ticket hebt.</p>
+<p>Heb je ons gemist bij NL Changemakers? Dan doen we je AI Moonshot alsnog. In een kwartier kijken we naar je ambitie, wat je tegenhoudt en welke AI-kans daar het meeste verschil maakt. Kies bij het contactformulier voor AI Moonshot, dan plannen we iets in.</p>
