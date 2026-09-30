@@ -41,6 +41,6 @@ knop_url: /actueel/#aanmelden
 
 <h3>Wanneer</h3>
 
-<p>De eerste aflevering komt binnenkort. Wil je een seintje zodra hij online staat, laat dan je mailadres achter via het contactformulier. We gebruiken het alleen daarvoor.</p>
+<p>De eerste aflevering komt binnenkort. Laat je mailadres achter, dan krijg je een seintje zodra hij online staat. Je hoort daarna ook over nieuwe afleveringen, events en wat we verder delen</p>
 
 <p>Ken je zelf een ondernemer met een groeiverhaal dat verteld mag worden? We zoeken nog gasten voor de volgende afleveringen.</p>
