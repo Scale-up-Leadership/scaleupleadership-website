@@ -35,7 +35,6 @@
       "Clarify",
       "Skyleague",
       "4dotnet",
-      "HAN University of Applied Sciences",
       "Silverflow",
       "Vive"
     ],
@@ -63,10 +62,6 @@
       {
         "naam": "4dotnet",
         "logo": "/img/uploads/image-3.png"
-      },
-      {
-        "naam": "HAN University of Applied Sciences",
-        "logo": "/img/uploads/image-4.png"
       },
       {
         "naam": "Silverflow",
