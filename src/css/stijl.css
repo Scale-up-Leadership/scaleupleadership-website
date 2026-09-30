@@ -716,3 +716,20 @@
       padding-right: calc((100% - 1280px) / 2);
     }
   }
+
+/* Foto's scale-up leaders: hele foto in beeld, niets afgesneden */
+.leader-foto {
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* Breed scherm: content gecentreerd, zijvlakken leeg */
+@media (min-width: 1400px) {
+  nav, .hero, .journey, .trustbar, .intro, .triggers, .diensten-lijst,
+  .pakketten, .testimonial, .team, .insights, .functioneel, .page-hero,
+  .verhaal, .stats, .leaders, .uitgelicht, .aanmelden, .slot-cta,
+  .fases, footer {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+}
