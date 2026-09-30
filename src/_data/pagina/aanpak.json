@@ -13,14 +13,14 @@
       "naam": "Scale-up Droom",
       "tekst": "Je droom concreet en je groeivraag benoemd.",
       "anker": "droom",
-      "start": true
+      "start": false
     },
     {
       "label": "Groeistrategie",
       "naam": "Scale-up Pad",
       "tekst": "Keuzes maken en een helder pad vastleggen.",
       "anker": "pad",
-      "start": false
+      "start": true
     },
     {
       "label": "Executie",
