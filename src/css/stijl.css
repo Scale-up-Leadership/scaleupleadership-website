@@ -733,10 +733,10 @@
     padding-right: calc((100% - 1280px) / 2);
   }
 }
-
 /* Pakketkaarten zijn doorklikbaar naar de aanpakpagina */
 a.pakket-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -749,9 +749,14 @@ a.pakket-card:focus-visible {
   outline: 3px solid var(--magenta);
   outline-offset: 3px;
 }
+a.pakket-card .pakket-badge {
+  align-self: center;
+}
 .pakket-meer {
-  margin-top: 18px;
+  margin-top: auto;
+  padding-top: 18px;
   font-size: 12.5px;
   font-weight: 600;
   color: var(--magenta);
+}
 }
