@@ -3,7 +3,7 @@ titel: De Scale-up Code, onze podcast over groeien zonder chaos
 soort: Podcast
 uitgelicht: false
 datum: 2026-09-16
-auteur: Miriam en Annemarie
+auteur: ''
 status: ''
 locatie: ''
 afbeelding: /img/uploads/WhatsApp Image 2026-09-23 at 11.58.52.jpeg
