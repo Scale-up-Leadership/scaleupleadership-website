@@ -46,4 +46,4 @@ knop_url: /contact/?onderwerp=moonshot
 
 <h3>Reserveer jouw AI Moonshot</h3>
 
-<p>Heb je ons gemist bij NL Changemakers? Dan doen we je AI Moonshot alsnog. In een kwartier kijken we naar je ambitie, wat je tegenhoudt en welke AI-kans daar het meeste verschil maakt. Kies bij het contactformulier voor AI Moonshot, dan plannen we iets in.</p>
+<p>Heb je ons gemist bij NL Changemakers? Dan doen we je AI Moonshot alsnog. In een uur kijken we naar je ambitie, wat je tegenhoudt en welke AI-kans daar het meeste verschil maakt. Kies bij het contactformulier voor AI Moonshot, dan plannen we iets in.</p>
