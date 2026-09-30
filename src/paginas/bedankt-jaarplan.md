@@ -2,7 +2,7 @@
 titel: Bedankt jaarplan
 omschrijving: ''
 label: ''
-kop: Je kan beginnen
+kop: Je kunt beginnen
 kop_accent: ''
 intro: ''
 afbeelding: ''
