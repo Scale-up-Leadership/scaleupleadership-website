@@ -13,7 +13,7 @@ praktisch:
   - 09.00 tot 19.00 uur
   - Van Nelle Fabriek, Rotterdam
 knop: Plan alsnog je AI Moonshot
-knop_url: /contact/
+knop_url: /contact/?onderwerp=moonshot
 ---
 
 <p class="lead">Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026. Daar helpen wij je in slechts 15 minuten jouw persoonlijke AI Moonshot te ontdekken, in een interactieve sessie waarin ambitie, groei en AI samenkomen.</p>
