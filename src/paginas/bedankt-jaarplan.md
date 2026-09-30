@@ -11,7 +11,7 @@ knop_url: /scan
 scanblok: false
 ---
 
-<p class="lead">We hebben je gegevens. Hieronder start je de check, het kost je tien minuten.</p>
+<p class="lead">We hebben je gegevens. Hieronder start je de scan, het kost je tien minuten.</p>
 
 <p>Je scoort je bedrijf op acht facetten. Aan het eind zie je je eigen wiel en waar de zwakke plek zit.</p>
 
