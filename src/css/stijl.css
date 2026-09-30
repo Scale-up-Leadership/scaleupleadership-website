@@ -760,3 +760,28 @@ a.pakket-card .pakket-badge {
   color: var(--magenta);
 }
 }
+/* Het oranje streepje onder de koppen weg. De ruimte eronder blijft staan.
+   Het oranje in het menu blijft wel. */
+.rule {
+  height: 0;
+  background: none;
+  border: none;
+}
+
+/* Fases op de aanpakpagina ruimer. De kaarten vullen de rij en gaan naar
+   twee per rij zodra vier te smal worden. */
+.fases {
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.fases .stap {
+  width: calc(25% - 11px);
+  margin: 0;
+  flex: 0 0 auto;
+}
+@media (max-width: 1080px) {
+  .fases .stap { width: calc(50% - 7px); }
+}
+@media (max-width: 560px) {
+  .fases .stap { width: 100%; }
+}
