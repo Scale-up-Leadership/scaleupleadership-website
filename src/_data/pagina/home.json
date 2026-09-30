@@ -37,7 +37,8 @@
       "4dotnet",
       "Silverflow",
       "Vive",
-      "NAHV"
+      "NAHV",
+      "Snowcountry"
     ],
     "logos": [
       {
@@ -71,6 +72,14 @@
       {
         "naam": "moneyou",
         "logo": "/img/uploads/logo-moneyou-rondjes.png"
+      },
+      {
+        "naam": "NAHV",
+        "logo": "/img/uploads/image (5).png"
+      },
+      {
+        "naam": "Snowcountry",
+        "logo": "/img/uploads/image-6.png"
       }
     ]
   },
