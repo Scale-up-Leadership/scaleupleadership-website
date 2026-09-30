@@ -3,15 +3,39 @@
   "omschrijving": "We werken gefaseerd. We starten met de Scale-up Droom en daaruit kunnen Pad, Reis of Kompas volgen.",
   "hero": {
     "label": "Onze aanpak",
-    "kop": "Van ambitie<br>naar ",
+    "kop": "Van ambitie<br>naar",
     "kop_accent": "resultaat",
     "tekst": "We werken gefaseerd. We starten met de Scale-up Droom en daaruit kunnen Pad, Reis of Kompas volgen."
   },
   "fases": [
-    { "label": "De start", "naam": "Scale-up Droom", "tekst": "Je droom concreet en je groeivraag benoemd.", "anker": "droom", "start": true },
-    { "label": "Groeistrategie", "naam": "Scale-up Pad", "tekst": "Keuzes maken en een helder pad vastleggen.", "anker": "pad", "start": false },
-    { "label": "Executie", "naam": "Scale-up Reis", "tekst": "Meelopen tot het staat, in ritme en resultaat.", "anker": "reis", "start": false },
-    { "label": "Support", "naam": "Het Kompas", "tekst": "Zelf doen, met ons ernaast als je vastloopt.", "anker": "kompas", "start": false }
+    {
+      "label": "De start",
+      "naam": "Scale-up Droom",
+      "tekst": "Je droom concreet en je groeivraag benoemd.",
+      "anker": "droom",
+      "start": true
+    },
+    {
+      "label": "Groeistrategie",
+      "naam": "Scale-up Pad",
+      "tekst": "Keuzes maken en een helder pad vastleggen.",
+      "anker": "pad",
+      "start": false
+    },
+    {
+      "label": "Executie",
+      "naam": "Scale-up Reis",
+      "tekst": "Meelopen tot het staat, in ritme en resultaat.",
+      "anker": "reis",
+      "start": false
+    },
+    {
+      "label": "Support",
+      "naam": "Het Kompas",
+      "tekst": "Zelf doen, met ons ernaast als je vastloopt.",
+      "anker": "kompas",
+      "start": false
+    }
   ],
   "intro": {
     "label": "Hoe we werken",
@@ -97,7 +121,7 @@
       "naam": "Het Kompas",
       "prijs": "€4K",
       "duur": "per kwartaal",
-      "pitch": "Doe het zelf, met ons ernaast zodra je vastloopt. Onbeperkt sparren, elk kwartaal.",
+      "pitch": "Doe het zelf, met ons ernaast zodra je vastloopt. We coachen jou en je team tot je het zelf kunt.",
       "knop": "Plan een kennismaking",
       "badge": "",
       "uitgelicht": false,
