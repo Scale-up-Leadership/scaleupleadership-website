@@ -78,3 +78,19 @@ eleventyComputed:
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var v = new URLSearchParams(location.search).get('onderwerp');
+    if (!v) return;
+    var lijst = document.getElementById('c-onderwerp');
+    if (!lijst) return;
+    v = v.toLowerCase();
+    for (var i = 0; i < lijst.options.length; i++) {
+      if (lijst.options[i].text.toLowerCase().indexOf(v) > -1) {
+        lijst.selectedIndex = i;
+        break;
+      }
+    }
+  })();
+</script>
