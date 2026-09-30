@@ -10,3 +10,109 @@
   to = "https://scan.scaleupleadership.nl"
   status = 301
   force = false
+
+# ── Doorverwijzingen van de oude Wix-site ──────────────────────────────
+# De bovenste regel die past wint, dus specifieke regels staan boven de
+# regels met een sterretje. 301 betekent permanent verhuisd. Daarmee gaat
+# de waarde die Google aan de oude pagina hangt mee naar de nieuwe.
+# Bestaat een pagina wel op de nieuwe site, dan slaat Netlify de regel over.
+
+[[redirects]]
+  from = "/over-ons"
+  to = "/over-ons/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/wat-we-doen"
+  to = "/aanpak/"
+  status = 301
+
+[[redirects]]
+  from = "/direct-aan-de-slag"
+  to = "/scan"
+  status = 301
+
+[[redirects]]
+  from = "/stilstaanomtegroeien"
+  to = "/het-boek/"
+  status = 301
+
+[[redirects]]
+  from = "/whitepaper"
+  to = "/het-boek/"
+  status = 301
+
+[[redirects]]
+  from = "/investeerders"
+  to = "/voor-wie/"
+  status = 301
+
+[[redirects]]
+  from = "/cases"
+  to = "/actueel/"
+  status = 301
+
+[[redirects]]
+  from = "/feed"
+  to = "/actueel/"
+  status = 301
+
+[[redirects]]
+  from = "/payment-request-page"
+  to = "/contact/"
+  status = 301
+
+# De zes blogartikelen van de oude site. Die staan nog niet op de nieuwe
+# site, dus ze gaan naar het overzicht op Actueel.
+[[redirects]]
+  from = "/post/*"
+  to = "/actueel/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/actueel/"
+  status = 301
+
+# Het boek stond in de webshop van Wix.
+[[redirects]]
+  from = "/product-page/*"
+  to = "/het-boek/"
+  status = 301
+
+[[redirects]]
+  from = "/category/*"
+  to = "/het-boek/"
+  status = 301
+
+# Diensten en workshops die je via Wix kon boeken.
+[[redirects]]
+  from = "/service-page/*"
+  to = "/aanpak/"
+  status = 301
+
+[[redirects]]
+  from = "/booking-calendar/*"
+  to = "/contact/"
+  status = 301
+
+[[redirects]]
+  from = "/plans-pricing"
+  to = "/aanpak/"
+  status = 301
+
+# Evenementen.
+[[redirects]]
+  from = "/event-details/*"
+  to = "/actueel/"
+  status = 301
+
+[[redirects]]
+  from = "/events/*"
+  to = "/actueel/"
+  status = 301
