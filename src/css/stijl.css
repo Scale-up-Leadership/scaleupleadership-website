@@ -759,7 +759,6 @@ a.pakket-card .pakket-badge {
   font-weight: 600;
   color: var(--magenta);
 }
-}
 /* Het oranje streepje onder de koppen weg. De ruimte eronder blijft staan.
    Het oranje in het menu blijft wel. */
 .rule {
