@@ -100,19 +100,19 @@ eleventyComputed:
 </section>
 
 <section class="pakketten">
-  <div class="section-head">
-    <div class="section-title slab-heading">{{ p.pakketten.kop }}</div>
-    <div class="section-sub">{{ p.pakketten.sub }}</div>
-  </div>
   <div class="pakketten-grid">
     {%- for k in p.pakketten.kaarten %}
-    <div class="pakket-card{% if k.uitgelicht %} highlight{% endif %}">
+    {#- Het anker komt uit de naam: "Scale-up Droom" wordt /aanpak/#droom.
+        Wil je ergens anders heen, dan kan dat met een veld link op de kaart. #}
+    {%- set anker = k.naam | lower | replace("scale-up ", "") | replace("het ", "") | trim %}
+    <a class="pakket-card{% if k.uitgelicht %} highlight{% endif %}" href="{{ k.link or ('/aanpak/#' + anker) }}">
       {%- if k.badge %}<div class="pakket-badge">{{ k.badge }}</div>{% endif %}
       <div class="pakket-naam">{{ k.naam }}</div>
       <div class="pakket-prijs">{{ k.prijs }}</div>
       <div class="pakket-duur">{{ k.duur }}</div>
       <div class="pakket-desc">{{ k.tekst }}</div>
-    </div>
+      <div class="pakket-meer">Bekijk de aanpak &rarr;</div>
+    </a>
     {%- endfor %}
   </div>
 </section>
