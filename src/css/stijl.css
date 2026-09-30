@@ -785,3 +785,7 @@ a.pakket-card .pakket-badge {
 @media (max-width: 560px) {
   .fases .stap { width: 100%; }
 }
+/* Berichten links uitlijnen, zodat een halve rij er niet los uitziet */
+.insights-grid {
+  justify-content: flex-start;
+}
