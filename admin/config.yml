@@ -3,20 +3,14 @@
 # Hier staat welke onderdelen van de site aan te passen zijn en met welke velden.
 # Wie inhoud wijzigt hoeft dit bestand nooit te openen.
 #
-# De repository staat nu op het persoonlijke account van Lian. Zodra de site
-# overgaat naar een organisatie op naam van Scale-up Leadership, moet de regel
-# "repo" hieronder mee veranderen. Iedere redacteur heeft een eigen (gratis)
-# GitHub-account nodig en toegang tot deze repository.
+# De repository staat op de GitHub-organisatie Scale-up-Leadership. Iedere
+# redacteur heeft een eigen (gratis) GitHub-account nodig en moet lid zijn van
+# die organisatie om te kunnen inloggen op het beheerscherm.
 
 backend:
   name: github
-  repo: Lianvisser/scaleupleadership-website
+  repo: Scale-up-Leadership/scaleupleadership-website
   branch: main
-
-# Wil je liever dat redacteuren zonder GitHub-account inloggen, gebruik dan:
-# backend:
-#   name: git-gateway
-#   branch: main
 
 media_folder: "src/img/uploads"
 public_folder: "/img/uploads"
