@@ -1,6 +1,6 @@
 {
   "titel": "Contact — Scale-up Leadership",
-  "omschrijving": "Vertel kort waar je tegenaan loopt. We reageren binnen één werkdag en denken meteen mee.",
+  "omschrijving": "Vertel kort waar je tegenaan loopt. We reageren binnen één werkdag en denken meteen me",
   "hero": {
     "label": "Contact",
     "kop": "Even",
@@ -37,6 +37,6 @@
   },
   "bedankt": {
     "kop": "Dank je wel",
-    "tekst": "We hebben je bericht ontvangen en reageren binnen één werkda"
+    "tekst": "We hebben je bericht ontvangen en reageren binnen één werkdag."
   }
 }
