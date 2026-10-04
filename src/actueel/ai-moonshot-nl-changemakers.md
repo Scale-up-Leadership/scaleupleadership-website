@@ -7,7 +7,10 @@ auteur: ''
 status: ''
 locatie: Van Nelle Fabriek, Rotterdam
 afbeelding: /img/uploads/LR WM NLGroeit Changemakers 2026 (194 van 436).jpg
-intro: Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026.
+intro: |-
+  Dit event is geweest. Wil je alsnog je AI Moonshot ontdekken, plan dan hieronder een afspraak in.
+
+  Wil jij weten wat de grootste AI-kans is voor jouw bedrijf? Kom dan op 22 september naar NL Changemakers 2026.
 praktisch:
   - 22 september 2026
   - 09.00 tot 19.00 uur
