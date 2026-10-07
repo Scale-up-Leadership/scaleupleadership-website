@@ -25,7 +25,7 @@
     },
     {
       "getal": "11",
-      "label": "Scale-up leaders"
+      "label": "Scale-up experts"
     }
   ],
   "geloven": {
@@ -52,6 +52,6 @@
   },
   "leaders": {
     "kop": "Wie we zijn",
-    "sub": "De scale-up leaders die instappen."
+    "sub": "De scale-up experts die instappen."
   }
 }
