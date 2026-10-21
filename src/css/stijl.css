@@ -711,7 +711,7 @@
     nav, .hero, .journey, .trustbar, .intro, .triggers, .diensten-lijst,
     .pakketten, .testimonial, .team, .insights, .functioneel, .page-hero,
     .verhaal, .stats, .leaders, .uitgelicht, .aanmelden, .slot-cta,
-    .fases, footer {
+      footer {
       padding-left: calc((100% - 1280px) / 2);
       padding-right: calc((100% - 1280px) / 2);
     }
@@ -728,7 +728,7 @@
   nav, .hero, .journey, .trustbar, .intro, .triggers, .diensten-lijst,
   .pakketten, .testimonial, .team, .insights, .functioneel, .page-hero,
   .verhaal, .stats, .leaders, .uitgelicht, .aanmelden, .slot-cta,
-  .fases, footer {
+    footer {
     padding-left: calc((100% - 1280px) / 2);
     padding-right: calc((100% - 1280px) / 2);
   }
