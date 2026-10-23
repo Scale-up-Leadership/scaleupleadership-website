@@ -52,7 +52,7 @@ scanblok: false
   .jp-stappen{flex-direction:column;gap:20px;padding-top:0}
   .jp-stap{text-align:left;padding:0 0 0 36px}
   .jp-stap::before{top:0;bottom:-20px;left:9px;right:auto;width:3px;height:auto}
-  .jp-stap:first-child::before{top:10px}
+  .jp-stap:first-child::before{top:10px;left:9px}
   .jp-stap:last-child::before{bottom:auto;height:10px}
   .jp-bol{position:absolute;left:0;top:0;margin:0}
   .jp-knoppen .pill-btn,.jp-knoppen .pill-btn-outline{width:100%;justify-content:center}
