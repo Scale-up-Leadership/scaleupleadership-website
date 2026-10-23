@@ -788,3 +788,43 @@ a.pakket-card .pakket-badge {
 .insights-grid {
   justify-content: flex-start;
 }
+/* ===== Vier kaarten met icoon, blok "Waar loop je tegenaan" (homepage) ===== */
+.trigger-row { max-width: 1120px; }
+.trigger-card { width: 22%; margin: 10px 1.5%; }
+.trigger-card .kaart-icoon { display: block; width: 36px; height: 36px; margin-bottom: 18px; }
+.trigger-card .kaart-icoon svg { display: block; width: 100%; height: 100%; }
+
+@media (max-width: 1000px) {
+  .trigger-card { width: 46%; margin: 10px 2%; }
+}
+@media (max-width: 768px) {
+  .trigger-card { width: 100%; margin: 8px 0; }
+}
+
+/* ===== Tijdlijn boven de vier fases (pagina Aanpak) ===== */
+.tl-route { max-width: 1120px; margin: 0 auto; padding: 40px 60px 0; }
+.tl-stappen { display: flex; align-items: flex-start; }
+.tl-stap { flex: 1 1 0; position: relative; padding: 0 8px; text-align: center;
+  text-decoration: none; color: inherit; display: block; }
+.tl-stap::before { content: ""; position: absolute; top: 9px; left: 0; right: 0;
+  height: 3px; background: var(--greige-2, #E6E7E8); }
+.tl-stap:first-child::before { left: 50%; }
+.tl-stap:last-child::before { right: 50%; }
+.tl-bol { position: relative; z-index: 2; display: block; width: 21px; height: 21px;
+  margin: 0 auto 12px; border-radius: 50%; background: #FFFFFF;
+  border: 3px solid var(--greige-3, #D5D6D8); transition: border-color .15s, box-shadow .15s; }
+.tl-stap.tl-hier .tl-bol { border-color: #F78F3B; box-shadow: 0 0 0 5px #FDE7D4; }
+.tl-stap:hover .tl-bol { border-color: #F78F3B; }
+.tl-naam { display: block; font-family: 'Sora', sans-serif; font-weight: 700;
+  font-size: 15px; letter-spacing: -.2px; line-height: 1.25; color: var(--dark, #181818); }
+.tl-duur { display: block; font-size: 12.5px; color: var(--grey, #5E6163); margin-top: 3px; }
+
+@media (max-width: 768px) {
+  .tl-route { padding: 26px 20px 0; }
+  .tl-stappen { flex-direction: column; gap: 20px; }
+  .tl-stap { text-align: left; padding: 0 0 0 36px; }
+  .tl-stap::before { top: 0; bottom: -20px; left: 9px; right: auto; width: 3px; height: auto; }
+  .tl-stap:first-child::before { top: 10px; }
+  .tl-stap:last-child::before { bottom: auto; height: 10px; }
+  .tl-bol { position: absolute; left: 0; top: 0; margin: 0; }
+}
