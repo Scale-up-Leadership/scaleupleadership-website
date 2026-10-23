@@ -17,18 +17,6 @@ eleventyComputed:
   <div class="merk-ring"></div><div class="merk-stip"></div>
 </section>
 
-<section class="tl-route">
-  {%- set duren = ["2 uur", "2 dagen met je MT", "3 tot 6 maanden", "doorlopend"] %}
-  <div class="tl-stappen">
-    {%- for f in p.fases %}
-    <a class="tl-stap{% if f.start %} tl-hier{% endif %}" href="#{{ f.anker }}">
-      <span class="tl-bol"></span>
-      <span class="tl-naam">{{ f.naam }}</span>
-      <span class="tl-duur">{{ duren[loop.index0] }}</span>
-    </a>
-    {%- endfor %}
-  </div>
-</section>
 <section class="fases">
   {%- for f in p.fases %}
   <a class="stap{% if f.start %} start{% endif %}" href="#{{ f.anker }}">
