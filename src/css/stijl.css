@@ -824,7 +824,7 @@ a.pakket-card .pakket-badge {
   .tl-stappen { flex-direction: column; gap: 20px; }
   .tl-stap { text-align: left; padding: 0 0 0 36px; }
   .tl-stap::before { top: 0; bottom: -20px; left: 9px; right: auto; width: 3px; height: auto; }
-  .tl-stap:first-child::before { top: 10px; }
+  .tl-stap:first-child::before { top: 10px; left: 9px; }
   .tl-stap:last-child::before { bottom: auto; height: 10px; }
   .tl-bol { position: absolute; left: 0; top: 0; margin: 0; }
 }
