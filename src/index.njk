@@ -70,10 +70,21 @@ eleventyComputed:
     <div class="section-title slab-heading">{{ p.triggers.kop }}</div>
     <div class="section-sub">{{ p.triggers.sub }}</div>
   </div>
-  <div class="trigger-row">
+   <div class="trigger-row">
     {%- for k in p.triggers.kaarten %}
     <div class="trigger-card">
-      <div class="dot-label"><span class="dot"></span>{{ k.kop }}</div>
+      <span class="kaart-icoon">
+        {%- if loop.index == 1 %}
+        <svg viewBox="0 0 32 32" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 25a12 12 0 0 1 24 0" stroke="#181818"/><path d="M16 25 9.5 17.5" stroke="#F78F3B"/><circle cx="16" cy="25" r="1.8" fill="#F78F3B" stroke="none"/></svg>
+        {%- elif loop.index == 2 %}
+        <svg viewBox="0 0 32 32" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5v22h23" stroke="#181818"/><path d="M9 22l5-6 5 3 6-8" stroke="#181818"/><circle cx="25.5" cy="10.5" r="2.6" fill="#F78F3B" stroke="none"/></svg>
+        {%- elif loop.index == 3 %}
+        <svg viewBox="0 0 32 32" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="12" r="3" stroke="#181818"/><path d="M2.5 24c0-3.3 2.5-5.5 5.5-5.5" stroke="#181818"/><circle cx="24" cy="12" r="3" stroke="#181818"/><path d="M29.5 24c0-3.3-2.5-5.5-5.5-5.5" stroke="#181818"/><circle cx="16" cy="11" r="4" stroke="#F78F3B"/><path d="M9.5 26c0-4 2.9-7 6.5-7s6.5 3 6.5 7" stroke="#F78F3B"/></svg>
+        {%- elif loop.index == 4 %}
+        <svg viewBox="0 0 32 32" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="24" height="21" rx="3" stroke="#181818"/><path d="M10 4v5M22 4v5M4 13h24" stroke="#181818"/><path d="M11 20.5l3.5 3.5 6.5-7" stroke="#F78F3B"/></svg>
+        {%- endif %}
+      </span>
+      <div class="dot-label">{{ k.kop }}</div>
       <p>{{ k.tekst }}</p>
     </div>
     {%- endfor %}
