@@ -7,6 +7,7 @@ layout: basis.njk
     <h1 class="slab-hero">{{ kop or titel }}{% if kop_accent %}{% if kop_accent[0] not in "?!.,:;" %} {% endif %}<span class="q">{{ kop_accent }}</span>{% endif %}</h1>
     <hr class="rule">
     {%- if intro %}<p>{{ intro }}</p>{% endif %}
+    {%- if hero_blok %}<div class="hero-extra">{{ hero_blok | safe }}</div>{% endif %}
   </div>
   {%- if afbeelding %}
   <div class="page-hero-cover"><img src="{{ afbeelding }}" alt="{{ kop or titel }}"></div>
