@@ -17,26 +17,37 @@ scanblok: false
 .jp-oorzaak{flex:1 1 210px;background:#FFFFFF;border:1px solid #E6E7E8;border-radius:14px;
   padding:20px 18px;font-size:14.5px;line-height:1.55}
 .jp-oorzaak strong{display:block;font-weight:600;color:#181818;margin-bottom:4px}
-.jp-oorzaak b{display:block;font-family:'Sora',sans-serif;font-weight:800;font-size:28px;
-  line-height:1;color:#F78F3B;margin-bottom:10px}
 
-/* de route: droom, pad, reis, kompas */
-.jp-route{margin:30px 0 8px}
-.jp-stappen{display:flex;gap:0;align-items:flex-start;position:relative;padding-top:4px}
-.jp-stap{flex:1 1 0;text-align:center;position:relative;padding:0 8px}
-.jp-stap::before{content:"";position:absolute;top:9px;left:0;right:0;height:3px;background:#E6E7E8}
-.jp-stap:first-child::before{left:50%}
-.jp-stap:last-child::before{right:50%}
-.jp-stap.jp-na::before,.jp-stap.jp-hier::before{background:#F78F3B}
-.jp-bol{position:relative;z-index:2;width:21px;height:21px;border-radius:50%;background:#fff;
-  border:3px solid #D5D6D8;margin:0 auto 12px}
-.jp-stap.jp-na .jp-bol{border-color:#F78F3B}
-.jp-stap.jp-hier .jp-bol{border-color:#F78F3B;box-shadow:0 0 0 5px #FDE7D4}
-.jp-naam{font-family:'Sora',sans-serif;font-weight:700;font-size:15px;letter-spacing:-.2px;line-height:1.25}
-.jp-hier .jp-naam{font-size:16px}
+/* de quote onder de vier blokken */
+p.jp-quote,.artikel p.jp-quote{font-family:'Sora',sans-serif;font-style:italic;font-weight:600;font-size:21px;
+  line-height:1.4;letter-spacing:-.3px;color:#181818;
+  margin:4px 0 34px;padding:2px 0 2px 20px;border-left:3px solid #F78F3B}
+
+/* de vier stappen in de twee dagen, de lijn loopt mee met het scrollen */
+.jp-tijdlijn{position:relative}
+.jp-spoor{position:absolute;left:12px;top:20px;bottom:18px;width:2px;background:#E6E7E8}
+.jp-spoor i{position:absolute;left:0;top:0;width:2px;height:100%;background:#F78F3B}
+.jp-stappenlijst{margin:22px 0 26px;padding:0;list-style:none;counter-reset:jp}
+.jp-stappenlijst li{position:relative;padding:0 0 0 52px;margin:0 0 20px;counter-increment:jp}
+.jp-stappenlijst li:last-child{margin-bottom:0}
+.jp-stappenlijst li::before{content:counter(jp,decimal-leading-zero);position:absolute;left:0;top:-2px;
+  font-family:'Sora',sans-serif;font-weight:800;font-size:22px;line-height:1;color:#F78F3B}
+.jp-stappenlijst strong{display:block;font-family:'Sora',sans-serif;font-weight:700;font-size:16px;
+  letter-spacing:-.2px;margin-bottom:3px}
+/* pas als javascript het overneemt gaat de lijn meelopen. Zonder javascript
+   staat alles gewoon aan, dan mist niemand iets. */
+.jp-tijdlijn.jp-loopt .jp-spoor i{height:0;transition:height .2s linear}
+.jp-tijdlijn.jp-loopt .jp-stappenlijst li::before{color:#D5D6D8;transition:color .3s ease}
+.jp-tijdlijn.jp-loopt .jp-stappenlijst li.jp-aan::before{color:#F78F3B}
+
+/* het blok met wat de tweedaagse is en wat hij kost */
+.jp-blok.jp-hier{margin:26px 0;border:2px solid #F78F3B;background:#FFFBF7;border-radius:14px;
+  padding:18px 20px;display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.jp-prijs b{font-family:'Sora',sans-serif;font-weight:700;font-size:21px;line-height:1;
+  letter-spacing:-.4px;color:#181818;white-space:nowrap}
+.jp-naam{font-family:'Sora',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.3px;line-height:1.3}
+.jp-sub{font-size:14px;color:#181818;margin-top:5px}
 .jp-duur{font-size:12.5px;color:#5E6163;margin-top:3px}
-.jp-merk{display:inline-block;margin-top:8px;font-size:10.5px;font-weight:700;letter-spacing:1px;
-  text-transform:uppercase;color:#B45309;background:#FDE7D4;border-radius:999px;padding:4px 10px}
 
 /* tekstlink in de huisstijl, dus niet dat standaard blauw van de browser */
 .jp-link{color:inherit;font-weight:600;text-decoration:none;
@@ -44,17 +55,12 @@ scanblok: false
 .jp-link:hover,.jp-link:focus{color:#EC008C;box-shadow:inset 0 -2px 0 0 #EC008C}
 
 .jp-knoppen{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:26px 0 0}
-.jp-onder{font-size:13px;color:#5E6163;margin:12px 0 0}
+p.jp-onder,.artikel p.jp-onder{font-size:13px;line-height:1.6;color:#5E6163;margin:12px 0 0}
 
 @media (max-width:760px){
   .jp-oorzaken{flex-direction:column}
   .jp-oorzaak{width:100%}
-  .jp-stappen{flex-direction:column;gap:20px;padding-top:0}
-  .jp-stap{text-align:left;padding:0 0 0 36px}
-  .jp-stap::before{top:0;bottom:-20px;left:9px;right:auto;width:3px;height:auto}
-  .jp-stap:first-child::before{top:10px;left:9px}
-  .jp-stap:last-child::before{bottom:auto;height:10px}
-  .jp-bol{position:absolute;left:0;top:0;margin:0}
+  .jp-blok.jp-hier{gap:10px}
   .jp-knoppen .pill-btn,.jp-knoppen .pill-btn-outline{width:100%;justify-content:center}
 }
 </style>
@@ -68,58 +74,93 @@ scanblok: false
 <p>Dit zien we elk jaar terugkomen en horen we ondernemers zeggen.</p>
 
 <ul class="jp-oorzaken">
-  <li class="jp-oorzaak"><b>01</b><strong>Het plan is gemaakt, het gesprek niet.</strong> Je maakt een plan en verwacht dat daarmee alles goed komt. Alleen is het echte gesprek met je MT er nooit geweest. Waar willen we heen, met wie doen we dat en hoe knippen we het op in haalbare kwartaaldoelen?</li>
-  <li class="jp-oorzaak"><b>02</b><strong>Focus op alles.</strong> Alles komt in het plan, alleen zijn er geen duidelijke keuzes gemaakt. De vraag die ontbreekt is wat je nu even niet doet. Zonder dat antwoord houd je een roadmap over die je nooit gaat halen.</li>
-  <li class="jp-oorzaak"><b>03</b><strong>Je blijft doorgaan in de operatie.</strong> Stress en chaos, terwijl het plan blijft liggen. Dat is de messy middle: te groot om alles zelf te doen en te klein om het los te laten.</li>
-  <li class="jp-oorzaak"><b>04</b><strong>Het plan verdwijnt in de la.</strong> Aan het einde van het jaar maak je plannen, daarna kijk je er niet meer naar. Een jaar later haal je ze erbij en zie je dat je er niets mee hebt gedaan.</li>
+  <li class="jp-oorzaak"><strong>Het plan is gemaakt, het gesprek niet.</strong> Je hebt een plan, maar het echte gesprek met je MT ontbreekt: waar willen we heen, met wie en hoe vertalen we dat naar haalbare kwartaaldoelen?</li>
+  <li class="jp-oorzaak"><strong>Focus op alles.</strong> Alles komt in het plan, alleen zijn er geen duidelijke keuzes gemaakt. De vraag die ontbreekt is wat je nu even niet doet. Zonder dat antwoord houd je een roadmap over die je nooit gaat halen.</li>
+  <li class="jp-oorzaak"><strong>Je blijft doorgaan in de operatie.</strong> Stress en chaos, terwijl het plan blijft liggen. Dat is de messy middle: te groot om alles zelf te doen en te klein om het los te laten.</li>
+  <li class="jp-oorzaak"><strong>Het plan verdwijnt in de la.</strong> Aan het einde van het jaar maak je plannen, daarna kijk je er niet meer naar. Een jaar later haal je ze erbij en zie je dat je er niets mee hebt gedaan.</li>
 </ul>
 
-<p>Een plan zonder actie is gewoon een wens.</p>
+<p class="jp-quote">Een plan zonder actie is gewoon een wens.</p>
 
 <h3>Zo pakken we het aan</h3>
 
-<p>Je jaarplan maak je in twee dagen, samen met je MT. We voeren het gesprek dat nog niet gevoerd is, we dwingen de keuze af over wat je niet doet en we knippen het jaar op in kwartaaldoelen. Je gaat naar huis met een plan waar je team achter staat.</p>
+<p>In twee dagen maak je samen met je MT het jaarplan voor 2027. Dit is wat je doet.</p>
 
-<p>Wil je daarna hulp bij de uitvoering? Dan draaien we een tijd mee als fractional CEO of COO. We nemen een deel over zodat jij uit de waan van de dag komt en we houden het ritme vast, zodat het plan niet in december weer uit de kast hoeft.</p>
-
-<p>Het jaarplan maken we in het <a class="jp-link" href="/aanpak/">Scale-up Pad</a>. Dat is stap twee. Zo loopt het hele pad:</p>
-
-<div class="jp-route">
-  <div class="jp-stappen">
-    <div class="jp-stap jp-na">
-      <div class="jp-bol"></div>
-      <div class="jp-naam">Scale-up Droom</div>
-      <div class="jp-duur">2 uur</div>
-    </div>
-    <div class="jp-stap jp-hier">
-      <div class="jp-bol"></div>
-      <div class="jp-naam">Scale-up Pad</div>
-      <div class="jp-duur">2 dagen met je MT</div>
-      <span class="jp-merk">Hier maken we je jaarplan</span>
-    </div>
-    <div class="jp-stap">
-      <div class="jp-bol"></div>
-      <div class="jp-naam">Scale-up Reis</div>
-      <div class="jp-duur">3 tot 6 maanden</div>
-    </div>
-    <div class="jp-stap">
-      <div class="jp-bol"></div>
-      <div class="jp-naam">Het Kompas</div>
-      <div class="jp-duur">doorlopend</div>
-    </div>
-  </div>
+<div class="jp-tijdlijn">
+<div class="jp-spoor"><i></i></div>
+<ol class="jp-stappenlijst">
+  <li><strong>Je droom concreet maken</strong>Wat is de volgende grote stap voor je bedrijf?</li>
+  <li><strong>Een heldere groeistrategie</strong>Je zet die droom om in groeiambities voor de komende drie tot vier jaar. Je team denkt mee over hoe je daar komt.</li>
+  <li><strong>Focus in 2027</strong>Je pelt de ambitie af naar wat je volgend jaar wil bereiken. Samen met je team, niet alleen. Je maakt keuzes en kiest je prioriteiten. Heldere prioriteiten geven rust en richting en vergroten de kans dat het lukt.</li>
+  <li><strong>Acties voor het komende kwartaal</strong>Je vertaalt de jaardoelen naar kwartaaldoelen en acties met OKR's, en je legt vast wie wat doet. Elke maand kijk je hoe het loopt, elk kwartaal stuur je bij. Zo houd je focus en flexibiliteit.</li>
+</ol>
 </div>
 
-<h3>Kan je hulp gebruiken?</h3>
+<div class="jp-blok jp-hier">
+  <div>
+    <div class="jp-naam">Jaarplan</div>
+    <div class="jp-sub">We combineren de <a class="jp-link" href="/aanpak/">Scale-up Droom en het Scale-up Pad</a></div>
+    <div class="jp-duur">2 dagen met je MT</div>
+  </div>
+  <div class="jp-prijs"><b>&euro; 4.500</b></div>
+</div>
 
-<p>Plan een gesprek met ons. We kijken waar je bedrijf staat, waar je volgend jaar wil zijn en wat daarvoor nodig is.</p>
+<p>Wil je dat we daarna betrokken blijven? Dan draaien we een tijd mee als fractional CEO of COO en houden we het ritme vast.</p>
+
+<h3>Zo ga jij 2027 goed van start</h3>
+
+<p>Wil jij ook een jaarplan dat echt wordt uitgevoerd en dat leidt tot resultaat? Plan dan de tweedaagse, dan zorgen we er samen voor dat het in 2027 lukt.</p>
 
 <div class="jp-knoppen">
-  <a class="pill-btn" href="/contact/">Plan een kennismaking <span class="arrow">&rarr;</span></a>
+  <a class="pill-btn" href="/contact/">Start met je jaarplan <span class="arrow">&rarr;</span></a>
   <a class="pill-btn-outline" id="jp-scan" href="https://scan.scaleupleadership.nl">Of doe eerst de scan <span class="arrow">&rarr;</span></a>
 </div>
 
-<p class="jp-onder">De scan kost je twee minuten. Je ziet meteen waar je bedrijf op acht onderdelen staat.</p>
+<p class="jp-onder">De scan kost je twee minuten. Je ziet direct waar je bedrijf staat op de belangrijkste ontwikkelgebieden die nodig zijn om te schalen.</p>
+
+<script>
+/* Laat de lijn tussen de vier stappen meelopen terwijl je scrollt.
+   Zet javascript uit en de lijn staat gewoon helemaal aan. */
+(function(){
+  var vak = document.querySelector(".jp-tijdlijn");
+  if(!vak) return;
+  var vul = vak.querySelector(".jp-spoor i");
+  var stappen = vak.querySelectorAll(".jp-stappenlijst li");
+  if(!vul || !stappen.length) return;
+  if(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  vak.className += " jp-loopt";
+  var wacht = false;
+
+  function teken(){
+    wacht = false;
+    var r = vak.getBoundingClientRect();
+    var hoog = window.innerHeight;
+    var start = hoog * 0.85;          // lijn begint te lopen als de eerste stap hier komt
+    var eind = hoog * 0.45;           // en is vol als de laatste stap hier is
+    var bereik = start - eind + r.height;
+    var deel = (start - r.top) / bereik;
+    if(deel < 0) deel = 0;
+    if(deel > 1) deel = 1;
+    vul.style.height = (deel * 100) + "%";
+
+    var tot = deel * r.height;        // hoe ver de lijn nu staat, in pixels
+    for(var i = 0; i < stappen.length; i++){
+      var s = stappen[i].getBoundingClientRect();
+      if(s.top - r.top <= tot + 12) stappen[i].classList.add("jp-aan");
+      else stappen[i].classList.remove("jp-aan");
+    }
+  }
+  function vraag(){
+    if(wacht) return;
+    wacht = true;
+    window.requestAnimationFrame(teken);
+  }
+  window.addEventListener("scroll", vraag, {passive:true});
+  window.addEventListener("resize", vraag);
+  teken();
+})();
+</script>
 
 <script>
 /* Geeft de utm-waarden van LinkedIn door aan de scan, want die staat op een
