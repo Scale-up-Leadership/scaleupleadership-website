@@ -4,11 +4,13 @@ omschrijving: ''
 label: Q4
 kop: Jaarplan voor 2027 aan het maken?
 kop_accent: ''
-intro: ''
+intro: Hoe zou het zijn als je voor 2027 een plan maakt dat ook echt wordt uitgevoerd? Een plan waarin je scherpe keuzes hebt gemaakt. Daar helpen wij je bij, zodat jij 2027 goed van start gaat.
 afbeelding: ''
 knop: ''
 knop_url: ''
 scanblok: false
+hero_blok: |
+  <p style="margin:22px 0 0"><a class="pill-btn" href="/contact/">Plan een kennismaking <span class="arrow">&rarr;</span></a></p>
 ---
 
 <style>
@@ -64,10 +66,6 @@ p.jp-onder,.artikel p.jp-onder{font-size:13px;line-height:1.6;color:#5E6163;marg
   .jp-knoppen .pill-btn,.jp-knoppen .pill-btn-outline{width:100%;justify-content:center}
 }
 </style>
-
-<p class="lead">Hoe zou het zijn als je voor 2027 een plan maakt dat ook echt wordt uitgevoerd? Een plan waarin je scherpe keuzes hebt gemaakt. Daar helpen wij je bij, zodat jij 2027 goed van start gaat.</p>
-
-<p><a class="pill-btn" href="/contact/">Plan een kennismaking <span class="arrow">&rarr;</span></a></p>
 
 <h3>Herken je dit?</h3>
 
