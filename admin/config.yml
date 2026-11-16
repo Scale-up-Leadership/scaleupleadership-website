@@ -491,3 +491,56 @@ collections:
       - { name: knop, label: "Tekst op de knop", widget: string, required: false }
       - { name: knop_url, label: "Link van de knop", widget: string, required: false }
       - { name: body, label: "De tekst", widget: markdown }
+  # ------------------------------------------------------------------
+  # ---------------- SPECIALE PAGINA'S ----------------
+  # Deze twee pagina's hebben eigen opmaak en eigen code in de tekst.
+  # Daarom staan ze in src/speciaal en niet bij de losse pagina's.
+  # Je past hier de teksten aan. Het veld onderaan met de code laat je staan.
+  - name: speciale_paginas
+    label: "Speciale pagina's"
+    description: "De boekpagina en de jaarplanpagina. Deze hebben eigen opmaak, dus je kunt hier wel de teksten wijzigen maar geen nieuwe pagina aanmaken."
+    files:
+      # ---------------- HET BOEK ----------------
+      - name: het_boek
+        label: "Het boek"
+        file: "src/speciaal/het-boek.md"
+        fields:
+          - { name: titel, label: "Paginatitel (browsertab en Google)", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text, required: false }
+          - { name: label, label: "Kopje boven de titel", widget: string, required: false }
+          - { name: kop, label: "Grote kop", widget: string }
+          - { name: kop_accent, label: "Gekleurd deel van de kop", widget: string, required: false }
+          - { name: intro, label: "Introtekst", widget: text, required: false }
+          - { name: afbeelding, label: "Beeld naast de kop", widget: image, required: false, hint: "De boekomslag." }
+          - { name: hero_punten, label: "Puntjes onder de introtekst", widget: list, required: false, field: { name: punt, label: "Regel", widget: string }, hint: "Korte regels met een vinkje ervoor, bijvoorbeeld over verzending." }
+          - { name: hero_knop, label: "Tekst op de knop bovenaan", widget: string, required: false }
+          - { name: hero_knop_url, label: "Link van die knop", widget: string, required: false, hint: "Laat dit op #bestellen staan, dan springt de knop naar het bestelformulier." }
+          - { name: knop, label: "Tekst op de knop onderaan", widget: string, required: false }
+          - { name: knop_url, label: "Link van die knop", widget: string, required: false }
+          - { name: scanblok, label: "Scanblok onderaan tonen", widget: boolean, default: false, required: false }
+          - name: body
+            label: "NIET WIJZIGEN: de opmaak en het bestelformulier"
+            widget: text
+            hint: "Hier staat de code van het bestelformulier. Laat dit veld ongemoeid. Wil je hier iets veranderd hebben, vraag het dan aan Hanka."
+
+      # ---------------- JAARPLAN 2027 ----------------
+      - name: jaarplan_2027
+        label: "Jaarplan 2027"
+        file: "src/speciaal/jaarplan-2027.md"
+        fields:
+          - { name: titel, label: "Paginatitel (browsertab en Google)", widget: string }
+          - { name: omschrijving, label: "Omschrijving voor Google", widget: text, required: false }
+          - { name: label, label: "Kopje boven de titel", widget: string, required: false }
+          - { name: kop, label: "Grote kop", widget: string }
+          - { name: kop_accent, label: "Gekleurd deel van de kop", widget: string, required: false }
+          - { name: intro, label: "Introtekst", widget: text, required: false }
+          - { name: afbeelding, label: "Beeld naast de kop", widget: image, required: false }
+          - { name: hero_knop, label: "Tekst op de knop bovenaan", widget: string, required: false }
+          - { name: hero_knop_url, label: "Link van die knop", widget: string, required: false }
+          - { name: knop, label: "Tekst op de knop onderaan", widget: string, required: false }
+          - { name: knop_url, label: "Link van die knop", widget: string, required: false }
+          - { name: scanblok, label: "Scanblok onderaan tonen", widget: boolean, default: false, required: false }
+          - name: body
+            label: "NIET WIJZIGEN: de opmaak en de tekst van de pagina"
+            widget: text
+            hint: "Hier staat de opmaak van de blokken en de tijdlijn. Laat dit veld ongemoeid. Wil je hier iets veranderd hebben, vraag het dan aan Hanka."
