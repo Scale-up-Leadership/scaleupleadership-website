@@ -13,6 +13,8 @@ praktisch:
   - Kijk op YouTube of luister op Spotify
 knop: Bekijk op YouTube
 knop_url: https://youtu.be/l67Wi-rThuE
+youtube_url: https://youtu.be/l67Wi-rThuE
+spotify_url: https://open.spotify.com/episode/4yWIcpvr5mdpWRQXlNpkBA
 ---
 
 Funding is nooit klaar. Dat is de rode draad in het gesprek tussen host Marleen Merx en Julie Munneke-Tromp, oprichter van Tiny Library. Julie financierde haar bedrijf stap voor stap: subsidie, een accelerator, Dragons' Den en convertible loans.
