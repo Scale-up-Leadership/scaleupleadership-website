@@ -490,6 +490,8 @@ collections:
       - { name: praktisch, label: "Praktische regels", widget: list, required: false, hint: "Korte feiten die als lijstje onder het artikel komen, bijvoorbeeld datum, locatie of duur. Houd elke regel kort.", field: { name: regel, label: "Regel", widget: string } }
       - { name: knop, label: "Tekst op de knop", widget: string, required: false }
       - { name: knop_url, label: "Link van de knop", widget: string, required: false }
+      - { name: youtube_url, label: "YouTube-link (podcast)", widget: string, required: false, hint: "Link naar de video. Dan staat er een knop Bekijk op YouTube op de kaart bij Actueel en bovenaan het artikel." }
+      - { name: spotify_url, label: "Spotify-link (podcast)", widget: string, required: false, hint: "Link naar de aflevering. Dan staat er een knop Luister op Spotify op de kaart bij Actueel en bovenaan het artikel." }
       - { name: body, label: "De tekst", widget: markdown }
   # ------------------------------------------------------------------
   # ---------------- SPECIALE PAGINA'S ----------------
