@@ -1,5 +1,5 @@
 ---
-titel: 'Aflevering 1 van De Scale-up Code: Julie Munneke-Tromp over funding'
+titel: 'De Scale-up Code: Julie Munneke-Tromp over funding'
 soort: Podcast
 uitgelicht: true
 datum: 26-11-2026
