@@ -24,7 +24,7 @@ eleventyComputed:
 
 {%- if uit %}
 <section class="uitgelicht">
-  <a class="uitgelicht-kaart" href="{{ uit.url }}">
+  <div class="uitgelicht-kaart">
     <div class="uitgelicht-beeld"{% if uit.data.afbeelding %} style="background-image:url('{{ uit.data.afbeelding }}')"{% endif %}></div>
     <div class="uitgelicht-tekst">
       <div class="kaart-meta">
@@ -32,12 +32,18 @@ eleventyComputed:
         {%- set bij = uit.data.status or uit.data.auteur %}
         {%- if bij %}<span class="kaart-sub">{{ bij }}</span>{% endif %}
       </div>
-      <h2 class="slab-heading">{{ uit.data.titel }}</h2>
+      <h2 class="slab-heading"><a class="uitgelicht-link" href="{{ uit.url }}">{{ uit.data.titel }}</a></h2>
       {%- if uit.data.intro %}<p>{{ uit.data.intro }}</p>{% endif %}
       <div class="date">{{ uit.data.datum | datum }}</div>
+      {%- if uit.data.youtube_url or uit.data.spotify_url %}
+      <div class="uitgelicht-knoppen">
+        {%- if uit.data.youtube_url %}<a class="pill-btn" href="{{ uit.data.youtube_url }}" target="_blank" rel="noopener">Bekijk op YouTube <span class="arrow">&rarr;</span></a>{% endif %}
+        {%- if uit.data.spotify_url %}<a class="pill-btn-outline" href="{{ uit.data.spotify_url }}" target="_blank" rel="noopener">Luister op Spotify <span class="arrow">&rarr;</span></a>{% endif %}
+      </div>
+      {%- endif %}
       <span class="li-link">Lees verder &rarr;</span>
     </div>
-  </a>
+  </div>
 </section>
 {%- endif %}
 
