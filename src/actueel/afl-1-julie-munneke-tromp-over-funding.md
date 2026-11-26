@@ -23,8 +23,6 @@ In deze aflevering deelt ze eerlijk wat ze daarbij leerde:
 * Ken je runway. Reken terug vanaf de deadline van je investeerder.
 * Weet waar je goed in bent. En haal hulp voor de rest, zoals Julie deed met een fractional CFO.
 
-[![Bekijk aflevering 1 van De Scale-up Code met Julie Munneke-Tromp op YouTube](/img/uploads/thumbnail-julie-munneke-tromp-scale-up-code.png)](https://youtu.be/l67Wi-rThuE)
-
 [Bekijk de aflevering op YouTube](https://youtu.be/l67Wi-rThuE)
 
 Liever luisteren? [Beluister de aflevering op Spotify](https://open.spotify.com/episode/4yWIcpvr5mdpWRQXlNpkBA).
@@ -32,7 +30,7 @@ Liever luisteren? [Beluister de aflevering op Spotify](https://open.spotify.com/
 ## Julie haalt op dit moment nieuwe funding op
 
 Funding is nooit klaar, en dat geldt ook voor Tiny Library. Het bedrijf haalt op dit moment €750.000 op in een nieuwe investeringsronde via het platform Broccoli, met bestaande aandeelhouder ROM InWest als lead investor. Benieuwd? [Bekijk de campagne van Tiny Library op Broccoli](https://platform.broccoli.eu/nl/all-campaigns/LwHabtPwRTEpmRV4ZyJC).
-*Dit is geen beleggingsadvies.
+\*Dit is geen beleggingsadvies.
 
 ## Over De Scale-up Code
 
