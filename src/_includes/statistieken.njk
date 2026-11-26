@@ -66,7 +66,7 @@
         gtag("event", "klik_scan", { knop: tekst, plek: plek, vanuit: inMenu ? "menu" : (inFooter ? "footer" : "pagina") });
         return;
       }
-      if (a.classList.contains("uitgelicht-kaart") || a.classList.contains("insight-card")) {
+      if (a.classList.contains("uitgelicht-kaart") || a.classList.contains("uitgelicht-link") || a.classList.contains("insight-card")) {
         var titel = a.querySelector("h2, h4");
         gtag("event", "klik_artikel", { artikel: titel ? tekstVan(titel) : tekst, link_url: href, plek: plek });
         return;

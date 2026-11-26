@@ -7,6 +7,12 @@ layout: basis.njk
     <h1 class="slab-hero">{{ titel }}</h1>
     <hr class="rule">
     {%- if intro %}<p>{{ intro }}</p>{% endif %}
+    {%- if youtube_url or spotify_url %}
+    <div class="podcast-knoppen">
+      {%- if youtube_url %}<a class="pill-btn" href="{{ youtube_url }}" target="_blank" rel="noopener">Bekijk op YouTube <span class="arrow">&rarr;</span></a>{% endif %}
+      {%- if spotify_url %}<a class="pill-btn-outline" href="{{ spotify_url }}" target="_blank" rel="noopener">Luister op Spotify <span class="arrow">&rarr;</span></a>{% endif %}
+    </div>
+    {%- endif %}
   </div>
   <div class="merk-ring"></div><div class="merk-stip"></div>
 </section>
