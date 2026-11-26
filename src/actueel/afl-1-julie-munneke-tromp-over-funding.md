@@ -1,10 +1,10 @@
 ---
-titel: 'De Scale-up Code: Julie Munneke-Tromp over funding'
+titel: Julie Munneke-Tromp over funding
 soort: Podcast
 uitgelicht: true
 datum: 26-11-2026
 auteur: Miriam Cnossen
-status: Aflevering 1 met Julie Munneke-Tromp
+status: Aflevering 1
 locatie: ''
 afbeelding: /img/uploads/thumbnail-julie-munneke-tromp-kaart.jpg
 intro: Hoe financier je een groeiend bedrijf zonder jezelf weg te geven? Julie Munneke-Tromp, oprichter van Tiny Library, vertelt het in de eerste aflevering van De Scale-up Code.
